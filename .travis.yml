@@ -5,7 +5,7 @@ jdk:
 
 env:
   global:
-  - secure: V/eI22wX8uzQt8Yr2gOsc6hER6RCZQm81EmukgIhOm3lSPI/CpYgWIdfQWe57ih61B9KtARotHOxQ4KxXcZpTUlQ8pG0OuJrZh6Dp2Azwp5XMtpBdQcGpgiid0Q+JEp34uMA5ynNVD1xLsb69wVYb8KqVtuEEkUaetflxI4E+PM=
+  - secure: "F9pPTcPO1gG0G61MaqGiVrFIW/eIQOtMMtgeoV9sOMelH+Ws5mV7cdEXO9uZ8ImWMN9/35uqF08xXuAhTsh9jVWtgD1gCaVmhAmKgsuQNCsjfboUd+qrBfnBrJEMWZkwkh5GjqlEJuNbqh8JQOmHjW1hTTeoOF6ztp4v6KoZFJk="
 
 before_install:
 - sudo apt-get update -qq -y
