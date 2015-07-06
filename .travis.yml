@@ -10,8 +10,10 @@ before_install:
 install:
   - cd generator
   - mvn -B package
-  - java -jar target/resume*.jar -f PDF ../content/resume.xml ../output.pdf
   - cd ..
+
+script:
+  - java -jar generator/target/resume*.jar -f PDF content/resume.xml output.pdf
   - ls -alrt
 
 notifications:
