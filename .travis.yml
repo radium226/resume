@@ -20,7 +20,7 @@ script:
 - ls -alrt
 
 after_script:
-- deploy_resume.sh
+- ./deploy_resume.sh
 
 notifications:
   email: false
