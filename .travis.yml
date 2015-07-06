@@ -1,0 +1,14 @@
+language: java
+
+jdk:
+  - oraclejdk8    
+
+before_install:
+  - sudo apt-get install -qq libreoffice
+
+install:
+  - cd generator
+  - mvn -B package
+  - java -jar target/resume*.jar -f PDF ../content/resume.xml ../output.pdf
+  - cd ..
+  - ls -alrt
