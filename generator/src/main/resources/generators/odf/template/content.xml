@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+                         xmlns:oooc="http://openoffice.org/2004/calc"
+                         xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+                         xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0"
+                         xmlns:dom="http://www.w3.org/2001/xml-events"
+                         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                         xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+                         xmlns:css3t="http://www.w3.org/TR/css3-text/"
+                         xmlns:drawooo="http://openoffice.org/2010/draw"
+                         xmlns:ooo="http://openoffice.org/2004/office"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+                         xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2"
+                         xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
+                         xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+                         xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+                         xmlns:resume="RESUME"
+                         xmlns:tableooo="http://openoffice.org/2009/table"
+                         xmlns:xforms="http://www.w3.org/2002/xforms"
+                         xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0"
+                         xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+                         xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+                         xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+                         xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                         xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+                         xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0"
+                         xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+                         xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+                         xmlns:rpt="http://openoffice.org/2005/report"
+                         xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+                         xmlns:math="http://www.w3.org/1998/Math/MathML"
+                         xmlns:officeooo="http://openoffice.org/2009/office"
+                         xmlns:ooow="http://openoffice.org/2004/writer"
+                         xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         office:version="1.2">
+   <office:automatic-styles>
+      <style:style style:family="table"
+                   style:master-page-name="A4_Page"
+                   style:name="Auteur_du_Curriculum_Vitae">
+         <style:table-properties style:page-number="auto"
+                                 style:width="18.002cm"
+                                 table:align="margins"/>
+      </style:style>
+      <style:style style:family="paragraph"
+                   style:name="JOB_LEFT"
+                   style:parent-style-name="Standard"/>
+      <style:style style:family="paragraph"
+                   style:name="JOB_RIGHT"
+                   style:parent-style-name="Standard">
+         <style:paragraph-properties fo:break-before="column"/>
+      </style:style>
+      <style:style style:family="section" style:name="JOB">
+         <style:section-properties style:editable="false" text:dont-balance-text-columns="false">
+            <style:columns fo:column-count="2" fo:column-gap="0cm">
+               <style:column fo:end-indent="0cm" fo:start-indent="0cm" style:rel-width="32767*"/>
+               <style:column fo:end-indent="0cm" fo:start-indent="0cm" style:rel-width="32768*"/>
+            </style:columns>
+         </style:section-properties>
+      </style:style>
+      <style:style style:family="section" style:name="Skills_Domain">
+         <style:section-properties style:editable="false" text:dont-balance-text-columns="false">
+            <style:columns fo:column-count="3" fo:column-gap="0cm"/>
+         </style:section-properties>
+      </style:style>
+   </office:automatic-styles>
+   <office:body>
+      <office:text text:use-soft-page-breaks="true">
+         <table:table xmlns:view="VIEW"
+                      table:name="Auteur_du_Curriculum_Vitae"
+                      table:style-name="Auteur_du_Curriculum_Vitae">
+            <table:table-column table:number-columns-repeated="2"/>
+            <table:table-column/>
+            <table:table-row>
+               <table:table-cell office:value-type="string">
+                  <text:p>
+                     <text:span>6 avenue du Fort</text:span>
+                     <text:line-break/>
+                     <text:span>
+                        <text:span>92120</text:span>
+                        <text:span>Montrouge</text:span>
+                     </text:span>
+                  </text:p>
+                  <text:p>
+                     <text:span>+33607726058</text:span>
+                  </text:p>
+                  <text:p>
+                     <text:span>adrien.besnard@gmail.com</text:span>
+                  </text:p>
+               </table:table-cell>
+               <table:table-cell office:value-type="string" table:style-name="Titre.B1">
+                  <text:p text:style-name="Title">
+                     <text:span>Prénom</text:span>
+                     <text:span>Nom</text:span>
+                  </text:p>
+                  <text:p text:style-name="Subtitle">
+                     <text:span>Yay! </text:span>
+                  </text:p>
+               </table:table-cell>
+               <table:table-cell office:value-type="string">
+                  <text:p>Né le 11 Octobre 1987<text:line-break/> à Saint-Brieuc (Côtes-d'Armor)</text:p>
+                  <text:p>Nationalité française</text:p>
+               </table:table-cell>
+            </table:table-row>
+         </table:table>
+         <text:h xmlns:view="VIEW" style:name="Heading_1" text:outline-level="1">Expérience professionnelle</text:h>
+         <text:h xmlns:view="VIEW" style:name="Heading_2" text:outline-level="2">StarClay</text:h>
+         <text:section xmlns:view="VIEW" text:name="Section_1">
+            <text:section text:name="Section_2">
+               <text:h text:outline-level="3">
+                  <text:span text:style-name="Job_Period">De Avril 2012 à aujourd'hui</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Project">BI Analytic Tool</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Customer">BNP Paribas</text:span>
+               </text:h>
+               <table:table>
+                  <table:table-column table:number-columns-repeated="2"/>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:p>Système décisionnel reposant sur un datawarehouse des ordres et des exécutions réalisées par les automates de trading sur les marchés électroniques (Euronext, Xetra, etc.) et sur un ensemble de datamarts utilisés pour la visualisation et <text:span text:style-name="Emphasis">l'analyse des trades</text:span> pour le front, middle et back-office</text:p>
+                     </table:table-cell>
+                     <table:table-cell office:value-type="string" table:number-rows-spanned="2">
+                        <text:list text:style-name="Technical_Environement_List">
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">
+                TECHNICAL1TECHNIACL1
+            </text:p>
+                           </text:list-item>
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">
+		TECHNICAL2 TECHNICAL2
+	</text:p>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                  </table:table-row>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:list text:style-name="Involvement">
+                           <text:list-item>
+                              <text:p>Participation à l'évolution de l'architecture datawarehouse et réalisation de plusieurs datamarts</text:p>
+                              <text:list>
+                                 <text:list-item>
+                                    <text:p>Volumétrie importante (1To de données non-compressées par jour)</text:p>
+                                 </text:list-item>
+                              </text:list>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                     <table:covered-table-cell/>
+                  </table:table-row>
+               </table:table>
+            </text:section>
+         </text:section>
+         <text:h xmlns:view="VIEW" style:name="Heading_2" text:outline-level="2">Sopra Group</text:h>
+         <text:section xmlns:view="VIEW" text:name="Section_3">
+            <text:section text:name="Section_4">
+               <text:h text:outline-level="3">
+                  <text:span text:style-name="Job_Period">De Juillet 2010 à Avril 2012</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Project">Datawarehouse IN</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Customer">Maroc Telecom</text:span>
+               </text:h>
+               <table:table>
+                  <table:table-column table:number-columns-repeated="2"/>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:p>Système décisionnel reposant sur un datawarehouse de tickets téléphoniques issus de systèmes amonts hétérogènes, destiné à l'alimentation d'un ensemble de datamarts utilisés dans le cadre de la création de rapports synthétiques pour divers métiers (marketing, fraude, revenu assurance, etc.)</text:p>
+                     </table:table-cell>
+                     <table:table-cell office:value-type="string" table:number-rows-spanned="2">
+                        <text:list text:style-name="Technical_Environement_List">
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">Conception, spécifications et développement des univers Business Objects utilisés dans le cadre de la confection des rapports</text:p>
+                              <text:list>
+                                 <text:list-item>
+                                    <text:p text:style-name="Technical_Environement">Prise en compte de l'intégralité des métiers impactés</text:p>
+                                 </text:list-item>
+                                 <text:list-item>
+                                    <text:p text:style-name="Technical_Environement">Présence d'un univers technique de statistiques d'exploitation </text:p>
+                                 </text:list-item>
+                              </text:list>
+                           </text:list-item>
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">Qualification à Rabat et mise-en-production à Casablanca</text:p>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                  </table:table-row>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:list text:style-name="Involvement">
+                           <text:list-item>
+                              <text:p>Conception, spécifications et développement de l'infrastructure de chargement des tickets dans le datawarehouse et d'alimentation des datamarts à la volée </text:p>
+                              <text:list>
+                                 <text:list-item>
+                                    <text:p>Volumétrie importante (près de 60M de tickets par jour avec 9 mois de Rétention pour le datawarehouse et 3 ans pour les datamarts)</text:p>
+                                 </text:list-item>
+                                 <text:list-item>
+                                    <text:p>Alimentation d'une dizaine de datamarts ayant des finalités fonctionnelles spécifiques</text:p>
+                                 </text:list-item>
+                              </text:list>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                     <table:covered-table-cell/>
+                  </table:table-row>
+               </table:table>
+            </text:section>
+            <text:section text:name="Section_5">
+               <text:h text:outline-level="3">
+                  <text:span text:style-name="Job_Period">De Avril 2009 à Octobre 2010</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Project">Datawarehouse IN</text:span>
+                  <text:tab/>
+                  <text:span text:style-name="Job_Customer">SFR</text:span>
+               </text:h>
+               <table:table>
+                  <table:table-column table:number-columns-repeated="2"/>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:p>J'ai fait des beaux gateaux! </text:p>
+                     </table:table-cell>
+                     <table:table-cell office:value-type="string" table:number-rows-spanned="2">
+                        <text:list text:style-name="Technical_Environement_List">
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">Lol</text:p>
+                              <text:list>
+                                 <text:list-item>
+                                    <text:p text:style-name="Technical_Environement">Prise en compte de l'intégralité des métiers impactés</text:p>
+                                 </text:list-item>
+                                 <text:list-item>
+                                    <text:p text:style-name="Technical_Environement">Présence d'un univers technique de statistiques d'exploitation </text:p>
+                                 </text:list-item>
+                              </text:list>
+                           </text:list-item>
+                           <text:list-item>
+                              <text:p text:style-name="Technical_Environement">Qualification à Rabat et mise-en-production à Casablanca</text:p>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                  </table:table-row>
+                  <table:table-row>
+                     <table:table-cell office:value-type="string">
+                        <text:list text:style-name="Involvement">
+                           <text:list-item>
+                              <text:p>Pas mal de trucs! </text:p>
+                              <text:list>
+                                 <text:list-item>
+                                    <text:p>Volumétrie importante (près de 60M de tickets par jour avec 9 mois de Rétention pour le datawarehouse et 3 ans pour les datamarts)</text:p>
+                                 </text:list-item>
+                                 <text:list-item>
+                                    <text:p>Alimentation d'une dizaine de datamarts ayant des finalités fonctionnelles spécifiques</text:p>
+                                 </text:list-item>
+                              </text:list>
+                           </text:list-item>
+                        </text:list>
+                     </table:table-cell>
+                     <table:covered-table-cell/>
+                  </table:table-row>
+               </table:table>
+            </text:section>
+         </text:section>
+         <text:h xmlns:view="VIEW" style:name="Heading_1" text:outline-level="1">Compétences</text:h>
+         <text:h xmlns:view="VIEW" style:name="Heading_2" text:outline-level="2">Informatique</text:h>
+         <text:section xmlns:view="VIEW" text:name="Section_6" text:style-name="Skills_Domain">
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Décisionnel</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>SAP Business Objects XIR2</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle Data Integrator</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>IBM DataStage 7.3</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Système de gestion de base de données</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>MySQL</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle 10g et 11g</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Système de gestion de base de données</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>MySQL</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle 10g et 11g</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Système de gestion de base de données</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>MySQL</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle 10g et 11g</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Système de gestion de base de données</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>MySQL</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle 10g et 11g</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+            <text:p text:style-name="Standard">
+               <draw:frame draw:name="Frame2"
+                           draw:style-name="Skills_Domain_Group"
+                           draw:z-index="1"
+                           style:rel-width="100%"
+                           svg:width="8.5cm"
+                           text:anchor-type="as-char">
+                  <draw:text-box fo:min-height="0.499cm">
+                     <text:h text:outline-level="3" text:style-name="Skills_Domain_Group_Heading">Système de gestion de base de données</text:h>
+                     <text:list text:style-name="Skills_Domain_Group_List">
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>MySQL</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                        <text:list-item>
+                           <text:p text:style-name="Skills_Domain_Group_Skill">
+                              <text:span>Oracle 10g et 11g</text:span>
+                              <text:tab/>
+                              <text:span text:style-name="Skills_Domain_Group_Skill_Note"></text:span>
+                           </text:p>
+                        </text:list-item>
+                     </text:list>
+                  </draw:text-box>
+               </draw:frame>
+            </text:p>
+         </text:section>
+      </office:text>
+   </office:body>
+</office:document-content>

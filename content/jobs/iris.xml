@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include:fragment xmlns="RESUME" xmlns:view="VIEW" xmlns:include="INCLUDE">
+    <job>
+        <project>Datawarehouse IN</project>
+        <employer>Sopra Group</employer>
+        <customer>SFR</customer>
+        <period>
+            <from>
+                <date>
+                    <year>2009</year>
+                    <month>04</month>
+                </date>
+            </from>
+            <to>
+                <date>
+                    <year>2010</year>
+                    <month>10</month>
+                </date>
+            </to>
+        </period>
+        <location>
+            <city>
+                <name>La Défense</name>
+                <code>22000</code>
+            </city>
+            <county>
+                <name>Haut-de-Seine</name>
+                <code>92</code>
+            </county>
+            <country>France</country>
+        </location>
+        <summary>
+            <view:paragraph>J'ai fait des beaux gateaux! </view:paragraph>
+        </summary>
+        <highlights>
+            <highlight type="involvement">
+                <view:paragraph>Pas mal de trucs! </view:paragraph>
+                <view:list>
+                    <view:item>Volumétrie importante (près de 60M de tickets par jour avec 9 mois de Rétention pour le datawarehouse et 3 ans pour les datamarts)</view:item>
+                    <view:item>Alimentation d'une dizaine de datamarts ayant des finalités fonctionnelles spécifiques</view:item>
+                </view:list>
+            </highlight>
+            <highlight type="technical">
+                <view:paragraph>Lol</view:paragraph>
+                <view:list>
+                    <view:item>Prise en compte de l'intégralité des métiers impactés</view:item>
+                    <view:item>Présence d'un univers technique de statistiques d'exploitation </view:item>
+                </view:list>
+            </highlight>
+            <highlight type="technical">
+                <view:paragraph>Qualification à Rabat et mise-en-production à Casablanca</view:paragraph>
+            </highlight>
+        </highlights>
+    </job>
+</include:fragment>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume xmlns="RESUME" xmlns:include="INCLUDE">
+    <author>
+        <name>
+            <first>Prénom</first>
+            <last>Nom</last>
+        </name>
+        <birth>
+            <date>
+                <year>1986</year>
+                <month>22</month>
+                <day>11</day>
+            </date>
+            <location>
+                <city>
+                    <name>Saint-Brieuc</name>
+                    <code>22000</code>
+                </city>
+                <county>
+                    <name>Côtes-d'Armor</name>
+                    <code>22</code>
+                </county>
+                <country>France</country>
+            </location>
+        </birth>
+        <nationality>Française</nationality>
+        <contact>
+            <address type="home">
+                <street>6 avenue du Fort</street>
+                <city>
+                    <name>Montrouge</name>
+                    <code>92120</code>
+                </city>
+                <county>
+                    <name>Haut-de-Seine</name>
+                    <code>92</code>
+                </county>
+                <country>France</country>
+            </address>
+            <phone type="personal">+336666666666</phone>
+            <email type="personal">prenom.nom@gmail.com</email>
+        </contact>
+    </author>
+    <title>Yay! </title>
+    <abstract>Yoy! </abstract>
+    <experience>
+        <include:include-fragments folder-path="jobs" />
+    </experience>
+    <education>
+        <include:include-fragments folder-path="schools" />
+    </education>
+    <skills>
+        <include:include-fragments folder-path="skills" />
+    </skills>
+</resume>

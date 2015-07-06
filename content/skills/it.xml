@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include:fragment xmlns="RESUME" xmlns:view="VIEW" xmlns:include="INCLUDE">
+    <domain view:column-count="3">
+        <name>Informatique</name>
+        <group>
+            <name>Décisionnel</name>
+            <skill>
+                <name>SAP Business Objects XIR2</name>
+                <note>5</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle Data Integrator</name>
+                <note>3</note>
+                <details>
+                    <detail>Développement de composants</detail>
+                </details>
+            </skill>
+            <skill>
+                <name>IBM DataStage 7.3</name>
+                <note>1</note>
+                <details>
+                    <detail>Administration d'environnements</detail>
+                </details>
+            </skill>
+        </group>
+        <group>
+            <name>Système de gestion de base de données</name>
+            <skill>
+                <name>MySQL</name>
+                <note>3</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle 10g et 11g</name>
+                <note>5</note>
+                <details>
+                    <detail>Exadata</detail>
+                    <detail>SQL (Hints) et PL/SQL</detail>
+                </details>
+            </skill>
+        </group>
+        <group>
+            <name>Système de gestion de base de données</name>
+            <skill>
+                <name>MySQL</name>
+                <note>3</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle 10g et 11g</name>
+                <note>5</note>
+                <details>
+                    <detail>Exadata</detail>
+                    <detail>SQL (Hints) et PL/SQL</detail>
+                </details>
+            </skill>
+        </group>
+        <group>
+            <name>Système de gestion de base de données</name>
+            <skill>
+                <name>MySQL</name>
+                <note>3</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle 10g et 11g</name>
+                <note>5</note>
+                <details>
+                    <detail>Exadata</detail>
+                    <detail>SQL (Hints) et PL/SQL</detail>
+                </details>
+            </skill>
+        </group>
+        <group>
+            <name>Système de gestion de base de données</name>
+            <skill>
+                <name>MySQL</name>
+                <note>3</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle 10g et 11g</name>
+                <note>5</note>
+                <details>
+                    <detail>Exadata</detail>
+                    <detail>SQL (Hints) et PL/SQL</detail>
+                </details>
+            </skill>
+        </group>
+        <group>
+            <name>Système de gestion de base de données</name>
+            <skill>
+                <name>MySQL</name>
+                <note>3</note>
+                <details />
+            </skill>
+            <skill>
+                <name>Oracle 10g et 11g</name>
+                <note>5</note>
+                <details>
+                    <detail>Exadata</detail>
+                    <detail>SQL (Hints) et PL/SQL</detail>
+                </details>
+            </skill>
+        </group>
+    </domain>
+</include:fragment>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include:fragment xmlns="RESUME" xmlns:view="VIEW" xmlns:include="INCLUDE">
+    <job>
+        <project>BI Analytic Tool</project>
+        <employer>StarClay</employer>
+        <customer>BNP Paribas</customer>
+        <period>
+            <from>
+                <date>
+                    <year>2012</year>
+                    <month>04</month>
+                </date>
+            </from>
+            <to>
+                <now />
+            </to>
+        </period>
+        <location>
+            <city>
+                <name>La Défense</name>
+                <code>22000</code>
+            </city>
+            <county>
+                <name>Haut-de-Seine</name>
+                <code>92</code>
+            </county>
+            <country>France</country>
+        </location>
+        <summary>Système décisionnel reposant sur un datawarehouse des ordres et des exécutions réalisées par les automates de trading sur les marchés électroniques (Euronext, Xetra, etc.) et sur un ensemble de datamarts utilisés pour la visualisation et <view:emphasis>l'analyse des trades</view:emphasis> pour le front, middle et back-office</summary>
+        <highlights>
+            <highlight type="involvement">
+                <view:paragraph>Participation à l'évolution de l'architecture datawarehouse et réalisation de plusieurs datamarts</view:paragraph>
+                <view:list>
+                    <view:item>Volumétrie importante (1To de données non-compressées par jour)</view:item>
+                </view:list>
+            </highlight>
+            <highlight type="technical"><view:paragraph>
+                TECHNICAL1TECHNIACL1
+            </view:paragraph></highlight>
+            <highlight type="technical"><view:paragraph>
+		TECHNICAL2 TECHNICAL2
+	</view:paragraph></highlight>
+        </highlights>
+    </job>
+</include:fragment>

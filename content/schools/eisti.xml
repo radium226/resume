@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include:fragment xmlns="RESUME" xmlns:view="VIEW" xmlns:include="INCLUDE">
+    <school>
+        <name>EISTI</name>
+        <majors>
+            <major>
+                <type>Option</type>
+                <name>Décisionnel</name>
+                <period>
+                    <from>
+                        <date>
+                            <year>2008</year>
+                            <month>09</month>
+                        </date>
+                    </from>
+                    <to>
+                        <date>
+                            <year>2009</year>
+                            <month>04</month>
+                        </date>
+                    </to>
+                </period>
+                <highlights>
+                    <highlight>Secrétaire-général de la Junior-Entreprise Cap'EISTI</highlight>
+                    <highlight>
+                        <view:paragraph>Présentation du projet de fin d'étude à l'ensemble de la promotion</view:paragraph>
+                        <view:list>
+                            <view:item>Preuve de concept d'un système de dénormalisation automatique d'un schéma relationnel </view:item>
+                        </view:list>
+                    </highlight>
+                </highlights>
+            </major>
+            <major>
+                <type>Filière</type>
+                <name>Management des Systèmes d'Informations</name>
+                <period>
+                    <from>
+                        <date>
+                            <year>2007</year>
+                            <month>09</month>
+                        </date>
+                    </from>
+                    <to>
+                        <date>
+                            <year>2008</year>
+                            <month>05</month>
+                        </date>
+                    </to>
+                </period>
+                <highlights>
+                    <highlight>Réalisation du portail intranet de l'association de trading Stock'EISTI</highlight>
+                    <highlight>
+                        <view:paragraph>Membre du bureau de l'association de musique l'Art-Scène</view:paragraph>
+                        <view:list>
+                            <view:item>Organisation de concerts </view:item>
+                        </view:list>
+                    </highlight>
+                </highlights>
+            </major>
+        </majors>
+    </school>
+</include:fragment>
