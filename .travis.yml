@@ -4,7 +4,8 @@ jdk:
   - oraclejdk8    
 
 before_install:
-  - sudo apt-get install -qq libreoffice
+  - sudo apt-get update -qq -y
+  - sudo apt-get install -qq -y libreoffice-writer
 
 install:
   - cd generator
@@ -12,3 +13,6 @@ install:
   - java -jar target/resume*.jar -f PDF ../content/resume.xml ../output.pdf
   - cd ..
   - ls -alrt
+
+notifications:
+  email: false
