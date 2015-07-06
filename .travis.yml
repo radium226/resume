@@ -1,18 +1,26 @@
 language: java
 
 jdk:
-  - oraclejdk8    
+- oraclejdk8
+
+env:
+  global:
+  - secure: V/eI22wX8uzQt8Yr2gOsc6hER6RCZQm81EmukgIhOm3lSPI/CpYgWIdfQWe57ih61B9KtARotHOxQ4KxXcZpTUlQ8pG0OuJrZh6Dp2Azwp5XMtpBdQcGpgiid0Q+JEp34uMA5ynNVD1xLsb69wVYb8KqVtuEEkUaetflxI4E+PM=
 
 before_install:
-  - sudo apt-get update -qq -y
-  - sudo apt-get install -qq -y libreoffice-writer
+- sudo apt-get update -qq -y
+- sudo apt-get install -qq -y libreoffice-writer
 
 install:
-  - mvn -B -f generator/pom.xml package
+- mvn -B -f generator/pom.xml package
 
 script:
-  - java -jar generator/target/resume-generator-*.jar -f PDF content/resume.xml output.pdf
-  - ls -alrt
+- mkdir -p pages
+- java -jar generator/target/resume-generator-*.jar -f PDF content/resume.xml pages/output.pdf
+- ls -alrt
+
+after_script:
+- deploy_resume.sh
 
 notifications:
   email: false
