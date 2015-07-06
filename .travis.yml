@@ -8,12 +8,10 @@ before_install:
   - sudo apt-get install -qq -y libreoffice-writer
 
 install:
-  - cd generator
-  - mvn -B package
-  - cd ..
+  - mvn -B -f generator/pom.xml package
 
 script:
-  - java -jar generator/target/resume*.jar -f PDF content/resume.xml output.pdf
+  - java -jar generator/target/resume-generator-*.jar -f PDF content/resume.xml output.pdf
   - ls -alrt
 
 notifications:
