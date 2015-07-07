@@ -26,16 +26,18 @@ import java.io.FileOutputStream;
 import javax.xml.transform.TransformerException;
 import org.w3c.dom.Document;
 
-public class ODFGenerator implements Generator {
+public class OpenDocumentGenerator implements Generator {
 
     public static final Path MIME_TYPE_PATH = Paths.get("mimetype");
+    
+    public static final String DEFAULT_FILE_NAME_EXTENSION = "odf";
     
 //    public static final File TRANSFORMATION_FILE = new File("src/main/generator/odf/main.xslt");
 //    public static final File TEMPLATE_FOLDER = new File("src/main/generator/odf/template");
 //    public static final File CONTENT_FILE = new File(TEMPLATE_FOLDER, "content.xml");
     
     
-    public ODFGenerator() {
+    public OpenDocumentGenerator() {
         super();
     }
     
@@ -111,6 +113,11 @@ public class ODFGenerator implements Generator {
         } catch (IOException | TransformerException e) {
             throw new GenerationException(e);
         }
+    }
+
+    @Override
+    public String defaultFileNameExtension() {
+        return DEFAULT_FILE_NAME_EXTENSION;
     }
 
 }
