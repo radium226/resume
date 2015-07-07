@@ -35,20 +35,23 @@ public class GenerateResume {
     }
 
     @Option(name = "--output-format", aliases = {"-f"}, metaVar = "FORMAT", usage = "Output format")
-    private Format format = Format.ODF;
+    private Format format;
 
     @Argument(index = 0, metaVar = "INPUT", required = true, usage = "Input file")
     private File inputFile;
 
     @Argument(index = 1, metaVar = "OUTPUT", required = true, usage = "Output file")
-    private File ouputFile;
+    private File outputFile;
 
     public Status execute() {
         Status status;
         try {
             System.out.println(" --> " + inputFile.getAbsolutePath());
-
-            format.getGenerator().generate(inputFile, ouputFile);
+            if (format == null) {
+                format = Format.of(outputFile);
+            }
+            System.out.println(format);
+            format.getGenerator().generate(inputFile, outputFile);
             status = Status.SUCCESS;
         } catch (GenerationException e) {
             e.printStackTrace(System.err);

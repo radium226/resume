@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 public class PortableDocumentGenerator implements Generator {
     
-    public static final String DEFAULT_FILE_EXTENSION = "pdf";
+    public static final String DEFAULT_FILE_NAME_EXTENSION = "pdf";
     
     public PortableDocumentGenerator() {
         super();
@@ -25,7 +25,7 @@ public class PortableDocumentGenerator implements Generator {
         try {
             File tempOpenDocumentFile = File.createTempFile("resume-", ".odf");
             Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile);
-            LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_EXTENSION, outputFile);
+            LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);
         }
@@ -34,7 +34,7 @@ public class PortableDocumentGenerator implements Generator {
 
     @Override
     public String defaultFileNameExtension() {
-        return DEFAULT_FILE_EXTENSION;
+        return DEFAULT_FILE_NAME_EXTENSION;
     }
     
 }

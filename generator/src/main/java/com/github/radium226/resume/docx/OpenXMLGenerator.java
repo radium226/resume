@@ -9,7 +9,6 @@ import com.github.radium226.libreoffice.LibreOffice;
 import com.github.radium226.resume.Format;
 import com.github.radium226.resume.GenerationException;
 import com.github.radium226.resume.Generator;
-import static com.github.radium226.resume.pdf.PortableDocumentGenerator.DEFAULT_FILE_EXTENSION;
 import java.io.File;
 import java.io.IOException;
 
@@ -31,7 +30,7 @@ public class OpenXMLGenerator implements Generator {
         try {
             File tempOpenDocumentFile = File.createTempFile("resume-", ".odf");
             Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile);
-            LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_EXTENSION, outputFile);
+            LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);
         }

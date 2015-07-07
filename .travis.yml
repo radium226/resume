@@ -16,7 +16,8 @@ install:
 
 script:
 - mkdir -p pages
-- java -jar generator/target/resume-generator-*.jar -f PDF content/resume.xml pages/output.pdf
+- java -jar generator/target/resume-generator-*.jar content/resume.xml pages/CV.pdf
+- java -jar generator/target/resume-generator-*.jar content/resume.xml pages/CV.docx
 - ls -alrt
 
 after_script:
