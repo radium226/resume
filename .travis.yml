@@ -9,7 +9,7 @@ env:
 
 before_install:
 - sudo apt-get update -qq -y
-- sudo apt-get install -qq -y libreoffice-writer
+- sudo apt-get install -qq -y libreoffice-writer ttf-ubuntu-font-family
 
 install:
 - mvn -B -f generator/pom.xml package
