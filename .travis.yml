@@ -18,6 +18,7 @@ script:
 - mkdir -p pages
 - java -jar generator/target/resume-generator-*.jar content/resume.xml pages/CV.pdf
 - java -jar generator/target/resume-generator-*.jar content/resume.xml pages/CV.docx
+- java -jar generator/target/resume-generator-*.jar content/resume.xml pages/CV.odt
 - ls -alrt
 
 after_script:
