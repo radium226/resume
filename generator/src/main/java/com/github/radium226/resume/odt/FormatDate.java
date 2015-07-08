@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.radium226.resume.odf;
+package com.github.radium226.resume.odt;
 
 import com.github.radium226.xml.XML;
 import com.google.common.base.Joiner;

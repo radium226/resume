@@ -1,4 +1,4 @@
-package com.github.radium226.resume.odf;
+package com.github.radium226.resume.odt;
 
 import com.github.radium226.io.Resources;
 import com.github.radium226.resume.GenerationException;
@@ -30,7 +30,7 @@ public class OpenDocumentGenerator implements Generator {
 
     public static final Path MIME_TYPE_PATH = Paths.get("mimetype");
     
-    public static final String DEFAULT_FILE_NAME_EXTENSION = "odf";
+    public static final String DEFAULT_FILE_NAME_EXTENSION = "odt";
     
 //    public static final File TRANSFORMATION_FILE = new File("src/main/generator/odf/main.xslt");
 //    public static final File TEMPLATE_FOLDER = new File("src/main/generator/odf/template");

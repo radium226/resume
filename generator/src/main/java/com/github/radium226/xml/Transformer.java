@@ -1,7 +1,7 @@
 package com.github.radium226.xml;
 
-import com.github.radium226.resume.odf.FormatDate;
-import com.github.radium226.resume.odf.FormatLocation;
+import com.github.radium226.resume.odt.FormatDate;
+import com.github.radium226.resume.odt.FormatLocation;
 import com.github.radium226.resume.GenerateSectionName;
 import java.io.File;
 import javax.xml.transform.Source;

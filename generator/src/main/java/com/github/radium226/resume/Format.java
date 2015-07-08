@@ -1,7 +1,7 @@
 package com.github.radium226.resume;
 
 import com.github.radium226.resume.docx.OpenXMLGenerator;
-import com.github.radium226.resume.odf.OpenDocumentGenerator;
+import com.github.radium226.resume.odt.OpenDocumentGenerator;
 import com.github.radium226.resume.pdf.PortableDocumentGenerator;
 import com.google.common.io.Files;
 import java.io.File;
