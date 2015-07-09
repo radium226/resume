@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,10 +22,10 @@ public class PortableDocumentGenerator implements Generator {
     }
     
     @Override
-    public void generate(File inputFile, File outputFile) throws GenerationException {
+    public void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException {
         try {
             File tempOpenDocumentFile = File.createTempFile("resume-", ".odf");
-            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile);
+            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile, tempFolder);
             LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);

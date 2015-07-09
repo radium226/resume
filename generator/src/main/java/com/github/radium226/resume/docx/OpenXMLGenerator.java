@@ -11,6 +11,7 @@ import com.github.radium226.resume.GenerationException;
 import com.github.radium226.resume.Generator;
 import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
 
 /**
  *
@@ -26,10 +27,10 @@ public class OpenXMLGenerator implements Generator {
     }
 
     @Override
-    public void generate(File inputFile, File outputFile) throws GenerationException {
+    public void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException {
         try {
-            File tempOpenDocumentFile = File.createTempFile("resume-", ".odf");
-            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile);
+            File tempOpenDocumentFile = File.createTempFile("resume-", ".odf", tempFolder.orElse(null));
+            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile, tempFolder);
             LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);

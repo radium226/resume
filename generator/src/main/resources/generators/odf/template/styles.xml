@@ -29,8 +29,8 @@
         <style:style style:name="Heading_3" style:display-name="Heading 3" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_Body" style:default-outline-level="3" style:class="text" style:master-page-name="">
             <style:paragraph-properties fo:margin-left="-0.131cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.131cm" loext:contextual-spacing="false" fo:keep-together="always" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:padding="0cm" fo:border="none" style:shadow="none" fo:keep-with-next="always">
                 <style:tab-stops>
-                    <style:tab-stop style:position="11.13cm" style:type="center"/>
-                    <style:tab-stop style:position="19.75cm" style:type="right"/>
+                    <style:tab-stop style:position="11cm" style:type="center"/>
+                    <style:tab-stop style:position="18cm" style:type="right"/>
                 </style:tab-stops>
             </style:paragraph-properties>
             <style:text-properties style:font-size-asian="10.5pt"/>
@@ -185,7 +185,7 @@
                 </style:list-level-properties>
             </text:list-level-style-number>
         </text:list-style>
-        <style:style style:name="Technical_Environement" style:display-name="Environnement technique" style:family="paragraph" style:parent-style-name="Text_Body"/>
+        <style:style style:name="Technical_Environement" style:display-name="Environnement technique" style:family="paragraph" style:parent-style-name="Text_Body" style:list-style-name="Technical_Environement"/>
         <style:style style:name="Technical_Environement_First" style:display-name="Début de l&apos;environnement technique" style:family="paragraph" style:parent-style-name="Environnement_20_technique"/>
         <style:style style:name="Technical_Environement_Next" style:display-name="Environnement technique suivant" style:family="paragraph" style:parent-style-name="Environnement_20_technique"/>
         <style:style style:name="Technical_Environement_Last" style:display-name="Dernier environnement technique" style:family="paragraph" style:parent-style-name="Environnement_20_technique"/>
@@ -193,23 +193,69 @@
             <style:text-properties fo:color="#999900" fo:font-size="7pt" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
         </style:style>
         
-        <style:style style:name="Involvement" style:family="text" style:parent-style-name="Bullet_Symbols">
-            <style:text-properties fo:color="#999900" fo:font-size="7pt" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
+        <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Subtitle" style:class="chapter">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:padding="0.131cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.26pt solid #f5f591" style:shadow="none"/>
+            <style:text-properties fo:font-size="12pt" fo:font-weight="bold" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
         </style:style>
-        <style:style style:name="Involvement" style:family="paragraph" style:parent-style-name="Text_Body" style:list-style-name="Involvement">
-            <style:paragraph-properties fo:margin-left="0.499cm" fo:margin-right="0.131cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="-0.25cm" style:auto-text-indent="false" style:shadow="none">
+        <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="9pt" style:font-size-asian="10.5pt"/>
+        </style:style>
+        
+        
+        <style:style style:name="Job" style:display-name="Mission" style:family="text"/>
+        <style:style style:name="Job_Period" style:display-name="Période de la mission" style:family="text" style:parent-style-name="Job">
+            <style:text-properties fo:text-transform="lowercase" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
+        </style:style>
+        <style:style style:name="Job_Project" style:display-name="Projet de la mission" style:family="text" style:parent-style-name="Job">
+            <style:text-properties fo:letter-spacing="0.018cm" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
+        </style:style>
+        <style:style style:name="Job_Customer" style:display-name="Client de la mission" style:family="text" style:parent-style-name="Job">
+            <style:text-properties fo:font-variant="small-caps" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
+        </style:style>
+    
+        <style:style style:name="Frame_Content" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
+        <style:style style:name="Frame" style:family="graphic">
+            <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+        </style:style>    
+         
+        <style:style style:name="Skills_Domain_Group" style:family="graphic" style:parent-style-name="Frame">
+            <style:graphic-properties svg:width="17cm" style:rel-width="100%" fo:min-height="0.499cm" text:anchor-type="as-char" svg:x="0cm" svg:y="-0.407cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="text" style:horizontal-pos="left" style:horizontal-rel="paragraph" draw:fill="none" fo:padding="0cm" fo:border="none" style:shadow="none" draw:shadow-opacity="100%" style:flow-with-text="false" loext:rel-width-rel="paragraph"/>
+        </style:style>
+        
+        <style:style style:name="Text_Body" style:display-name="Text Body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+            <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+        </style:style>
+        <style:style style:name="Standard" style:display-name="Standard" style:family="paragraph" style:class="text">
+            <style:paragraph-properties fo:text-align="justify" style:justify-single-word="false"/>
+            <style:text-properties style:font-name="Ubuntu" fo:font-family="Ubuntu" style:font-style-name="Normal" style:font-pitch="variable" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
+        </style:style>
+        
+        <style:style style:name="Job_Table.Left_Column.Paragraph" style:family="paragraph" style:parent-style-name="Text_Body">
+            <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0.25cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:shadow="none">
                 <style:tab-stops/>
             </style:paragraph-properties>
             <style:text-properties fo:font-size="8pt"/>
         </style:style>
-        <text:list-style style:name="Involvement">
-            <text:list-level-style-bullet text:level="1" text:style-name="Involvement" text:bullet-char="▪">
+        
+        <style:style style:name="Job.Summary" style:family="paragraph" style:parent-style-name="Job_Table.Left_Column.Paragraph" />
+        <style:style style:name="Job.Involvement" style:family="paragraph" style:parent-style-name="Job_Table.Left_Column.Paragraph" style:list-style-name="Job.Involvement">
+            <style:paragraph-properties fo:margin-left="0.5cm" fo:margin-right="0.5cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="-0.25cm" style:auto-text-indent="false" style:shadow="none">
+                <style:tab-stops/>
+            </style:paragraph-properties>
+            <style:text-properties fo:font-size="8pt"/>
+        </style:style>
+        <style:style style:name="Job.Involvement" style:family="text" style:parent-style-name="Bullet_Symbols">
+            <style:text-properties fo:color="#999900" fo:font-size="7pt" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
+        </style:style>
+        <text:list-style style:name="Job.Involvement">
+            <text:list-level-style-bullet text:level="1" text:style-name="Job.Involvement" text:bullet-char="▪">
                 <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="center">
-                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.499cm" fo:text-indent="-0.249cm" fo:margin-left="0.499cm"/>
+                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.499cm" fo:text-indent="-0.249cm" fo:margin-left="0.499cm" fo:margin-right="0.5cm" />
                 </style:list-level-properties>
                 <style:text-properties style:font-name="OpenSymbol"/>
             </text:list-level-style-bullet>
-            <text:list-level-style-bullet text:level="2" text:style-name="Involvement" text:bullet-char="">
+            <text:list-level-style-bullet text:level="2" text:style-name="Job.Involvement" text:bullet-char="">
                 <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="center">
                     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75cm" fo:text-indent="-0.25cm" fo:margin-left="1cm"/>
                 </style:list-level-properties>
@@ -257,49 +303,10 @@
             </text:list-level-style-number>
         </text:list-style>
         
-        
-        
-        <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Subtitle" style:class="chapter">
-            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:padding="0.131cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.26pt solid #f5f591" style:shadow="none"/>
-            <style:text-properties fo:font-size="12pt" fo:font-weight="bold" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
-        </style:style>
-        <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
-            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-            <style:text-properties fo:font-size="9pt" style:font-size-asian="10.5pt"/>
-        </style:style>
-        
-        
-        <style:style style:name="Job" style:display-name="Mission" style:family="text"/>
-        <style:style style:name="Job_Period" style:display-name="Période de la mission" style:family="text" style:parent-style-name="Job">
-            <style:text-properties fo:text-transform="lowercase" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
-        </style:style>
-        <style:style style:name="Job_Project" style:display-name="Projet de la mission" style:family="text" style:parent-style-name="Job">
-            <style:text-properties fo:letter-spacing="0.018cm" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
-        </style:style>
-        <style:style style:name="Job_Customer" style:display-name="Client de la mission" style:family="text" style:parent-style-name="Job">
-            <style:text-properties fo:font-variant="small-caps" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
-        </style:style>
-    
-        <style:style style:name="Frame_Content" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
-        <style:style style:name="Frame" style:family="graphic">
-            <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
-        </style:style>    
-         
-        <style:style style:name="Skills_Domain_Group" style:family="graphic" style:parent-style-name="Frame">
-            <style:graphic-properties svg:width="17cm" style:rel-width="100%" fo:min-height="0.499cm" text:anchor-type="as-char" svg:x="0cm" svg:y="-0.407cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="text" style:horizontal-pos="left" style:horizontal-rel="paragraph" draw:fill="none" fo:padding="0cm" fo:border="none" style:shadow="none" draw:shadow-opacity="100%" style:flow-with-text="false" loext:rel-width-rel="paragraph"/>
-        </style:style>
-        
-        <style:style style:name="Text_Body" style:display-name="Text Body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
-            <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
-        </style:style>
-        <style:style style:name="Standard" style:display-name="Standard" style:family="paragraph" style:class="text">
-            <style:paragraph-properties fo:text-align="justify" style:justify-single-word="false"/>
-            <style:text-properties style:font-name="Ubuntu" fo:font-family="Ubuntu" style:font-style-name="Normal" style:font-pitch="variable" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
-        </style:style>
     </office:styles>
     <office:automatic-styles>
         <style:page-layout style:name="A4_Page_Layout">
-            <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="1.499cm" fo:margin-bottom="1.499cm" fo:margin-left="1.499cm" fo:margin-right="1.499cm" style:shadow="none" style:writing-mode="lr-tb" draw:fill-image-width="0cm" draw:fill-image-height="0cm" style:footnote-max-height="0cm">
+            <style:page-layout-properties fo:page-width="21cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="1.5cm" fo:margin-bottom="1.5cm" fo:margin-left="1.5cm" fo:margin-right="1.5cm" style:shadow="none" style:writing-mode="lr-tb" draw:fill-image-width="0cm" draw:fill-image-height="0cm" style:footnote-max-height="0cm">
                 <style:columns fo:column-count="1" fo:column-gap="0cm"/>
                 <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
             </style:page-layout-properties>

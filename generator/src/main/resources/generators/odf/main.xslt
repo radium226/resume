@@ -32,6 +32,40 @@
                         <style:columns fo:column-count="3" fo:column-gap="0cm" />
                     </style:section-properties>
                 </style:style>
+                
+                <!--                <style:style style:name="Job_Table" style:family="table">
+                    <style:table-properties style:width="18cm" table:align="margins" style:shadow="none"/>
+                </style:style>
+                <style:style style:name="Job_Table.Left_Column" style:family="table-column">
+                    <style:table-column-properties style:column-width="11cm" style:rel-column-width="6289*"/>
+                </style:style>
+                <style:style style:name="Job_Table.Right_Column" style:family="table-column">
+                    <style:table-column-properties style:column-width="7cm" style:rel-column-width="3917*"/>
+                </style:style>
+                <style:style style:name="Job_Table.Summary_Cell" style:family="table-cell">
+                    <style:table-cell-properties fo:padding="0cm" fo:border="none"/>
+                </style:style>
+                <style:style style:name="Job_Table.Involvement_Cell" style:family="table-cell">
+                    <style:table-cell-properties fo:padding="0cm" fo:border="none"/>
+                </style:style>
+                <style:style style:name="Job_Table.Technical_Cell" style:family="table-cell">
+                    <style:table-cell-properties fo:padding="0cm" fo:border-left="0.05pt solid #999900" fo:border-right="none" fo:border-top="none" fo:border-bottom="none"/>
+                </style:style>-->
+                
+                <style:style style:name="Job" style:family="section">
+                    <style:section-properties text:dont-balance-text-columns="false" style:editable="false">
+                        <style:columns fo:column-count="2" fo:column-gap="0.497cm">
+                            <style:column-sep style:width="0.001cm" style:color="#999900" style:height="100%" style:style="solid"/>
+                            <style:column style:rel-width="4818*" fo:start-indent="0cm" fo:end-indent="0.249cm"/>
+                            <style:column style:rel-width="4820*" fo:start-indent="0.249cm" fo:end-indent="0cm"/>
+                        </style:columns>
+                    </style:section-properties>
+                </style:style>
+                
+                <style:style style:name="Technical_Environement.Column_Break" style:family="paragraph" style:parent-style-name="Technical_Environement" style:list-style-name="Technical_Environement">
+                    <style:paragraph-properties fo:break-before="column"/>
+                </style:style>
+                
             </office:automatic-styles>
             <office:body>
                 <office:text text:use-soft-page-breaks="true">

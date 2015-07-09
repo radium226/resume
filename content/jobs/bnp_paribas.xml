@@ -34,12 +34,26 @@
                     <view:item>Volumétrie importante (1To de données non-compressées par jour)</view:item>
                 </view:list>
             </highlight>
-            <highlight type="technical"><view:paragraph>
-                TECHNICAL1TECHNIACL1
-            </view:paragraph></highlight>
-            <highlight type="technical"><view:paragraph>
-		TECHNICAL2 TECHNICAL2
-	</view:paragraph></highlight>
+            <highlight type="involvement">
+                <view:paragraph>Participation à l'évolution de l'architecture datawarehouse et réalisation de plusieurs datamarts</view:paragraph>
+                <view:list>
+                    <view:item>Volumétrie importante (1To de données non-compressées par jour)</view:item>
+                </view:list>
+            </highlight>
+            <highlight type="technical">
+                <view:paragraph>TECHNICAL1TECHNIACL1</view:paragraph>
+            </highlight>
+            <highlight type="technical">
+                <view:paragraph>TECHNICAL2 TECHNICAL2</view:paragraph>
+                <view:list>
+                    <view:item>
+                        <view:paragraph>TECHNICAL21</view:paragraph>
+                    </view:item>
+                    <view:item>
+                        <view:paragraph>TECHNICAL22</view:paragraph>
+                    </view:item>
+                </view:list>
+            </highlight>
         </highlights>
     </job>
 </include:fragment>

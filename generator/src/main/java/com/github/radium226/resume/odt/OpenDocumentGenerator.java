@@ -23,6 +23,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 import static com.github.radium226.xml.XML.*;
 import java.io.FileOutputStream;
+import java.util.Optional;
 import javax.xml.transform.TransformerException;
 import org.w3c.dom.Document;
 
@@ -41,14 +42,14 @@ public class OpenDocumentGenerator implements Generator {
         super();
     }
     
-    public File extractFilesToTempFolder() throws IOException {
-        File tempFolder = Files.createTempDirectory("resume-odf").toFile();
+    public File extractFilesToTempFolder(Optional<File> optionalTempFolder) throws IOException {
+        File tempFolder = optionalTempFolder.orElse(Files.createTempDirectory("resume-odf").toFile());
         Resources.copyResources("generators/odf", tempFolder);
         return tempFolder;
     }
 
-    public void generate(File inputFile, OutputStream outputStream) throws TransformerException, IOException {
-        File tempFolder = extractFilesToTempFolder();
+    public void generate(File inputFile, OutputStream outputStream, Optional<File> optionalTempFolder) throws TransformerException, IOException {
+        File tempFolder = extractFilesToTempFolder(optionalTempFolder);
         
         Document inputDocument = parse(inputFile);
         
@@ -107,9 +108,9 @@ public class OpenDocumentGenerator implements Generator {
     }
 
     @Override
-    public void generate(File inputFile, File outputFile) throws GenerationException {
+    public void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException {
         try {
-            generate(inputFile, new FileOutputStream(outputFile));
+            generate(inputFile, new FileOutputStream(outputFile), tempFolder);
         } catch (IOException | TransformerException e) {
             throw new GenerationException(e);
         }

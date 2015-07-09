@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.util.Enumeration;
+import java.util.Optional;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import org.kohsuke.args4j.Argument;
@@ -36,6 +37,9 @@ public class GenerateResume {
 
     @Option(name = "--output-format", aliases = {"-f"}, metaVar = "FORMAT", usage = "Output format")
     private Format format;
+    
+    @Option(name = "--temp", aliases = {"-t"}, metaVar = "TEMP", usage = "Temp folder")
+    private File tempFolder;
 
     @Argument(index = 0, metaVar = "INPUT", required = true, usage = "Input file")
     private File inputFile;
@@ -51,7 +55,7 @@ public class GenerateResume {
                 format = Format.of(outputFile);
             }
             System.out.println(format);
-            format.getGenerator().generate(inputFile, outputFile);
+            format.getGenerator().generate(inputFile, outputFile, Optional.ofNullable(tempFolder));
             status = Status.SUCCESS;
         } catch (GenerationException e) {
             e.printStackTrace(System.err);
