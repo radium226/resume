@@ -26,7 +26,8 @@
             </county>
             <country>France</country>
         </location>
-        <summary>Système décisionnel reposant sur un datawarehouse des ordres et des exécutions réalisées par les automates de trading sur les marchés électroniques (Euronext, Xetra, etc.) et sur un ensemble de datamarts utilisés pour la visualisation et <view:emphasis>l'analyse des trades</view:emphasis> pour le front, middle et back-office</summary>
+        <summary>
+            <view:emphasis>Système décisionnel</view:emphasis> reposant sur un datawarehouse des ordres et des exécutions réalisées par les automates de trading sur les marchés électroniques (Euronext, Xetra, etc.) et sur un ensemble de datamarts utilisés pour la visualisation et <view:emphasis>l'analyse des trades</view:emphasis> pour le front, middle et back-office</summary>
         <highlights>
             <highlight type="involvement">
                 <view:paragraph>Participation à l'évolution de l'architecture datawarehouse et réalisation de plusieurs datamarts</view:paragraph>

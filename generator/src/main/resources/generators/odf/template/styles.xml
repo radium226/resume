@@ -6,6 +6,10 @@
     <office:styles>
         <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
         
+        <style:style style:name="Emphasis" style:family="text">
+            <style:text-properties fo:color="#999900" style:font-size-asian="10.5pt"/>
+        </style:style>
+        
         <!-- Titres -->
         <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_Body" style:class="text" style:master-page-name="">
             <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.131cm" loext:contextual-spacing="false" fo:text-align="start" style:justify-single-word="false" style:page-number="auto" style:shadow="none">

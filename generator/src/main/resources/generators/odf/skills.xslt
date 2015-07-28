@@ -35,6 +35,15 @@
                                         <xsl:for-each select="1 to resume:note"></xsl:for-each>
                                     </text:span>
                                 </text:p>
+                                <xsl:if test="count(resume:details/resume:detail) > 0">
+                                    <text:list>
+                                        <xsl:for-each select="resume:details/resume:detail">
+                                            <text:list-item>
+                                                <text:p><xsl:value-of select="." /></text:p>
+                                            </text:list-item>
+                                        </xsl:for-each>
+                                    </text:list>
+                                </xsl:if>
                             </text:list-item>
                         </xsl:for-each>
                     </text:list>
