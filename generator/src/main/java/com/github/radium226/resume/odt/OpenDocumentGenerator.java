@@ -5,6 +5,7 @@ import com.github.radium226.resume.GenerationException;
 import com.github.radium226.resume.Generator;
 import com.github.radium226.xml.Canonicalizer;
 import com.github.radium226.xml.IncludeResolver;
+import com.github.radium226.xml.Style;
 import com.github.radium226.xml.XML;
 import com.google.common.collect.Lists;
 import java.io.File;
@@ -51,15 +52,27 @@ public class OpenDocumentGenerator implements Generator {
     public void generate(File inputFile, OutputStream outputStream, Optional<File> optionalTempFolder) throws TransformerException, IOException {
         File tempFolder = extractFilesToTempFolder(optionalTempFolder);
         
-        Document inputDocument = parse(inputFile);
-        
         File workingFolder = inputFile.getParentFile();
-        new IncludeResolver(workingFolder).resolveIncludes(inputDocument);
-        new Canonicalizer().canonicalize(inputDocument);
+        Document document = normalize(parse(inputFile), tempFolder, workingFolder);
         System.out.println("tempFolder=" + tempFolder);
-        Document contentDocument = transform(inputDocument).relativeTo(tempFolder).with(new File(tempFolder, "main.xslt"));
+        Document contentDocument = transform(document).relativeTo(tempFolder).with(new File(tempFolder, "main.xslt"));
         print(contentDocument).to(new File(new File(tempFolder, "template"), "content.xml"));
         assemble(new File(tempFolder, "template"), outputStream);
+    }
+    
+    public Document normalize(Document document, File tempFolder, File workingFolder) {
+        document = new IncludeResolver(workingFolder).resolveIncludes(document);
+        
+        document = transform(document).with(new File(tempFolder, "normalize.xslt"));
+        
+        document = new Canonicalizer().canonicalize(document);
+        System.out.println("HEYYO! ");
+        try {
+            print(document).to(System.out, Style.PRETTY);
+        } catch (TransformerException e) {
+            e.printStackTrace(System.err);
+        }
+        return document;
     }
 
     public void assemble(File folder, OutputStream outputStream) throws IOException {

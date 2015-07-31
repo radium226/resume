@@ -152,5 +152,17 @@ public class XML {
     public static <T extends Node> Optional<T> first(NodeList nodeList) {
         return (Optional<T>) asList(nodeList).stream().findFirst();
     }
+    
+    public static Document clone(Document document) {
+        Document clonedDocument = create();
+        Node rootNode = document.getDocumentElement();
+
+        Node clonedRootNode = clonedDocument.importNode(rootNode, true);
+        clonedDocument.appendChild(clonedRootNode);
+        
+        return clonedDocument;
+    }
+    
+    
 
 }

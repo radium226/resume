@@ -24,10 +24,12 @@ public class Canonicalizer {
         super();
     }
     
-    public void canonicalize(Document document) {
-        Map<String, String> prefixByNamespace = mapPrefixesByNamespace(document);
-        DocumentTraversal documentTraversal = (DocumentTraversal) document;
-        NodeIterator nodeIterator = documentTraversal.createNodeIterator(document, NodeFilter.SHOW_ELEMENT, null, false);
+    public Document canonicalize(Document document) {
+        Document canonicalizedDocument = XML.clone(document);
+        
+        Map<String, String> prefixByNamespace = mapPrefixesByNamespace(canonicalizedDocument);
+        DocumentTraversal documentTraversal = (DocumentTraversal) canonicalizedDocument;
+        NodeIterator nodeIterator = documentTraversal.createNodeIterator(canonicalizedDocument, NodeFilter.SHOW_ELEMENT, null, false);
         for (Node node = nodeIterator.nextNode(); node != null; node = nodeIterator.nextNode()) {
             String namespace = node.getNamespaceURI();
             String prefix = Strings.nullToEmpty(prefixByNamespace.get(namespace));
@@ -37,7 +39,7 @@ public class Canonicalizer {
                 name = prefix + ":" + name;
             }
             
-            document.renameNode(node, namespace, name);
+            canonicalizedDocument.renameNode(node, namespace, name);
             
             NamedNodeMap attributes = node.getAttributes();
             int attributeCount = attributes.getLength();
@@ -53,7 +55,7 @@ public class Canonicalizer {
         }
         
         //element.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:acme", "http://www.acme.com/schemas");
-        Element rootElement = document.getDocumentElement();
+        Element rootElement = canonicalizedDocument.getDocumentElement();
         for (Map.Entry<String, String> entry : prefixByNamespace.entrySet()) {
             String name = "xmlns";
             String prefix = entry.getValue();
@@ -64,13 +66,15 @@ public class Canonicalizer {
             rootElement.setAttributeNS("http://www.w3.org/2000/xmlns/", name, namespace);
         }
         
-        NodeIterator textNodeIterator = documentTraversal.createNodeIterator(document, NodeFilter.SHOW_TEXT, null, false);
+        NodeIterator textNodeIterator = documentTraversal.createNodeIterator(canonicalizedDocument, NodeFilter.SHOW_TEXT, null, false);
         for (Node textNode = textNodeIterator.nextNode(); textNode != null; textNode = textNodeIterator.nextNode()) {
             String content = textNode.getTextContent();
             if (Strings.nullToEmpty(content).trim().isEmpty()) {
                 textNode.getParentNode().removeChild(textNode);
             }
         }
+        
+        return canonicalizedDocument;
     }
     
     protected Map<String, String> mapPrefixesByNamespace(Document document) {

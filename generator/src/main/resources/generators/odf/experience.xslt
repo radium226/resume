@@ -97,18 +97,9 @@
     </xsl:template>
     
     <xsl:template match="resume:summary">
-        <xsl:choose>
-            <xsl:when test="node()[position() = 1 and not(self::view:paragraph)]">
-                <text:p text:style-name="Job.Summary">
-                    <xsl:apply-templates select="view:*|text()" />
-                </text:p>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates select="view:*|text()">
-                    <xsl:with-param name="paragraph-style">Job.Summary</xsl:with-param>
-                </xsl:apply-templates>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:apply-templates select="view:*|text()">
+            <xsl:with-param name="paragraph-style">Job.Summary</xsl:with-param>
+        </xsl:apply-templates>
     </xsl:template>
     
     <xsl:template name="loop-until-other-employer">
@@ -120,7 +111,6 @@
         <xsl:if test="$jobs/resume:job[$position]/resume:employer/text() = $employer">
             <xsl:apply-templates select="$jobs/resume:job[$position]" />
             <xsl:if test="$position &lt; count($jobs/resume:job) ">
-            
                 <xsl:call-template name="loop-until-other-employer">
                     <xsl:with-param name="jobs" select="$jobs" />
                     <xsl:with-param name="position" select="$position + 1" />

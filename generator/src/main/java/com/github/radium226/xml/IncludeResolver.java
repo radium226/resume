@@ -49,9 +49,11 @@ public class IncludeResolver {
         this.workingFolder = workingFolder;
     }
 
-    public void resolveIncludes(Document document) {
-        DocumentTraversal documentTraversal = (DocumentTraversal) document;
-        NodeIterator nodeIterator = documentTraversal.createNodeIterator(document, NodeFilter.SHOW_ELEMENT, node -> {
+    public Document resolveIncludes(Document inputDocument) {
+        Document outputDocument = XML.clone(inputDocument);
+        
+        DocumentTraversal documentTraversal = (DocumentTraversal) outputDocument;
+        NodeIterator nodeIterator = documentTraversal.createNodeIterator(outputDocument, NodeFilter.SHOW_ELEMENT, node -> {
             String namespaceURI = node.getNamespaceURI();
             return namespaceURI != null && namespaceURI.equals(NAMESPACE_URI) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
         }, false);
@@ -69,6 +71,8 @@ public class IncludeResolver {
                     break;
             }
         }
+        
+        return outputDocument;
     }
 
 }
