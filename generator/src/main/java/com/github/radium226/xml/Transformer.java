@@ -4,6 +4,8 @@ import com.github.radium226.resume.odt.FormatDate;
 import com.github.radium226.resume.odt.FormatLocation;
 import com.github.radium226.resume.GenerateSectionName;
 import java.io.File;
+import java.util.Collections;
+import java.util.Map;
 import javax.xml.transform.Source;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.URIResolver;
@@ -11,11 +13,15 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamSource;
 import net.sf.saxon.s9api.DOMDestination;
 import net.sf.saxon.s9api.Processor;
+import net.sf.saxon.s9api.QName;
 import net.sf.saxon.s9api.SaxonApiException;
+import net.sf.saxon.s9api.XdmAtomicValue;
 import net.sf.saxon.s9api.XdmNode;
+import net.sf.saxon.s9api.XdmValue;
 import net.sf.saxon.s9api.XsltCompiler;
 import net.sf.saxon.s9api.XsltExecutable;
 import net.sf.saxon.s9api.XsltTransformer;
+import net.sf.saxon.value.StringValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -33,6 +39,10 @@ public class Transformer {
     }
     
     public Document transform(Document source, File workingFolder) {
+        return transform(source, workingFolder, Collections.emptyMap());
+    }
+    
+    public Document transform(Document source, File workingFolder, Map<String, String> bindings) {
         Document destination = XML.create();
         try {
             Processor processor = new Processor(false);
@@ -51,9 +61,11 @@ public class Transformer {
             });
             XsltExecutable executable = compiler.compile(new DOMSource(transformation));
             XsltTransformer transformer = executable.load();
-            
             transformer.setDestination(new DOMDestination(destination));
             transformer.setSource(new DOMSource(source));
+            
+            bindings.forEach((key, value) -> transformer.setParameter(new QName(key), new XdmAtomicValue(value)));
+            
             transformer.transform();
             return destination;
         } catch (SaxonApiException e) {

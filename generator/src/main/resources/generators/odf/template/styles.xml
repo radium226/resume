@@ -58,7 +58,11 @@
         </style:style>
         
         <style:style style:name="Skills_Domain_Group_Bullet" style:family="text" style:parent-style-name="Bullet_Symbols">
-            <style:text-properties fo:color="#999900" fo:font-size="7pt" fo:font-weight="bold" style:font-size-asian="10.5pt"/>
+            <style:text-properties fo:font-size="7pt" fo:font-weight="bold" style:font-size-asian="10.5pt">
+                <xsl:attribute name="color" namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
+                    <xsl:value-of select="#999900" />
+                </xsl:attribute>
+            </style:text-properties>
         </style:style>
         
         <style:style style:name="Bullet_Symbols" style:display-name="Bullet Symbols" style:family="text">

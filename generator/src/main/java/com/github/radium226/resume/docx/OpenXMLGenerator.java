@@ -27,10 +27,10 @@ public class OpenXMLGenerator implements Generator {
     }
 
     @Override
-    public void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException {
+    public void generate(File inputFile, File outputFile, String color, Optional<File> tempFolder) throws GenerationException {
         try {
             File tempOpenDocumentFile = File.createTempFile("resume-", ".odf", tempFolder.orElse(null));
-            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile, tempFolder);
+            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile, color, tempFolder);
             LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);

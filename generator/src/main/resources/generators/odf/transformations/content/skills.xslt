@@ -39,7 +39,7 @@
                                     <text:list>
                                         <xsl:for-each select="resume:details/resume:detail">
                                             <text:list-item>
-                                                <text:p><xsl:value-of select="." /></text:p>
+                                                <text:p><xsl:value-of select="$color" /><xsl:value-of select="." /></text:p>
                                             </text:list-item>
                                         </xsl:for-each>
                                     </text:list>

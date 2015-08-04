@@ -7,6 +7,6 @@ public interface Generator {
     
     String defaultFileNameExtension();
     
-    void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException;
+    void generate(File inputFile, File outputFile, String color, Optional<File> tempFolder) throws GenerationException;
     
 }

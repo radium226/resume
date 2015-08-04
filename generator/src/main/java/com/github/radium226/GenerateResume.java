@@ -41,6 +41,9 @@ public class GenerateResume {
     @Option(name = "--temp", aliases = {"-t"}, metaVar = "TEMP", usage = "Temp folder")
     private File tempFolder;
 
+    @Option(name = "--color", aliases = {"-c"}, metaVar = "COLOR", usage = "Color")
+    private String color = "#ff0000";
+    
     @Argument(index = 0, metaVar = "INPUT", required = true, usage = "Input file")
     private File inputFile;
 
@@ -55,7 +58,7 @@ public class GenerateResume {
                 format = Format.of(outputFile);
             }
             System.out.println(format);
-            format.getGenerator().generate(inputFile, outputFile, Optional.ofNullable(tempFolder));
+            format.getGenerator().generate(inputFile, outputFile, color, Optional.ofNullable(tempFolder));
             status = Status.SUCCESS;
         } catch (GenerationException e) {
             e.printStackTrace(System.err);

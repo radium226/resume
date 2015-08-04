@@ -1,5 +1,6 @@
 package com.github.radium226.resume.odt;
 
+import com.github.radium226.Colors;
 import com.github.radium226.io.Resources;
 import com.github.radium226.resume.GenerationException;
 import com.github.radium226.resume.Generator;
@@ -23,7 +24,9 @@ import java.util.zip.CRC32;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 import static com.github.radium226.xml.XML.*;
+import com.google.common.collect.ImmutableMap;
 import java.io.FileOutputStream;
+import java.util.Map;
 import java.util.Optional;
 import javax.xml.transform.TransformerException;
 import org.w3c.dom.Document;
@@ -49,21 +52,50 @@ public class OpenDocumentGenerator implements Generator {
         return tempFolder;
     }
 
-    public void generate(File inputFile, OutputStream outputStream, Optional<File> optionalTempFolder) throws TransformerException, IOException {
+    public void generate(File inputFile, OutputStream outputStream, String color, Optional<File> optionalTempFolder) throws TransformerException, IOException {
         File tempFolder = extractFilesToTempFolder(optionalTempFolder);
+        
+        ImmutableMap.Builder<String, String> variableBuilder = ImmutableMap.builder();
+        int count = 3;
+        List<String> colorShades = Colors.shadesOf(color, count);
+        for (int i = 1; i <= count; i++) {
+            String colorShade = colorShades.get(i - 1);
+            variableBuilder = variableBuilder.put("color" + i, colorShade);
+        }
+        Map<String, String> variables = variableBuilder.build();
         
         File workingFolder = inputFile.getParentFile();
         Document document = normalize(parse(inputFile), tempFolder, workingFolder);
         System.out.println("tempFolder=" + tempFolder);
-        Document contentDocument = transform(document).relativeTo(tempFolder).with(new File(tempFolder, "main.xslt"));
-        print(contentDocument).to(new File(new File(tempFolder, "template"), "content.xml"));
+        
+        generateContent(document, tempFolder, variables);
+        generateStyle(document, tempFolder, variables);
+        
         assemble(new File(tempFolder, "template"), outputStream);
+    }
+    
+    public void generateContent(Document document, File tempFolder, Map<String, String> variables) throws TransformerException, IOException {
+        File contentTransformationFolder = tempFolder.toPath().resolve("transformations/content").toFile();
+        Document contentDocument = transform(document)
+                .relativeTo(contentTransformationFolder)
+                .bindAll(variables)
+            .with(new File(contentTransformationFolder, "content.xslt"));
+        print(contentDocument).to(new File(new File(tempFolder, "template"), "content.xml"));
+    }
+    
+    public void generateStyle(Document document, File tempFolder, Map<String, String> variables) throws TransformerException, IOException {
+        File styleTransformationFolder = tempFolder.toPath().resolve("transformations/styles").toFile();
+        Document styleDocument = transform(document)
+                .relativeTo(styleTransformationFolder)
+                .bindAll(variables)
+            .with(new File(styleTransformationFolder, "styles.xslt"));
+        print(styleDocument).to(tempFolder.toPath().resolve("template/styles.xml").toFile());
     }
     
     public Document normalize(Document document, File tempFolder, File workingFolder) {
         document = new IncludeResolver(workingFolder).resolveIncludes(document);
         
-        document = transform(document).with(new File(tempFolder, "normalize.xslt"));
+        document = transform(document).with(tempFolder.toPath().resolve("transformations/normalize.xslt").toFile());
         
         document = new Canonicalizer().canonicalize(document);
         System.out.println("HEYYO! ");
@@ -121,9 +153,9 @@ public class OpenDocumentGenerator implements Generator {
     }
 
     @Override
-    public void generate(File inputFile, File outputFile, Optional<File> tempFolder) throws GenerationException {
+    public void generate(File inputFile, File outputFile, String color, Optional<File> tempFolder) throws GenerationException {
         try {
-            generate(inputFile, new FileOutputStream(outputFile), tempFolder);
+            generate(inputFile, new FileOutputStream(outputFile), color, tempFolder);
         } catch (IOException | TransformerException e) {
             throw new GenerationException(e);
         }
