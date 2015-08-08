@@ -87,7 +87,7 @@
                 <style:style style:name="Skills_Domain_Group_Skill" style:family="paragraph" style:parent-style-name="Skills_Domain_Group_List">
                     <style:paragraph-properties style:shadow="none">
                         <style:tab-stops>
-                            <style:tab-stop style:position="4cm"/>
+                            <style:tab-stop style:position="3cm"/>
                         </style:tab-stops>
                     </style:paragraph-properties>
                 </style:style>

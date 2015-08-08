@@ -29,28 +29,43 @@
                     <text:h text:style-name="Skills_Domain_Group_Heading" text:outline-level="3">
                         <xsl:value-of select="resume:name" />
                     </text:h>
-                    <text:list text:style-name="Skills_Domain_Group_List">
+                    <table:table table:style-name="Skills.Domain.Group.Table">
+                        <table:table-column table:style-name="Skills.Domain.Group.Table.Left_Column"/>
+                        <table:table-column table:style-name="Skills.Domain.Group.Table.Right_Column"/>
                         <xsl:for-each select="resume:skill">
-                            <text:list-item>
-                                <text:p text:style-name="Skills_Domain_Group_Skill">
-                                    <text:span><xsl:value-of select="resume:name" /></text:span>
-                                    <text:tab />
-                                    <text:span text:style-name="Skills_Domain_Group_Skill_Note">
-                                        <xsl:for-each select="1 to resume:note"></xsl:for-each>
-                                    </text:span>
-                                </text:p>
-                                <xsl:if test="count(resume:details/resume:detail) > 0">
-                                    <text:list>
-                                        <xsl:for-each select="resume:details/resume:detail">
-                                            <text:list-item>
-                                                <text:p><xsl:value-of select="." /></text:p>
-                                            </text:list-item>
-                                        </xsl:for-each>
+                            <table:table-row>
+                                <table:table-cell office:value-type="string">
+                                    <text:list text:style-name="Skills_Domain_Group_List">
+                                        <text:list-item>
+                                            <text:p text:style-name="Skills_Domain_Group_Skill">
+                                                <text:span>
+                                                    <xsl:value-of select="resume:name" />
+                                                </text:span>
+                                            </text:p>
+                                            <xsl:if test="count(resume:details/resume:detail) > 0">
+                                                <text:list>
+                                                    <xsl:for-each select="resume:details/resume:detail">
+                                                        <text:list-item>
+                                                            <text:p>
+                                                                <xsl:value-of select="." />
+                                                            </text:p>
+                                                        </text:list-item>
+                                                    </xsl:for-each>
+                                                </text:list>
+                                            </xsl:if>
+                                        </text:list-item>
                                     </text:list>
-                                </xsl:if>
-                            </text:list-item>
+                                </table:table-cell>
+                                <table:table-cell>
+                                    <text:p>
+                                        <text:span text:style-name="Skills_Domain_Group_Skill_Note">
+                                            <xsl:for-each select="1 to resume:note"></xsl:for-each>
+                                        </text:span>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
                         </xsl:for-each>
-                    </text:list>
+                    </table:table>
                 </draw:text-box>
             </draw:frame> 
         </text:p>

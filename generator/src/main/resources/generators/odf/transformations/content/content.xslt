@@ -20,14 +20,23 @@
                 
                 <style:style style:name="Skills_Domain" style:family="section">
                     <style:section-properties text:dont-balance-text-columns="false" style:editable="false">
-                        <style:columns fo:column-count="3" fo:column-gap="0cm" />
+                        <style:columns fo:column-count="3" fo:column-gap="0.497cm">
+                            <style:column-sep style:width="0.001cm" style:height="100%" style:style="solid">
+                                <xsl:attribute name="color" namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+                                    <xsl:value-of select="$color1" />
+                                </xsl:attribute>
+                            </style:column-sep>
+                            <style:column style:rel-width="3402*" fo:start-indent="0cm" fo:end-indent="0.249cm"/>
+                            <style:column style:rel-width="3402*" fo:start-indent="0.249cm" fo:end-indent="0.249cm"/>
+                            <style:column style:rel-width="3402*" fo:start-indent="0.249cm" fo:end-indent="0cm"/>
+                        </style:columns>
                     </style:section-properties>
                 </style:style>
                 
                 <style:style style:name="Job" style:family="section">
                     <style:section-properties text:dont-balance-text-columns="false" style:editable="false">
                         <style:columns fo:column-count="2">
-                            <style:column-sep style:width="0.009cm" style:height="100%" style:style="solid">
+                            <style:column-sep style:width="0.001cm" style:height="100%" style:style="solid">
                                 <xsl:attribute name="color" namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
                                     <xsl:value-of select="$color1" />
                                 </xsl:attribute>
@@ -40,6 +49,16 @@
                 
                 <style:style style:name="Technical_Environement.Column_Break" style:family="paragraph" style:parent-style-name="Technical_Environement" style:list-style-name="Technical_Environement">
                     <style:paragraph-properties fo:break-before="column"/>
+                </style:style>
+                
+                <style:style style:name="Skills.Domain.Group.Table" style:family="table">
+                    <style:table-properties style:width="5.669cm" table:align="margins"/>
+                </style:style>
+                <style:style style:name="Skills.Domain.Group.Table.Left_Column" style:family="table-column">
+                    <style:table-column-properties style:column-width="4.249cm" style:rel-column-width="2409*"/>
+                </style:style>
+                <style:style style:name="Skills.Domain.Group.Table.Right_Column" style:family="table-column">
+                    <style:table-column-properties style:column-width="1.42cm" style:rel-column-width="805*"/>
                 </style:style>
                 
             </office:automatic-styles>
