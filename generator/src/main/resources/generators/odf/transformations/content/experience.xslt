@@ -31,39 +31,6 @@
             </text:span>
         </text:h>
 
-        <!--        <table:table table:style-name="Job_Table">
-            <table:table-column table:style-name="Job_Table.Left_Column"/>
-            <table:table-column table:style-name="Job_Table.Right_Column"/>
-            <table:table-row>
-                 Résumé 
-                <table:table-cell office:value-type="string" table:style-name="Job_Table.Summary_Cell">
-                    <xsl:apply-templates select="resume:summary" />
-                </table:table-cell>
-                 Environnement technique 
-                <table:table-cell table:number-rows-spanned="2" office:value-type="string" table:style-name="Job_Table.Technical_Cell">
-                    <text:list text:style-name="Technical_Environement_List">
-                        <xsl:for-each select="resume:highlights/resume:highlight[@type = 'technical']">
-                            <xsl:variable name="paragraph-style">Technical_Environement</xsl:variable>
-                            <xsl:apply-templates select=".">
-                                <xsl:with-param name="paragraph-style" select="$paragraph-style" tunnel="yes"/> 
-                            </xsl:apply-templates>
-                        </xsl:for-each>
-                    </text:list>
-                </table:table-cell>
-            </table:table-row>
-            <table:table-row>
-                 Participation 
-                <table:table-cell office:value-type="string" table:style-name="Job_Table.Involvement_Cell">
-                    <text:list text:style-name="Job.Involvement">
-                        <xsl:variable name="paragraph-style">Job.Involvement</xsl:variable>
-                        <xsl:apply-templates select="resume:highlights/resume:highlight[@type = 'involvement']">
-                            <xsl:with-param name="paragraph-style" select="$paragraph-style" tunnel="yes"/> 
-                        </xsl:apply-templates>
-                    </text:list>
-                </table:table-cell>
-                <table:covered-table-cell/>
-            </table:table-row>
-        </table:table>-->
         <text:section text:style-name="Job">
             <xsl:attribute name="name" namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" >
                 <xsl:value-of select="resume:office-generate-section-name()" />
