@@ -35,9 +35,9 @@
                         <xsl:for-each select="resume:skill">
                             <table:table-row>
                                 <table:table-cell office:value-type="string">
-                                    <text:list text:style-name="Skills_Domain_Group_List">
+                                    <text:list>
                                         <text:list-item>
-                                            <text:p text:style-name="Skills_Domain_Group_Skill">
+                                            <text:p>
                                                 <text:span>
                                                     <xsl:value-of select="resume:name" />
                                                 </text:span>
@@ -46,7 +46,7 @@
                                                 <text:list>
                                                     <xsl:for-each select="resume:details/resume:detail">
                                                         <text:list-item>
-                                                            <text:p>
+                                                            <text:p text:style-name="Skills.Domain.Group.Skill">
                                                                 <xsl:value-of select="." />
                                                             </text:p>
                                                         </text:list-item>
