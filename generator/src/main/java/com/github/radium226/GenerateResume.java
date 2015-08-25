@@ -3,6 +3,7 @@ package com.github.radium226;
 import com.github.radium226.io.Resources;
 import com.github.radium226.resume.Format;
 import com.github.radium226.resume.GenerationException;
+import com.github.radium226.resume.Generator;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -44,6 +45,9 @@ public class GenerateResume {
     @Option(name = "--color", aliases = {"-c"}, metaVar = "COLOR", usage = "Color")
     private String color = "#ff0000";
     
+    @Option(name = "--display", aliases = {"-d"}, usage = "Display the generated resume")
+    private boolean display = false;
+    
     @Argument(index = 0, metaVar = "INPUT", required = true, usage = "Input file")
     private File inputFile;
 
@@ -58,7 +62,11 @@ public class GenerateResume {
                 format = Format.of(outputFile);
             }
             System.out.println(format);
-            format.getGenerator().generate(inputFile, outputFile, color, Optional.ofNullable(tempFolder));
+            Generator generator = format.getGenerator();
+            generator.generate(inputFile, outputFile, color, Optional.ofNullable(tempFolder));
+            if (display) {
+                generator.display(outputFile);
+            }
             status = Status.SUCCESS;
         } catch (GenerationException e) {
             e.printStackTrace(System.err);

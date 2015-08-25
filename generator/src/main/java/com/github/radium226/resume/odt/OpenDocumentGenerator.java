@@ -2,6 +2,7 @@ package com.github.radium226.resume.odt;
 
 import com.github.radium226.Colors;
 import com.github.radium226.io.Resources;
+import com.github.radium226.libreoffice.LibreOffice;
 import com.github.radium226.resume.GenerationException;
 import com.github.radium226.resume.Generator;
 import com.github.radium226.xml.Canonicalizer;
@@ -164,6 +165,15 @@ public class OpenDocumentGenerator implements Generator {
     @Override
     public String defaultFileNameExtension() {
         return DEFAULT_FILE_NAME_EXTENSION;
+    }
+    
+    @Override
+    public void display(File file) {
+        try {
+            LibreOffice.open(file);
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace(System.err);
+        }
     }
 
 }

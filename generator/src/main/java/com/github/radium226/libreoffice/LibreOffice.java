@@ -26,4 +26,11 @@ public class LibreOffice {
         Files.copy(tempFilePath.toPath(), outputFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
     
+    public static void open(File file) throws IOException, InterruptedException {
+        String filePath = file.getAbsolutePath();
+        ProcessBuilder processBuilder = new ProcessBuilder("libreoffice", "--writer", filePath).inheritIO();
+        Process process = processBuilder.start();
+        process.waitFor();
+    }
+    
 }
