@@ -19,7 +19,8 @@ public class IncludeResolver {
 
     public static enum ElementName {
 
-        INCLUDE_FRAGMENTS("include-fragments");
+        INCLUDE_FRAGMENTS("include-fragments"), 
+        INCLUDE_FRAGMENT("include-fragment");
 
         private String name;
 
@@ -68,6 +69,11 @@ public class IncludeResolver {
                     List<Node> fragmentNodes = Lists.newArrayList();
                     fragmentDocuments.forEach((Document fragmentDocument) -> fragmentNodes.addAll(XML.asList(fragmentDocument.getDocumentElement().getChildNodes())));
                     XML.swapNodeWithNodes(element, fragmentNodes);
+                    break;
+                case INCLUDE_FRAGMENT:
+                    String filePath = element.getAttribute("file-path");
+                    Document fragmentDocument = XML.parse(new File(workingFolder, filePath));
+                    XML.swapNodeWithNodes(element, XML.asList(fragmentDocument.getDocumentElement().getChildNodes()));
                     break;
             }
         }

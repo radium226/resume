@@ -40,8 +40,8 @@
             <xsl:apply-templates select="resume:summary" />
             
             <!-- Job Involvement -->
-            <text:list text:style-name="Job.Involvement">
-                <xsl:variable name="paragraph-style">Job.Involvement</xsl:variable>
+            <text:list text:style-name="Job.Involvement.List">
+                <xsl:variable name="paragraph-style">Job.Involvement.Paragraph</xsl:variable>
                 <xsl:apply-templates select="resume:highlights/resume:highlight[@type = 'involvement']">
                     <xsl:with-param name="paragraph-style" select="$paragraph-style" />
                 </xsl:apply-templates>

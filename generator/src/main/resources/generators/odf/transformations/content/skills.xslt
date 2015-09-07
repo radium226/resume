@@ -46,7 +46,7 @@
                                                 <text:list>
                                                     <xsl:for-each select="resume:details/resume:detail">
                                                         <text:list-item>
-                                                            <text:p text:style-name="Skills.Domain.Group.Skill">
+                                                            <text:p>
                                                                 <xsl:value-of select="." />
                                                             </text:p>
                                                         </text:list-item>

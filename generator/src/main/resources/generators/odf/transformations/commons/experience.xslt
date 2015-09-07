@@ -82,15 +82,15 @@
             <style:text-properties fo:font-variant="small-caps" fo:font-size="8pt" style:font-size-asian="10.5pt"/>
         </style:style>
         <style:style style:name="Job_Table.Left_Column.Paragraph" style:family="paragraph" style:parent-style-name="Text_Body">
-            <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0.25cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:shadow="none">
+            <style:paragraph-properties fo:margin-left="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:shadow="none">
                 <style:tab-stops/>
             </style:paragraph-properties>
             <style:text-properties fo:font-size="8pt"/>
         </style:style>
         
         <style:style style:name="Job.Summary" style:family="paragraph" style:parent-style-name="Job_Table.Left_Column.Paragraph" />
-        <style:style style:name="Job.Involvement" style:family="paragraph" style:parent-style-name="Job_Table.Left_Column.Paragraph" style:list-style-name="Job.Involvement">
-            <style:paragraph-properties fo:margin-left="0.5cm" fo:margin-right="0.5cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="-0.25cm" style:auto-text-indent="false" style:shadow="none">
+        <style:style style:name="Job.Involvement.Paragraph" style:family="paragraph" style:parent-style-name="Job_Table.Left_Column.Paragraph" style:list-style-name="Job.Involvement.List">
+            <style:paragraph-properties fo:margin-left="0.5cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="-0.25cm" style:auto-text-indent="false" style:shadow="none">
                 <style:tab-stops/>
             </style:paragraph-properties>
             <style:text-properties fo:font-size="8pt"/>
@@ -102,16 +102,16 @@
                 </xsl:attribute>
             </style:text-properties>
         </style:style>
-        <text:list-style style:name="Job.Involvement">
-            <text:list-level-style-bullet text:level="1" text:style-name="Job.Involvement" text:bullet-char="▪">
+        <text:list-style style:name="Job.Involvement.List" style:display-name="Tâches principales">
+            <text:list-level-style-bullet text:level="1" text:style-name="Technical_Environement_Bullet" text:bullet-char="▪">
                 <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="center">
-                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.499cm" fo:text-indent="-0.249cm" fo:margin-left="0.499cm" fo:margin-right="0.5cm" />
+                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.499cm" fo:text-indent="-0.249cm" fo:margin-left="0.499cm"/>
                 </style:list-level-properties>
                 <style:text-properties style:font-name="OpenSymbol"/>
             </text:list-level-style-bullet>
-            <text:list-level-style-bullet text:level="2" text:style-name="Job.Involvement" text:bullet-char="">
+            <text:list-level-style-bullet text:level="2" text:style-name="Technical_Environement_Bullet" text:bullet-char="">
                 <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="center">
-                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75cm" fo:text-indent="-0.25cm" fo:margin-left="1cm"/>
+                    <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.762cm" fo:text-indent="-0.254cm" fo:margin-left="1.016cm"/>
                 </style:list-level-properties>
                 <style:text-properties style:font-name="OpenSymbol"/>
             </text:list-level-style-bullet>
