@@ -1,4 +1,4 @@
-package com.github.radium226.xml;
+package com.github.radium226.util;
 
 import com.google.common.collect.Lists;
 import java.io.File;

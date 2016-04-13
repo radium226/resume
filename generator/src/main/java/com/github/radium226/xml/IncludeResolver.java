@@ -22,7 +22,7 @@ public class IncludeResolver {
         INCLUDE_FRAGMENTS("include-fragments"), 
         INCLUDE_FRAGMENT("include-fragment");
 
-        private String name;
+        private final String name;
 
         ElementName(String name) {
             this.name = name;

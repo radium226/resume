@@ -8,7 +8,6 @@ import com.github.radium226.resume.Generator;
 import com.github.radium226.xml.Canonicalizer;
 import com.github.radium226.xml.IncludeResolver;
 import com.github.radium226.xml.Style;
-import com.github.radium226.xml.XML;
 import com.google.common.collect.Lists;
 import java.io.File;
 import java.io.IOException;
@@ -30,10 +29,14 @@ import java.io.FileOutputStream;
 import java.util.Map;
 import java.util.Optional;
 import javax.xml.transform.TransformerException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 
 public class OpenDocumentGenerator implements Generator {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(OpenDocumentGenerator.class);
+    
     public static final Path MIME_TYPE_PATH = Paths.get("mimetype");
     
     public static final String DEFAULT_FILE_NAME_EXTENSION = "odt";
@@ -48,8 +51,8 @@ public class OpenDocumentGenerator implements Generator {
     }
     
     public File extractFilesToTempFolder(Optional<File> optionalTempFolder) throws IOException {
-        File tempFolder = optionalTempFolder.orElse(Files.createTempDirectory("resume-odf").toFile());
-        Resources.copyResources("generators/odf", tempFolder);
+        File tempFolder = optionalTempFolder.orElse(Files.createTempDirectory("resume-odt").toFile());
+        Resources.copyResources("generators/odt", tempFolder);
         return tempFolder;
     }
 
@@ -98,11 +101,11 @@ public class OpenDocumentGenerator implements Generator {
         document = transform(document).with(tempFolder.toPath().resolve("transformations/normalize.xslt").toFile());
         
         document = new Canonicalizer().canonicalize(document);
-        /*try {
-            print(document).to(System.out, Style.PRETTY);
+        try {
+            LOGGER.debug("print(document).toString(Style.PRETTY)={}", print(document).toString(Style.PRETTY));
         } catch (TransformerException e) {
             e.printStackTrace(System.err);
-        }*/
+        }
         return document;
     }
 

@@ -24,8 +24,9 @@ public class PortableDocumentGenerator implements Generator {
     @Override
     public void generate(File inputFile, File outputFile, String color, Optional<File> tempFolder) throws GenerationException {
         try {
-            File tempOpenDocumentFile = File.createTempFile("resume-", ".odf");
-            Format.ODF.getGenerator().generate(inputFile, tempOpenDocumentFile, color, tempFolder);
+            Generator odtGenerator = Format.ODT.getGenerator();
+            File tempOpenDocumentFile = File.createTempFile("resume-", "." + odtGenerator.defaultFileNameExtension());
+            odtGenerator.generate(inputFile, tempOpenDocumentFile, color, tempFolder);
             LibreOffice.convertTo(tempOpenDocumentFile, DEFAULT_FILE_NAME_EXTENSION, outputFile);
         } catch (IOException | InterruptedException e) {
             throw new GenerationException(e);

@@ -1,6 +1,8 @@
 package com.github.radium226.xml.dsl;
 
+import com.github.radium226.util.ThrowableThrower;
 import com.github.radium226.xml.Style;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -46,6 +48,22 @@ public class PrintDocument {
         Source source = new DOMSource(this.document);
         Result result = new StreamResult(outputStream);
         transformer.transform(source, result);
+    }
+    
+    @Override
+    public String toString() {
+        try {
+            return toString(Style.PRETTY);
+        } catch (TransformerException e) {
+            ThrowableThrower.throwThrowable(e);
+            return null;
+        }
+    }
+    
+    public String toString(Style style) throws TransformerException {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        to(byteArrayOutputStream, style);
+        return byteArrayOutputStream.toString();
     }
     
 }

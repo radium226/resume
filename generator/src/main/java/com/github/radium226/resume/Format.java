@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public enum Format {
     
-    ODF(new OpenDocumentGenerator()), PDF(new PortableDocumentGenerator()), DOCX(new OpenXMLGenerator());
+    ODT(new OpenDocumentGenerator()), PDF(new PortableDocumentGenerator()), DOCX(new OpenXMLGenerator());
     
     private final Generator generator;
     
