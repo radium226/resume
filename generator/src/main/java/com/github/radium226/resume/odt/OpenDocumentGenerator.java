@@ -67,7 +67,6 @@ public class OpenDocumentGenerator implements Generator {
         
         File workingFolder = inputFile.getParentFile();
         Document document = normalize(parse(inputFile), tempFolder, workingFolder);
-        System.out.println("tempFolder=" + tempFolder);
         
         generateContent(document, tempFolder, variables);
         generateStyle(document, tempFolder, variables);
@@ -99,12 +98,11 @@ public class OpenDocumentGenerator implements Generator {
         document = transform(document).with(tempFolder.toPath().resolve("transformations/normalize.xslt").toFile());
         
         document = new Canonicalizer().canonicalize(document);
-        System.out.println("HEYYO! ");
-        try {
+        /*try {
             print(document).to(System.out, Style.PRETTY);
         } catch (TransformerException e) {
             e.printStackTrace(System.err);
-        }
+        }*/
         return document;
     }
 

@@ -17,8 +17,6 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import javax.xml.xpath.XPathFactoryConfigurationException;
-import net.sf.saxon.lib.NamespaceConstant;
-import net.sf.saxon.xpath.XPathFactoryImpl;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -59,7 +57,6 @@ public class SelectQuery {
 
                 @Override
                 public String getNamespaceURI(String prefix) {
-                    System.out.println("prefix = " + prefix);
                     String uri = XMLConstants.NULL_NS_URI;
                     if (uriByPrefix.containsKey(prefix)) {
                         uri = uriByPrefix.get(prefix);
@@ -69,7 +66,6 @@ public class SelectQuery {
 
                 @Override
                 public String getPrefix(String uri) {
-                    System.out.println("uri = " + uri);
                     BiMap<String, String> prefixByURI = uriByPrefix.inverse();
                     String prefix  = null; 
                     if (prefixByURI.containsKey(uri)) {

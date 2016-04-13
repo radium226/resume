@@ -47,7 +47,6 @@ public class Resources {
 
                         @Override
                         public FileVisitResult preVisitDirectory(final Path dir, final BasicFileAttributes attrs) throws IOException {
-                            System.out.println(dir);
                             Files.createDirectories(targetPath.resolve(sourcePath.relativize(dir)));
                             return FileVisitResult.CONTINUE;
                         }

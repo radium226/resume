@@ -65,7 +65,6 @@ public class FormatLocation extends ExtensionFunctionDefinition {
                 for (Item item = sequenceIterator.next(); item !=null; item = sequenceIterator.next()) {
                     DOMNodeWrapper nodeWrapper = (DOMNodeWrapper) item;
                     Node node = (Node) nodeWrapper.getRealNode();
-                    System.out.println(node);
                     String cityName = null; 
                     String countyName = null; 
                     try {

@@ -15,9 +15,6 @@ public class LibreOffice {
         String inputFilePath = inputFile.getAbsolutePath();
         File tempFolder = Files.createTempDirectory("libreoffice-").toFile();
         String tempFolderPath = tempFolder.getAbsolutePath();
-        
-        System.out.println(" format = " + format);
-        
         ProcessBuilder processBuilder = new ProcessBuilder("libreoffice", "--headless", "--convert-to", format, inputFilePath, "--outdir", tempFolderPath).inheritIO();
         Process process = processBuilder.start();
         process.waitFor();

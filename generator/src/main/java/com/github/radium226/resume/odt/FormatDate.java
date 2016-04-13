@@ -66,8 +66,6 @@ public class FormatDate extends ExtensionFunctionDefinition {
                 SequenceIterator sequenceIterator = arguments[0].iterate();
                 for (Item item = sequenceIterator.next(); item !=null; item = sequenceIterator.next()) {
                     
-                    System.out.println("item = " + item.toString());
-                    
                     NodeInfo node = (NodeInfo) item;
                     
                     if (node.getLocalPart().equals("date")) {

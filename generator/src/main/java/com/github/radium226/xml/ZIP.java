@@ -34,7 +34,6 @@ public class ZIP {
     }
     
     public static void zip(Path folderPath, OutputStream outputStream, MethodByPathMapper methodByPathMapper) throws IOException {
-        System.out.println("folderPath = " + folderPath);
         ZipOutputStream zipOutputStream = new ZipOutputStream(outputStream);
         
         List<Path> filePaths = Lists.newArrayList();
@@ -64,41 +63,33 @@ public class ZIP {
             
         });
         
-        Collections.sort(filePaths, new Comparator<Path>() {
-
-            @Override
-            public int compare(Path onePath, Path otherPath) {
-                String oneName = folderPath.relativize(onePath).toString();
-                String otherName = folderPath.relativize(otherPath).toString();
-                if (oneName.equals("mimetype") || otherName.equals("mimetype")) {
-                    return -1;
-                } else {
-                    return onePath.compareTo(otherPath);
-                }
+        Collections.sort(filePaths, (Path onePath, Path otherPath) -> {
+            String oneName = folderPath.relativize(onePath).toString();
+            String otherName = folderPath.relativize(otherPath).toString();
+            if (oneName.equals("mimetype") || otherName.equals("mimetype")) {
+                return -1;
+            } else {
+                return onePath.compareTo(otherPath);
             }
-            
         });
         
         for (Path filePath : filePaths) {
-            System.out.println(" --> " + filePath);
-                String name = folderPath.relativize(filePath).toString();
-                System.out.println("name=" + name);
-                ZipEntry zipEntry = new ZipEntry(name);
-                int method = methodByPathMapper.mapMethodByPath(folderPath, filePath);
-                if (method == ZipEntry.STORED) {
-                    zipEntry.setMethod(method);
-                    CRC32 crc32 = new CRC32();
-                    byte[] bytes = Files.readAllBytes(filePath);
-                    crc32.update(bytes);
-                    zipEntry.setCrc(crc32.getValue());
-                    zipEntry.setSize(bytes.length);
-                    zipEntry.setCompressedSize(bytes.length);
-                    zipOutputStream.putNextEntry(zipEntry);
-                } else {
-                    zipOutputStream.putNextEntry(zipEntry);
-                }
-                Files.copy(filePath, zipOutputStream);
-                zipOutputStream.closeEntry();
+            String name = folderPath.relativize(filePath).toString();
+            ZipEntry zipEntry = new ZipEntry(name);
+            int method = methodByPathMapper.mapMethodByPath(folderPath, filePath);
+            if (method == ZipEntry.STORED) {
+                zipEntry.setMethod(method);
+                CRC32 crc32 = new CRC32();
+                byte[] bytes = Files.readAllBytes(filePath);
+                crc32.update(bytes);
+                zipEntry.setCrc(crc32.getValue());
+                zipEntry.setSize(bytes.length);
+                zipEntry.setCompressedSize(bytes.length);
+                
+            }
+            zipOutputStream.putNextEntry(zipEntry);
+            Files.copy(filePath, zipOutputStream);
+            zipOutputStream.closeEntry();
         }
         
         zipOutputStream.finish();

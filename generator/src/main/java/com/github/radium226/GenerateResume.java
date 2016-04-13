@@ -17,9 +17,13 @@ import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GenerateResume {
 
+    final private static Logger LOGGER = LoggerFactory.getLogger(GenerateResume.class);
+    
     public static enum Status {
 
         SUCCESS(0), FAILURE(1);
@@ -57,11 +61,11 @@ public class GenerateResume {
     public Status execute() {
         Status status;
         try {
-            System.out.println(" --> " + inputFile.getAbsolutePath());
+            LOGGER.debug("inputFile.getAbsoluteFilePath()={}", inputFile.getAbsolutePath());
             if (format == null) {
                 format = Format.of(outputFile);
             }
-            System.out.println(format);
+            LOGGER.debug("format={}", format);
             Generator generator = format.getGenerator();
             generator.generate(inputFile, outputFile, color, Optional.ofNullable(tempFolder));
             if (display) {
