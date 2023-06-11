@@ -1,0 +1,31 @@
+---
+experiences:
+- company:
+    name: Jump
+  positions:
+  - name: Head of Data
+    period:
+      from: 2023-02
+      to: now
+    description: |
+        Bla bla bla
+  - name: Data Engineer
+    period:
+      from: 2022-07
+      to: 2023-02
+    description: |
+        Bla bla bla
+    tasks:
+    - description: Definition de bonnes pratiques  de développement et de modélisation
+      tasks: 
+      - Modélisation des schémas Avro
+      - Domaines et responsabilité des micro-services
+    - description: Développement et maintenance des micro-services de la Data Platform
+      tasks:
+      - Système d’offload des messages Kafka sur Google Cloud Storage
+      - Ingestion automatique des messages de Kafka dans BigQuery
+      - Indexation en temps réel via Aloglia
+    - description: Outillage divers
+      tasks: 
+      - Validation de schémas Avro (linting, nomenclature, compatibilité, etc.)
+      - Automatisation de la maintenance de la plateforme
