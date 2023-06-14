@@ -1,4 +1,4 @@
-from radium226.resume_generator.parser import parse_paragraph
+from radium226.resume_generator.parsers import parse_paragraph
 
 
 def test_parse_paragraph():

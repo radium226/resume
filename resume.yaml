@@ -9,6 +9,8 @@ experiences:
       to: now
     description: |
         Bla bla bla
+    tasks:
+    - Coucou
   - name: Data Engineer
     period:
       from: 2022-07
