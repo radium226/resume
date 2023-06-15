@@ -1,5 +1,5 @@
 from lxml.etree import Element, SubElement, parse, register_namespace
-from typing import Union
+from typing import Union, Optional
 from mistletoe.block_token import Paragraph
 from mistletoe.span_token import RawText, Emphasis, SpanToken
 
@@ -11,41 +11,69 @@ XMLNS_TABLE = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
 XMLNS_TEXT = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
 XMLNS_OFFICE = "urn:oasis:names:tc:opendocument:xmlns:office:1.0"
 
+NAMESPACES_BY_PREFIX = {
+    "table": XMLNS_TABLE,
+    "text": XMLNS_TEXT,
+    "office": XMLNS_OFFICE,
+}
 
-def create_element(tag: str) -> Element:
-    return Element(
-        tag,
-        namespaces={
-            "table": XMLNS_TABLE,
-            "text": XMLNS_TEXT,
-            "office": XMLNS_OFFICE,
-        }
+def table()
+
+
+def create_element(tag: str, attributes: dict[str, str] = {}, children: list[Union[Element, str]] = [], parent: Optional[Element] = None, text: str | None = None) -> Element:
+    [namespace_prefix, local_tag] = tag.split(":")
+    namespace = NAMESPACES_BY_PREFIX[namespace_prefix]
+    element = Element(
+        "{" + namespace + "}" + local_tag,
     )
 
+    if parent is not None:
+        parent.append(element)
 
-def attrib(element: Element, namespace: str, name: str, value):
-    element.attrib["{" + namespace + "}" + name] = value
+    if text:
+        element.text = text
+
+    for attribute_name, attribute_value in attributes.items():
+        set_attribute_to_element(element, attribute_name, attribute_value)
+
+    append_child_nodes_to_parent_element(element, children)
+
+    element.tail = "\n"
+
+    return element
+
+def set_attribute_to_element(element: Element, name: str, value: str):
+    [namespace_prefix, local_name] = name.split(":")
+    namespace = NAMESPACES_BY_PREFIX[namespace_prefix]
+    element.attrib["{" + namespace + "}" + local_name] = value
 
 
 def render_span_token(span_token: SpanToken) -> Union[Element, str]:
-    print(f"span_token={span_token}")
     match span_token:
         case RawText():
-            content = span_token.content
-            return content
+            return span_token.content
 
         case Emphasis():
-            element = Element("{urn:oasis:names:tc:opendocument:xmlns:text:1.0}emphasis")
-            element.attrib["{urn:oasis:names:tc:opendocument:xmlns:text:1.0}style-name"] = "Strong_20_Emphasis"
-            append_child_nodes_to_parent_element(element, [render_span_token(child) for child in span_token.children])
-            return element
+            return create_element(
+                tag="text:emphasis", 
+                attributes={
+                    "text:style_name": "Strong_20_Emphasis",
+                },
+                children=[
+                    render_span_token(child) for child in span_token.children
+                ],
+            )
 
 def render_paragraph(paragraph: Paragraph) -> Element:
-    element = Element("{urn:oasis:names:tc:opendocument:xmlns:text:1.0}p")
-    element.attrib["{urn:oasis:names:tc:opendocument:xmlns:text:1.0}style-name"] = "P1"
-    append_child_nodes_to_parent_element(element, [render_span_token(child) for child in paragraph.children])
-    return element
-
+    return create_element(
+        tag="text:p", 
+        attributes={
+            "text:style-name": "P1",
+        },
+        children=[
+            render_span_token(child) for child in paragraph.children
+        ],
+    )
 
 def render_tasks(tasks: list[Task]) -> Element:
     def render_task(parent_element: Element, task: Task):
@@ -57,62 +85,92 @@ def render_tasks(tasks: list[Task]) -> Element:
                 description = task
                 append_child_nodes_to_parent_element(parent_element, [render_paragraph(description)])
 
-
-    ul = Element("{urn:oasis:names:tc:opendocument:xmlns:text:1.0}list")
+    list_element = create_element(tag="text:list")
     for task in tasks:
-        li = SubElement(ul, "{urn:oasis:names:tc:opendocument:xmlns:text:1.0}list-item")
-        render_task(li, task)
-    return ul
+        list_item_element = create_element("text:list-item")
+        list_element.append(list_item_element)
+        render_task(list_item_element, task)
+    return list_element
 
 
 def render_position(position: Position, position_index=0) -> Element:
-    section = Element("{" + XMLNS_TEXT + "}section")
-    attrib(section, XMLNS_TEXT, "style-name", "Sect1")
-    attrib(section, XMLNS_TEXT, "name", f"Section{position_index}")
-    section.tail = "\n"
+    section_element = create_element(
+        tag="text:section",
+        attributes={
+            "text:style-name": "Sect1",
+            "text:name": f"Section{position_index}",
+        },
+    )
+
+    heading_element = create_element(
+        parent=section_element,
+        tag="text:h",
+        attributes={
+            "text:outline-level": "3",
+        },
+        text=position.name,
+    )
         
-    h = SubElement(section, "{" + XMLNS_TEXT + "}h")
-    attrib(h, XMLNS_TEXT, "outline-level", "3")
-    h.text = position.name
-    h.tail = "\n"
+ 
+    table_element = create_element(
+        parent=section_element,
+        tag="table:table",
+        attributes={
+            "table:style-name": "Tableau1",
+            "table:name": f"Tableau{position_index}"
+        },
+    )
 
-    table = SubElement(section, "{" + XMLNS_TABLE + "}table")
-    attrib(table, XMLNS_TABLE, "style-name", "Tableau1")
-    attrib(table, XMLNS_TABLE, "name", f"Tableau{position_index}")
-    table.tail = "\n"
+    table_column_element = create_element(
+        parent=table_element,
+        tag="table:table-column",
+        attributes={
+            "table:number-columns-repeated": "2",
+            "table:style-name": "Tableau1.A",
+        },
+    )
     
-    table_column = SubElement(table, "{" + XMLNS_TABLE + "}table-column")
-    attrib(table_column, XMLNS_TABLE, "number-columns-repeated", "2")
-    attrib(table_column, XMLNS_TABLE, "style-name", "Tableau1.A")
-    table_column.tail = "\n"
-    
-    table_row = SubElement(table, "{" + XMLNS_TABLE + "}table-row")
-    table_row.tail = "\n"
+    table_row_element = create_element(
+        parent=table_element,
+        tag="table:table-row"
+    )
 
-    table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
-    attrib(table_cell, XMLNS_TABLE, "number-columns-spanned", "2")
-    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.A1")
-    table_cell.tail = "\n"
+    table_cell_element = create_element(
+        parent=table_row_element,
+        tag="table:cell",
+        attributes={
+            "table:number-columns-spanned": "2",
+            "table:style-name": "Tableau1.A1",
+        },
+        children=[render_paragraph(position.description)]
+    )
 
-    table_cell.append(render_paragraph(position.description))
-    table_cell.tail = "\n"
+    covered_table_cell_element = create_element(
+        parent=table_row_element,
+        tag="table:covered-table-cell",
+    )
 
-    covered_table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}covered-table-cell")
-    covered_table_cell.tail = "\n"
+    table_row_element = create_element(
+        parent=table_element,
+        tag="table:table-row",
+        children=[
+            create_element(
+                tag="table:table-cell",
+                attributes={
+                    "table:style-name": "Tableau1.A2"
+                },
+                children=[render_tasks(position.tasks)]
+            ),
+            create_element(
+                tag="table:table-cell",
+                attributes={
+                    "table:style-name": "Tableau1.B2",
+                }
+            )
+        ],
+    )
 
-    table_row = SubElement(table, "{" + XMLNS_TABLE + "}table-row")
-    table_row.tail = "\n"
-
-    table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
-    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.A2")
-    table_cell.append(render_tasks(position.tasks))
-    table_cell.tail = "\n"
-
-    table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
-    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.B2")
-    table_cell.tail = "\n"
-
-    return section
+    return section_element
 
 
 def render_resume(resume: Resume) -> Element:
