@@ -1,4 +1,4 @@
-from lxml.etree import Element, SubElement, parse
+from lxml.etree import Element, SubElement, parse, register_namespace
 from typing import Union
 from mistletoe.block_token import Paragraph
 from mistletoe.span_token import RawText, Emphasis, SpanToken
@@ -9,6 +9,7 @@ from .append_child_nodes_to_parent_element import append_child_nodes_to_parent_e
 
 XMLNS_TABLE = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
 XMLNS_TEXT = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+XMLNS_OFFICE = "urn:oasis:names:tc:opendocument:xmlns:office:1.0"
 
 
 def attrib(element: Element, namespace: str, name: str, value):
@@ -87,4 +88,12 @@ def render_position(position: Position) -> Element:
 
 def render_resume(resume: Resume) -> Element:
     empty = parse(str(Path(__file__).parent / "empty.fodt"))
+    body = next(iter(empty.xpath("//office:body", namespaces={
+        "office": XMLNS_OFFICE,
+    })), None)
+
+    for experience in resume.experiences:
+        for position in experience.positions:
+            body.append(render_position(position))
+
     return empty
