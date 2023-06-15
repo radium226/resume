@@ -12,15 +12,19 @@ XMLNS_TEXT = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
 XMLNS_OFFICE = "urn:oasis:names:tc:opendocument:xmlns:office:1.0"
 
 
+def create_element(tag: str) -> Element:
+    return Element(
+        tag,
+        namespaces={
+            "table": XMLNS_TABLE,
+            "text": XMLNS_TEXT,
+            "office": XMLNS_OFFICE,
+        }
+    )
+
+
 def attrib(element: Element, namespace: str, name: str, value):
     element.attrib["{" + namespace + "}" + name] = value
-
-def append_to_element(parent_element: Element, child_element_or_text: Union[Element, str]) -> None:
-    if isinstance(child_element_or_text, str):
-        parent_element.tail = child_element_or_text
-
-    else:
-        parent_element.append(child_element_or_text)
 
 
 def render_span_token(span_token: SpanToken) -> Union[Element, str]:
@@ -33,9 +37,7 @@ def render_span_token(span_token: SpanToken) -> Union[Element, str]:
         case Emphasis():
             element = Element("{urn:oasis:names:tc:opendocument:xmlns:text:1.0}emphasis")
             element.attrib["{urn:oasis:names:tc:opendocument:xmlns:text:1.0}style-name"] = "Strong_20_Emphasis"
-            for child in span_token.children:
-                if child:    
-                    append_to_element(element, render_span_token(child))
+            append_child_nodes_to_parent_element(element, [render_span_token(child) for child in span_token.children])
             return element
 
 def render_paragraph(paragraph: Paragraph) -> Element:
