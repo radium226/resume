@@ -18,9 +18,9 @@ def app(yaml_file_path: Path, fodt_file_path: Path):
     resume = parse_resume(obj)
     
     document = render_resume(resume)
-    fodt_file_content = tostring(document, encoding="utf-8", pretty_print=True, xml_declaration=True)
+    fodt_file_content = tostring(document, encoding="utf-8", pretty_print=True, xml_declaration=True).decode()
     print(fodt_file_content)
-    with fodt_file_path.open("wb") as fodt_file_stream:
+    with fodt_file_path.open("w") as fodt_file_stream:
         fodt_file_stream.write(fodt_file_content)
 
     # for experience in resume.experiences:

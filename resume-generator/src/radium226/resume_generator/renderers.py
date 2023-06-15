@@ -63,26 +63,53 @@ def render_tasks(tasks: list[Task]) -> Element:
     return ul
 
 
-def render_position(position: Position) -> Element:
+def render_position(position: Position, position_index=0) -> Element:
     section = Element("{" + XMLNS_TEXT + "}section")
-    
+    attrib(section, XMLNS_TEXT, "style-name", "Sect1")
+    attrib(section, XMLNS_TEXT, "name", f"Section{position_index}")
+    section.tail = "\n"
+        
     h = SubElement(section, "{" + XMLNS_TEXT + "}h")
     attrib(h, XMLNS_TEXT, "outline-level", "3")
     h.text = position.name
+    h.tail = "\n"
 
     table = SubElement(section, "{" + XMLNS_TABLE + "}table")
+    attrib(table, XMLNS_TABLE, "style-name", "Tableau1")
+    attrib(table, XMLNS_TABLE, "name", f"Tableau{position_index}")
+    table.tail = "\n"
+    
     table_column = SubElement(table, "{" + XMLNS_TABLE + "}table-column")
     attrib(table_column, XMLNS_TABLE, "number-columns-repeated", "2")
-    table_row = SubElement(table_column, "{" + XMLNS_TABLE + "}table-row")
+    attrib(table_column, XMLNS_TABLE, "style-name", "Tableau1.A")
+    table_column.tail = "\n"
+    
+    table_row = SubElement(table, "{" + XMLNS_TABLE + "}table-row")
+    table_row.tail = "\n"
+
     table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
     attrib(table_cell, XMLNS_TABLE, "number-columns-spanned", "2")
+    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.A1")
+    table_cell.tail = "\n"
+
     table_cell.append(render_paragraph(position.description))
+    table_cell.tail = "\n"
+
     covered_table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}covered-table-cell")
-    table_row = SubElement(table_column, "{" + XMLNS_TABLE + "}table-row")
+    covered_table_cell.tail = "\n"
+
+    table_row = SubElement(table, "{" + XMLNS_TABLE + "}table-row")
+    table_row.tail = "\n"
+
     table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
+    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.A2")
     table_cell.append(render_tasks(position.tasks))
+    table_cell.tail = "\n"
+
     table_cell = SubElement(table_row, "{" + XMLNS_TABLE + "}table-cell")
-    
+    attrib(table_cell, XMLNS_TABLE, "style-name", "Tableau1.B2")
+    table_cell.tail = "\n"
+
     return section
 
 
@@ -91,9 +118,10 @@ def render_resume(resume: Resume) -> Element:
     body = next(iter(empty.xpath("//office:body", namespaces={
         "office": XMLNS_OFFICE,
     })), None)
-
+    i = 1
     for experience in resume.experiences:
         for position in experience.positions:
-            body.append(render_position(position))
+            body.append(render_position(position, i))
+            i += 1
 
     return empty
