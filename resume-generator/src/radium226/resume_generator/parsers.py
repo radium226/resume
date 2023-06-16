@@ -5,6 +5,8 @@ from io import StringIO, BufferedReader
 from mistletoe import markdown
 from mistletoe.block_token import Paragraph, Document, tokenize
 
+from pendulum import parse
+
 from .models import *
 
 
@@ -31,10 +33,18 @@ def parse_experience(obj: dict) -> Experience:
 
 def parse_position(obj: dict) -> Position:
     name = obj["name"]
+
+    period_from = parse(obj["period"]["from"])
+    period_to = parse(text, format="YYYY[-]MM") if (text := obj["period"].get("to", None)) else today()
+
+    period = period_to - period_from
+
+
     description = Description(parse_paragraph(description_text)) if (description_text := obj.get("description", None)) else None
     tasks = [parse_task(task_obj) for task_obj in obj["tasks"]]
     return Position(
         name=name,
+        period=period,
         description=description,
         tasks=tasks,
     )

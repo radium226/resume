@@ -3,6 +3,7 @@ from pathlib import Path
 from ruamel.yaml import YAML
 from dataclasses import dataclass, field
 from mistletoe.block_token import Paragraph
+from pendulum import Period
 
 
 Description = NewType("Description", Paragraph)
@@ -25,6 +26,7 @@ Task: TypeAlias = ComplexTask | SimpleTask
 class Position:
 
     name: str
+    period: Period
     description: Description
     tasks: list[Task] = field(default_factory=list)
 

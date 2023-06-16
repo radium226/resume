@@ -55,6 +55,13 @@ def render_position(position: Position, position_index=0) -> Element:
                 outline_level=3,
                 children=[position.name],
             ),
+            p(
+                children=[
+                    span(
+                        children=[],
+                    )
+                ]
+            ),
             table(
                 name=f"Tableau{position_index}",
                 children=[

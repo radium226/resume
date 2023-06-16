@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:css3t="http://www.w3.org/TR/css3-text/"
+    xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xforms="http://www.w3.org/2002/xforms"
+    xmlns:dom="http://www.w3.org/2001/xml-events"
+    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:ooo="http://openoffice.org/2004/office"
+    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+    xmlns:ooow="http://openoffice.org/2004/writer"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:drawooo="http://openoffice.org/2010/draw"
+    xmlns:oooc="http://openoffice.org/2004/calc"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2"
+    xmlns:tableooo="http://openoffice.org/2009/table"
+    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+    xmlns:rpt="http://openoffice.org/2005/report"
+    xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0"
+    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+    xmlns:officeooo="http://openoffice.org/2009/office"
+    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+    xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
+    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+    xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" office:version="1.3">
+    <office:scripts/>
+    <office:font-face-decls>
+        <style:font-face style:name="Droid Sans Devanagari" svg:font-family="&apos;Droid Sans Devanagari&apos;" style:font-family-generic="swiss"/>
+        <style:font-face style:name="Droid Sans Devanagari1" svg:font-family="&apos;Droid Sans Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+        <style:font-face style:name="Droid Sans Fallback" svg:font-family="&apos;Droid Sans Fallback&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+        <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
+        <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol" style:font-adornments="Regular" style:font-charset="x-symbol"/>
+        <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+        <style:font-face style:name="Ubuntu" svg:font-family="Ubuntu" style:font-adornments="Maigre" style:font-pitch="variable"/>
+        <style:font-face style:name="Ubuntu1" svg:font-family="Ubuntu" style:font-adornments="Normal" style:font-pitch="variable"/>
+    </office:font-face-decls>
+    <office:automatic-styles>
+        <style:style style:name="Tableau6" style:family="table">
+            <style:table-properties style:width="10.6951in" fo:margin-left="0in" fo:margin-right="0in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau6.A" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7368in" style:rel-column-width="16770*"/>
+        </style:style>
+        <style:style style:name="Tableau6.B" style:family="table-column">
+            <style:table-column-properties style:column-width="7.9583in" style:rel-column-width="48765*"/>
+        </style:style>
+        <style:style style:name="Tableau6.1" style:family="table-row">
+            <style:table-row-properties style:row-height="0.984in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau6.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="bottom" fo:background-color="#dee6ef" fo:padding-left="0.0986in" fo:padding-right="0.0986in" fo:padding-top="0in" fo:padding-bottom="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau6.B1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="bottom" fo:background-color="#ffffff" fo:padding-left="0in" fo:padding-right="0.1965in" fo:padding-top="0in" fo:padding-bottom="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau6.2" style:family="table-row">
+            <style:table-row-properties style:row-height="10.3153in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau6.A2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#dee6ef" fo:padding-left="0.0986in" fo:padding-right="0.0986in" fo:padding-top="0in" fo:padding-bottom="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau6.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding-left="0.0986in" fo:padding-right="0.1965in" fo:padding-top="0.0986in" fo:padding-bottom="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau12" style:family="table">
+            <style:table-properties style:width="2.5396in" fo:margin-left="0in" fo:margin-right="0in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau12.A" style:family="table-column">
+            <style:table-column-properties style:column-width="0.2743in" style:rel-column-width="7086*"/>
+        </style:style>
+        <style:style style:name="Tableau12.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.2653in" style:rel-column-width="58449*"/>
+        </style:style>
+        <style:style style:name="Tableau12.1" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau12.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau13" style:family="table">
+            <style:table-properties style:width="2.5396in" fo:margin-left="0in" fo:margin-right="0in" table:align="margins" fo:background-color="transparent" table:border-model="collapsing">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau13.A" style:family="table-column">
+            <style:table-column-properties style:column-width="0.8889in" style:rel-column-width="22938*"/>
+        </style:style>
+        <style:style style:name="Tableau13.B" style:family="table-column">
+            <style:table-column-properties style:column-width="1.1021in" style:rel-column-width="28447*"/>
+        </style:style>
+        <style:style style:name="Tableau13.C" style:family="table-column">
+            <style:table-column-properties style:column-width="0.5486in" style:rel-column-width="14150*"/>
+        </style:style>
+        <style:style style:name="Tableau13.1" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau13.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #5983b0"/>
+        </style:style>
+        <style:style style:name="Tableau13.B1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau13.A4" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="0.05pt solid #5983b0" fo:border-bottom="0.05pt solid #5983b0"/>
+        </style:style>
+        <style:style style:name="Tableau13.B4" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="0.05pt solid #5983b0" fo:border-bottom="none"/>
+        </style:style>
+        <style:style style:name="Tableau13.18" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.19" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.20" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.21" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.22" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.23" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau1" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau1.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8889in" style:rel-column-width="41812*"/>
+        </style:style>
+        <style:style style:name="Tableau1.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7743in" style:rel-column-width="23723*"/>
+        </style:style>
+        <style:style style:name="Tableau1.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau1.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau1.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border-left="0.05pt solid #b4c7dc" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau7" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau7.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8889in" style:rel-column-width="41812*"/>
+        </style:style>
+        <style:style style:name="Tableau7.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7743in" style:rel-column-width="23723*"/>
+        </style:style>
+        <style:style style:name="Tableau7.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau7.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau7.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border-left="0.05pt solid #b4c7dc" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8896in" style:rel-column-width="41814*"/>
+        </style:style>
+        <style:style style:name="Tableau8.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7736in" style:rel-column-width="23721*"/>
+        </style:style>
+        <style:style style:name="Tableau8.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0.0194in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0.0194in" fo:border-left="0.05pt solid #729fcf" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau14" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau14.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.2229in" style:rel-column-width="36114*"/>
+        </style:style>
+        <style:style style:name="Tableau14.B" style:family="table-column">
+            <style:table-column-properties style:column-width="1.3201in" style:rel-column-width="11291*"/>
+        </style:style>
+        <style:style style:name="Tableau14.C" style:family="table-column">
+            <style:table-column-properties style:column-width="2.1201in" style:rel-column-width="18130*"/>
+        </style:style>
+        <style:style style:name="Tableau14.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau14.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0in" fo:padding-right="0in" fo:padding-top="0.0194in" fo:padding-bottom="0.0194in" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #dddddd"/>
+        </style:style>
+        <style:style style:name="Tableau14.B1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0in" fo:padding-right="0in" fo:padding-top="0.0194in" fo:padding-bottom="0.0194in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau12" style:family="table">
+            <style:table-properties style:width="2.5396in" fo:margin-left="0in" fo:margin-right="0in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau12.A" style:family="table-column">
+            <style:table-column-properties style:column-width="0.2743in" style:rel-column-width="7086*"/>
+        </style:style>
+        <style:style style:name="Tableau12.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.2653in" style:rel-column-width="58449*"/>
+        </style:style>
+        <style:style style:name="Tableau12.1" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau12.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau13" style:family="table">
+            <style:table-properties style:width="2.5396in" fo:margin-left="0in" fo:margin-right="0in" table:align="margins" fo:background-color="transparent" table:border-model="collapsing">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau13.A" style:family="table-column">
+            <style:table-column-properties style:column-width="0.8889in" style:rel-column-width="22938*"/>
+        </style:style>
+        <style:style style:name="Tableau13.B" style:family="table-column">
+            <style:table-column-properties style:column-width="1.1021in" style:rel-column-width="28447*"/>
+        </style:style>
+        <style:style style:name="Tableau13.C" style:family="table-column">
+            <style:table-column-properties style:column-width="0.5486in" style:rel-column-width="14150*"/>
+        </style:style>
+        <style:style style:name="Tableau13.1" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau13.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #5983b0"/>
+        </style:style>
+        <style:style style:name="Tableau13.B1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau13.A4" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="0.05pt solid #5983b0" fo:border-bottom="0.05pt solid #5983b0"/>
+        </style:style>
+        <style:style style:name="Tableau13.B4" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding="0in" fo:border-left="none" fo:border-right="none" fo:border-top="0.05pt solid #5983b0" fo:border-bottom="none"/>
+        </style:style>
+        <style:style style:name="Tableau13.18" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.19" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.20" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.21" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.22" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau13.23" style:family="table-row">
+            <style:table-row-properties style:min-row-height="0.1965in"/>
+        </style:style>
+        <style:style style:name="Tableau7" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau7.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8889in" style:rel-column-width="41812*"/>
+        </style:style>
+        <style:style style:name="Tableau7.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7743in" style:rel-column-width="23723*"/>
+        </style:style>
+        <style:style style:name="Tableau7.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau7.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau7.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border-left="0.05pt solid #b4c7dc" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8896in" style:rel-column-width="41814*"/>
+        </style:style>
+        <style:style style:name="Tableau8.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7736in" style:rel-column-width="23721*"/>
+        </style:style>
+        <style:style style:name="Tableau8.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8.A2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0.0194in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau8.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0.0194in" fo:border-left="0.05pt solid #729fcf" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau14" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau14.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.2229in" style:rel-column-width="36114*"/>
+        </style:style>
+        <style:style style:name="Tableau14.B" style:family="table-column">
+            <style:table-column-properties style:column-width="1.3201in" style:rel-column-width="11291*"/>
+        </style:style>
+        <style:style style:name="Tableau14.C" style:family="table-column">
+            <style:table-column-properties style:column-width="2.1201in" style:rel-column-width="18130*"/>
+        </style:style>
+        <style:style style:name="Tableau14.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau14.A1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0in" fo:padding-right="0in" fo:padding-top="0.0194in" fo:padding-bottom="0.0194in" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.05pt solid #dddddd"/>
+        </style:style>
+        <style:style style:name="Tableau14.B1" style:family="table-cell">
+            <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0in" fo:padding-right="0in" fo:padding-top="0.0194in" fo:padding-bottom="0.0194in" fo:border="none"/>
+        </style:style>
+        <style:style style:name="Tableau1" style:family="table">
+            <style:table-properties style:width="7.6632in" table:align="margins" fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-properties>
+        </style:style>
+        <style:style style:name="Tableau1.A" style:family="table-column">
+            <style:table-column-properties style:column-width="4.8889in" style:rel-column-width="41812*"/>
+        </style:style>
+        <style:style style:name="Tableau1.B" style:family="table-column">
+            <style:table-column-properties style:column-width="2.7743in" style:rel-column-width="23723*"/>
+        </style:style>
+        <style:style style:name="Tableau1.1" style:family="table-row">
+            <style:table-row-properties fo:background-color="transparent">
+                <style:background-image/>
+            </style:table-row-properties>
+        </style:style>
+        <style:style style:name="Tableau1.A1" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="Tableau1.B2" style:family="table-cell">
+            <style:table-cell-properties fo:background-color="#ffffff" fo:padding="0in" fo:border-left="0.05pt solid #b4c7dc" fo:border-right="none" fo:border-top="none" fo:border-bottom="none">
+                <style:background-image/>
+            </style:table-cell-properties>
+        </style:style>
+        <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Title">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties officeooo:paragraph-rsid="0051f6a3"/>
+        </style:style>
+        <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+        </style:style>
+        <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Title">
+            <style:text-properties officeooo:paragraph-rsid="00523030"/>
+        </style:style>
+        <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties officeooo:rsid="002b955a" officeooo:paragraph-rsid="002b955a"/>
+        </style:style>
+        <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties style:font-name="Ubuntu1" fo:font-size="7pt" officeooo:rsid="002c652c" officeooo:paragraph-rsid="002c652c" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="002c652c" officeooo:paragraph-rsid="002c652c" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="002e06c2" officeooo:paragraph-rsid="002e06c2" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="002e06c2" officeooo:paragraph-rsid="00bae6c0" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="002e06c2" officeooo:paragraph-rsid="00bd25f0" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="002e06c2" officeooo:paragraph-rsid="00d1c805" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="0076b6ee" officeooo:paragraph-rsid="0076b6ee" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+            <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+            <style:text-properties fo:font-size="7pt" officeooo:rsid="00d1c805" officeooo:paragraph-rsid="00d1c805" style:font-size-asian="7pt" style:font-size-complex="7pt"/>
+        </style:style>
+        <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Contact">
+            <style:text-properties officeooo:rsid="0087aae4" officeooo:paragraph-rsid="0087aae4"/>
+        </style:style>
+        <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Profil">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-weight="250" officeooo:rsid="00998380" officeooo:paragraph-rsid="00998380"/>
+        </style:style>
+        <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Publication">
+            <style:text-properties officeooo:paragraph-rsid="007a3206"/>
+        </style:style>
+        <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
+            <style:text-properties officeooo:rsid="00b32c6a" officeooo:paragraph-rsid="00b32c6a"/>
+        </style:style>
+        <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Subtitle">
+            <style:text-properties fo:text-transform="uppercase" fo:color="#355269" loext:opacity="100%" style:font-name="Ubuntu" fo:font-size="12pt" fo:font-weight="bold" officeooo:rsid="006afccb" officeooo:paragraph-rsid="006afccb" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+        </style:style>
+        <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Compétence">
+            <style:text-properties officeooo:paragraph-rsid="0076b6ee"/>
+        </style:style>
+        <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Période">
+            <style:text-properties officeooo:paragraph-rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Période">
+            <style:text-properties officeooo:rsid="007028a3" officeooo:paragraph-rsid="007028a3"/>
+        </style:style>
+        <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Sections_20_suivantes">
+            <style:text-properties officeooo:paragraph-rsid="006fe40e"/>
+        </style:style>
+        <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Sections_20_suivantes">
+            <style:text-properties officeooo:paragraph-rsid="007028a3"/>
+        </style:style>
+        <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Heading_20_1">
+            <style:paragraph-properties fo:break-before="column"/>
+        </style:style>
+        <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_2">
+            <style:paragraph-properties>
+                <style:tab-stops>
+                    <style:tab-stop style:position="5.7035in" style:type="right"/>
+                </style:tab-stops>
+            </style:paragraph-properties>
+            <style:text-properties officeooo:rsid="00ca0f2e" officeooo:paragraph-rsid="00e10ab8"/>
+        </style:style>
+        <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_3">
+            <style:text-properties officeooo:paragraph-rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Heading_20_3">
+            <style:text-properties officeooo:paragraph-rsid="00ca0f2e"/>
+        </style:style>
+        <style:style style:name="P27" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1"/>
+        <style:style style:name="P28" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:paragraph-rsid="00a820b0"/>
+        </style:style>
+        <style:style style:name="P29" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:paragraph-rsid="00a74f83"/>
+        </style:style>
+        <style:style style:name="P30" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:rsid="00db97e1" officeooo:paragraph-rsid="00db97e1"/>
+        </style:style>
+        <style:style style:name="P31" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:rsid="00cfe863" officeooo:paragraph-rsid="00cfe863"/>
+        </style:style>
+        <style:style style:name="P32" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:paragraph-rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="P33" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:rsid="00e53efd" officeooo:paragraph-rsid="00e53efd"/>
+        </style:style>
+        <style:style style:name="P34" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:rsid="00ccd9e0" officeooo:paragraph-rsid="00ccd9e0"/>
+        </style:style>
+        <style:style style:name="P35" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:rsid="00d87bd5" officeooo:paragraph-rsid="00d87bd5"/>
+        </style:style>
+        <style:style style:name="P36" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00abaa6c" officeooo:paragraph-rsid="00abaa6c" style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari"/>
+        </style:style>
+        <style:style style:name="P37" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:rsid="00ac2fd0" officeooo:paragraph-rsid="00ac2fd0"/>
+        </style:style>
+        <style:style style:name="P38" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:rsid="00ac2fd0" officeooo:paragraph-rsid="00ac2fd0"/>
+        </style:style>
+        <style:style style:name="P39" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:paragraph-rsid="00d4ba63"/>
+        </style:style>
+        <style:style style:name="P40" style:family="paragraph" style:parent-style-name="List_20_1_20_Cont.">
+            <style:text-properties officeooo:rsid="007028a3" officeooo:paragraph-rsid="007028a3"/>
+        </style:style>
+        <style:style style:name="P41" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont." style:list-style-name="List_20_1"/>
+        <style:style style:name="P42" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:rsid="00db97e1" officeooo:paragraph-rsid="00db97e1"/>
+        </style:style>
+        <style:style style:name="P43" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont." style:list-style-name="List_20_1">
+            <style:text-properties officeooo:rsid="00dd5a81" officeooo:paragraph-rsid="00dd5a81"/>
+        </style:style>
+        <style:style style:name="P44" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont.">
+            <style:text-properties officeooo:rsid="00a820b0" officeooo:paragraph-rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="P45" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont.">
+            <style:text-properties officeooo:rsid="00a820b0" officeooo:paragraph-rsid="00a820b0"/>
+        </style:style>
+        <style:style style:name="P46" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont.">
+            <style:text-properties officeooo:rsid="00d1181c" officeooo:paragraph-rsid="00d1181c"/>
+        </style:style>
+        <style:style style:name="P47" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont.">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="7pt" fo:font-weight="250" style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari"/>
+        </style:style>
+        <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Présentation_20_de_20_l_27_entreprise">
+            <style:text-properties officeooo:paragraph-rsid="00ef445a"/>
+        </style:style>
+        <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Présentation_20_du_20_projet">
+            <style:text-properties officeooo:rsid="00ccd9e0" officeooo:paragraph-rsid="00ccd9e0"/>
+        </style:style>
+        <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Période">
+            <style:text-properties officeooo:paragraph-rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Sociétés_20_suivantes">
+            <style:text-properties officeooo:paragraph-rsid="00e10ab8"/>
+        </style:style>
+        <style:style style:name="T1" style:family="text">
+            <style:text-properties officeooo:rsid="003001e5"/>
+        </style:style>
+        <style:style style:name="T2" style:family="text">
+            <style:text-properties officeooo:rsid="0046a98a"/>
+        </style:style>
+        <style:style style:name="T3" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:use-window-font-color="true" loext:opacity="0%" style:font-name="Ubuntu" fo:font-size="10pt" fo:font-weight="bold" officeooo:rsid="003001e5" style:font-size-asian="13.6499996185303pt" style:font-weight-asian="bold" style:font-size-complex="15.6000003814697pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T4" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:use-window-font-color="true" loext:opacity="0%" style:font-name="Ubuntu" fo:font-size="6pt" fo:font-weight="bold" officeooo:rsid="0088b77b" style:font-size-asian="12.0500001907349pt" style:font-weight-asian="bold" style:font-size-complex="13.8000001907349pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T5" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:use-window-font-color="true" loext:opacity="0%" style:font-name="Ubuntu1" fo:font-size="6pt" fo:font-weight="bold" officeooo:rsid="003001e5" style:font-size-asian="12.0500001907349pt" style:font-weight-asian="bold" style:font-size-complex="13.8000001907349pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T6" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:use-window-font-color="true" loext:opacity="0%" style:font-name="Ubuntu1" fo:font-size="6pt" fo:font-weight="bold" officeooo:rsid="0076b6ee" style:font-size-asian="12.0500001907349pt" style:font-weight-asian="bold" style:font-size-complex="13.8000001907349pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T7" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:use-window-font-color="true" loext:opacity="0%" style:font-name="Ubuntu1" fo:font-size="6pt" fo:font-weight="bold" officeooo:rsid="00b913be" style:font-size-asian="12.0500001907349pt" style:font-weight-asian="bold" style:font-size-complex="13.8000001907349pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T8" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:font-name="Ubuntu" fo:font-size="7pt" fo:font-weight="bold" officeooo:rsid="00c1cf12"/>
+        </style:style>
+        <style:style style:name="T9" style:family="text">
+            <style:text-properties fo:text-transform="uppercase" style:font-name="Ubuntu" fo:font-size="9pt" fo:font-style="normal" fo:font-weight="bold" officeooo:rsid="00ca3bb6" style:font-size-asian="10.6000003814697pt" style:font-weight-asian="bold" style:font-size-complex="12.1000003814697pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T10" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="005d57c3"/>
+        </style:style>
+        <style:style style:name="T11" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="00628dfe"/>
+        </style:style>
+        <style:style style:name="T12" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="0062ff61"/>
+        </style:style>
+        <style:style style:name="T13" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="0067523d"/>
+        </style:style>
+        <style:style style:name="T14" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="008e907a"/>
+        </style:style>
+        <style:style style:name="T15" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="00ce2b07"/>
+        </style:style>
+        <style:style style:name="T16" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="8pt" fo:font-weight="250" officeooo:rsid="00660a7f"/>
+        </style:style>
+        <style:style style:name="T17" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="009308b0" style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari"/>
+        </style:style>
+        <style:style style:name="T18" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00a19731" style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari"/>
+        </style:style>
+        <style:style style:name="T19" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00c1cf12" style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari"/>
+        </style:style>
+        <style:style style:name="T20" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00a820b0"/>
+        </style:style>
+        <style:style style:name="T21" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00ab2d10"/>
+        </style:style>
+        <style:style style:name="T22" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="9pt" fo:font-weight="250" officeooo:rsid="00accb40"/>
+        </style:style>
+        <style:style style:name="T23" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" officeooo:rsid="006fe40e" style:font-size-asian="12.0500001907349pt" style:font-weight-asian="bold" style:font-size-complex="13.8000001907349pt" style:font-weight-complex="bold"/>
+        </style:style>
+        <style:style style:name="T24" style:family="text">
+            <style:text-properties style:font-name="Ubuntu" fo:font-size="7pt" fo:font-weight="250" officeooo:rsid="00c1cf12"/>
+        </style:style>
+        <style:style style:name="T25" style:family="text">
+            <style:text-properties officeooo:rsid="005d57c3"/>
+        </style:style>
+        <style:style style:name="T26" style:family="text">
+            <style:text-properties officeooo:rsid="00620606"/>
+        </style:style>
+        <style:style style:name="T27" style:family="text">
+            <style:text-properties officeooo:rsid="00660a7f"/>
+        </style:style>
+        <style:style style:name="T28" style:family="text">
+            <style:text-properties fo:color="#666666" loext:opacity="100%" style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="005d57c3"/>
+        </style:style>
+        <style:style style:name="T29" style:family="text">
+            <style:text-properties fo:color="#666666" loext:opacity="100%" style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="0067523d"/>
+        </style:style>
+        <style:style style:name="T30" style:family="text">
+            <style:text-properties fo:color="#666666" loext:opacity="100%" style:font-name="Ubuntu" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250" officeooo:rsid="00c1cf12"/>
+        </style:style>
+        <style:style style:name="T31" style:family="text">
+            <style:text-properties officeooo:rsid="006fe40e"/>
+        </style:style>
+        <style:style style:name="T32" style:family="text">
+            <style:text-properties officeooo:rsid="007028a3"/>
+        </style:style>
+        <style:style style:name="T33" style:family="text">
+            <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
+        </style:style>
+        <style:style style:name="T34" style:family="text">
+            <style:text-properties fo:font-style="italic" officeooo:rsid="00db97e1" style:font-style-asian="italic" style:font-style-complex="italic"/>
+        </style:style>
+        <style:style style:name="T35" style:family="text">
+            <style:text-properties fo:font-style="italic" officeooo:rsid="00cd48d1" style:font-style-asian="italic" style:font-style-complex="italic"/>
+        </style:style>
+        <style:style style:name="T36" style:family="text">
+            <style:text-properties fo:font-style="italic" officeooo:rsid="00ea5483" style:font-style-asian="italic" style:font-style-complex="italic"/>
+        </style:style>
+        <style:style style:name="T37" style:family="text">
+            <style:text-properties officeooo:rsid="007bff66"/>
+        </style:style>
+        <style:style style:name="T38" style:family="text">
+            <style:text-properties officeooo:rsid="0081e3a2"/>
+        </style:style>
+        <style:style style:name="T39" style:family="text">
+            <style:text-properties officeooo:rsid="0089ddca"/>
+        </style:style>
+        <style:style style:name="T40" style:family="text">
+            <style:text-properties officeooo:rsid="008f1f64"/>
+        </style:style>
+        <style:style style:name="T41" style:family="text">
+            <style:text-properties officeooo:rsid="009aa314"/>
+        </style:style>
+        <style:style style:name="T42" style:family="text">
+            <style:text-properties officeooo:rsid="00a2ae73"/>
+        </style:style>
+        <style:style style:name="T43" style:family="text">
+            <style:text-properties officeooo:rsid="00ab2d10"/>
+        </style:style>
+        <style:style style:name="T44" style:family="text">
+            <style:text-properties officeooo:rsid="00ac2fd0"/>
+        </style:style>
+        <style:style style:name="T45" style:family="text">
+            <style:text-properties officeooo:rsid="00c1cf12"/>
+        </style:style>
+        <style:style style:name="T46" style:family="text">
+            <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T47" style:family="text">
+            <style:text-properties fo:font-style="normal" officeooo:rsid="00cfcefd" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T48" style:family="text">
+            <style:text-properties fo:font-style="normal" officeooo:rsid="00d1c805" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T49" style:family="text">
+            <style:text-properties fo:font-style="normal" officeooo:rsid="00db97e1" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T50" style:family="text">
+            <style:text-properties fo:font-style="normal" officeooo:rsid="00e2c1ce" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T51" style:family="text">
+            <style:text-properties fo:font-style="normal" officeooo:rsid="00e6b887" style:font-style-asian="normal" style:font-style-complex="normal"/>
+        </style:style>
+        <style:style style:name="T52" style:family="text">
+            <style:text-properties officeooo:rsid="00ca3bb6"/>
+        </style:style>
+        <style:style style:name="T53" style:family="text">
+            <style:text-properties officeooo:rsid="00ccd9e0"/>
+        </style:style>
+        <style:style style:name="T54" style:family="text">
+            <style:text-properties officeooo:rsid="00cd48d1"/>
+        </style:style>
+        <style:style style:name="T55" style:family="text">
+            <style:text-properties officeooo:rsid="00974923"/>
+        </style:style>
+        <style:style style:name="T56" style:family="text">
+            <style:text-properties officeooo:rsid="00daf61a"/>
+        </style:style>
+        <style:style style:name="T57" style:family="text">
+            <style:text-properties officeooo:rsid="00db97e1"/>
+        </style:style>
+        <style:style style:name="T58" style:family="text">
+            <style:text-properties officeooo:rsid="00dc607c"/>
+        </style:style>
+        <style:style style:name="T59" style:family="text">
+            <style:text-properties officeooo:rsid="00df11b9"/>
+        </style:style>
+        <style:style style:name="T60" style:family="text">
+            <style:text-properties officeooo:rsid="00e017cd"/>
+        </style:style>
+        <style:style style:name="T61" style:family="text">
+            <style:text-properties officeooo:rsid="00e020c9"/>
+        </style:style>
+        <style:style style:name="T62" style:family="text">
+            <style:text-properties fo:font-weight="normal" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+        </style:style>
+        <style:style style:name="T63" style:family="text">
+            <style:text-properties fo:font-weight="normal" officeooo:rsid="00e020c9" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+        </style:style>
+        <style:style style:name="T64" style:family="text">
+            <style:text-properties officeooo:rsid="00e3197b"/>
+        </style:style>
+        <style:style style:name="T65" style:family="text">
+            <style:text-properties officeooo:rsid="00e67ae7"/>
+        </style:style>
+        <style:style style:name="T66" style:family="text">
+            <style:text-properties officeooo:rsid="00e6b887"/>
+        </style:style>
+        <style:style style:name="T67" style:family="text">
+            <style:text-properties officeooo:rsid="00ea5483"/>
+        </style:style>
+        <style:style style:name="T68" style:family="text">
+            <style:text-properties officeooo:rsid="00ed9f46"/>
+        </style:style>
+        <style:style style:name="T69" style:family="text"/>
+        <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
+            <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+        </style:style>
+        <style:style style:name="fr2" style:family="graphic" style:parent-style-name="Graphics">
+            <style:graphic-properties style:vertical-pos="from-top" style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+        </style:style>
+        <style:style style:name="fr3" style:family="graphic" style:parent-style-name="Graphics">
+            <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="center" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+        </style:style>
+        <style:style style:name="fr4" style:family="graphic" style:parent-style-name="Graphics">
+            <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="baseline" fo:padding="0in" fo:border="0.11pt solid #3465a4" style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+        </style:style>
+    </office:automatic-styles>
+    <office:body>
+        <office:text>
+            <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+            <text:sequence-decls>
+                <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+            </text:sequence-decls>
+            <table:table table:name="Tableau6" table:style-name="Tableau6">
+                <table:table-column table:style-name="Tableau6.A"/>
+                <table:table-column table:style-name="Tableau6.B"/>
+                <table:table-row table:style-name="Tableau6.1">
+                    <table:table-cell table:style-name="Tableau6.A1" office:value-type="string">
+                        <text:p text:style-name="P1">
+                            <draw:frame draw:style-name="fr4" draw:name="Image90" text:anchor-type="as-char" svg:width="0.7874in" svg:height="0.7874in" draw:z-index="2">
+                                <draw:image xlink:href="Pictures/10000001000001C2000001C260F2A0B4CA198303.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                            </draw:frame>
+                        </text:p>
+                    </table:table-cell>
+                    <table:table-cell table:style-name="Tableau6.B1" office:value-type="string">
+                        <text:p text:style-name="P3">Adrien Besnard</text:p>
+                        <text:p text:style-name="P17">Data engineer / <text:span text:style-name="T38">Manager</text:span>
+                        </text:p>
+                    </table:table-cell>
+                </table:table-row>
+                <table:table-row table:style-name="Tableau6.2">
+                    <table:table-cell table:style-name="Tableau6.A2" office:value-type="string">
+                        <text:h text:style-name="Heading_20_1" text:outline-level="1">Contact</text:h>
+                        <table:table table:name="Tableau12" table:style-name="Tableau12">
+                            <table:table-column table:style-name="Tableau12.A"/>
+                            <table:table-column table:style-name="Tableau12.B"/>
+                            <table:table-row table:style-name="Tableau12.1">
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P2">
+                                        <draw:frame draw:style-name="fr3" draw:name="Image1" text:anchor-type="as-char" svg:width="0.1181in" svg:height="0.1181in" draw:z-index="0">
+                                            <draw:image xlink:href="Pictures/100006C4000034EB000034EB34218CB0DD879DDB.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020000000200E613484E8D1F698F.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="Contact">+33(0)6 07 72 60 58</text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau12.1">
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P2">
+                                        <draw:frame draw:style-name="fr2" draw:name="Image2" text:anchor-type="as-char" svg:y="0in" svg:width="0.1181in" svg:height="0.1181in" draw:z-index="3">
+                                            <draw:image xlink:href="Pictures/1000085E00003505000035058AE5A208A40DF861.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201026C0B3659FABB51.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="Contact">adrien.besnard@gmail.com</text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau12.1">
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P2">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image3" text:anchor-type="as-char" svg:width="0.1181in" svg:height="0.1181in" draw:z-index="4">
+                                            <draw:image xlink:href="Pictures/1000084F000034EB000034EBD4694523DB3BB130.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020000000200F7CE58212675C581.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="Contact">Basé <text:span text:style-name="T24">en Île-de-France</text:span>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau12.1">
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P4">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image4" text:anchor-type="as-char" svg:width="0.1181in" svg:height="0.1181in" draw:z-index="1">
+                                            <draw:image xlink:href="Pictures/10000FA600003505000035057E56B3039F451A10.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/10000001000002010000020196C0779A1904D596.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="Contact">Nationalité française</text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau12.1">
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P4">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image104" text:anchor-type="as-char" svg:width="0.1181in" svg:height="0.1181in" draw:z-index="5">
+                                            <draw:image xlink:href="Pictures/10000B8E00002D6E00002D6EC73E8A95551B8BE5.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/10000001000001B8000001B8B544822357DF3869.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau12.A1" office:value-type="string">
+                                    <text:p text:style-name="P13">radium226</text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                        </table:table>
+                        <text:h text:style-name="Sections_20_suivantes" text:outline-level="1">Profil</text:h>
+                        <text:p text:style-name="Profil">Issu d’une formation en Business Intelligence, <text:span text:style-name="T27">je suis interessé par les problématiques (et les solutions !) liées aux architectures </text:span>
+                            <text:span text:style-name="T16">Big </text:span>
+                            <text:span text:style-name="T27">Data et Streaming. </text:span>
+                        </text:p>
+                        <text:p text:style-name="P14">En plus de l’expertise technique, ces 10 années d’expérience m’ont permis de monter en compétence sur <text:span text:style-name="T56">le management d’équipe, le </text:span>pilotage et suivi <text:span text:style-name="T56">de </text:span>projets. </text:p>
+                        <text:h text:style-name="Séctions_20_suivantes_20_sans_20_espacements" text:outline-level="1">Compétence<text:span text:style-name="T3">s</text:span>
+                        </text:h>
+                        <table:table table:name="Tableau13" table:style-name="Tableau13">
+                            <table:table-column table:style-name="Tableau13.A"/>
+                            <table:table-column table:style-name="Tableau13.B"/>
+                            <table:table-column table:style-name="Tableau13.C"/>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A1" table:number-rows-spanned="3" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">Pilotage</text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P5">Gestion de projet</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P8">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image8" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="6">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image5" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="7">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image6" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="8">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P5">Agile</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image7" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="9">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image9" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="10">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image10" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="11">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P5">Management</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="12">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image12" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="13">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image13" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="14">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A4" table:number-rows-spanned="4" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">Big Data</text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P6">Hadoop</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image14" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="15">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image15" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="16">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image16" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="17">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P6">Spark</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image17" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="18">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image18" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="19">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image19" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="20">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P12">BigQuery</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P10">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image74" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="36">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image75" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="63">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image76" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="64">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P6">Cassandra</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image20" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="21">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image21" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="22">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image22" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="23">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A4" table:number-rows-spanned="3" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">DevOps</text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P6">Ansible</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image23" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="24">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image24" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="25">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image25" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="26">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P12">Kubernetes</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P10">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image62" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="65">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image63" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="66">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image64" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="67">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P6">Linux</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image26" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="27">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image27" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="28">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image28" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="29">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A4" table:number-rows-spanned="4" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">Streaming</text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P6">Kafka</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image29" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="30">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image30" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="31">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image31" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="32">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P6">Akka Stream</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image32" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="33">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image33" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="34">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image34" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="35">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P12">Beam</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P10">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="68">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image72" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="69">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image73" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="70">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P7">FS2</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P10">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image35" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="71">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image36" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="37">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image37" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="38">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A4" table:number-rows-spanned="2" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">SG</text:span>
+                                        <text:span text:style-name="Compétence">
+                                            <text:span text:style-name="T1">BD</text:span>
+                                        </text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P6">Oracle</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image38" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="39">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image39" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="40">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="41">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P6">PostgreSQL</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image41" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="42">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image42" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="43">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image43" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="44">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.1">
+                                <table:table-cell table:style-name="Tableau13.A4" table:number-rows-spanned="5" office:value-type="string">
+                                    <text:h text:style-name="P18" text:outline-level="2">
+                                        <text:span text:style-name="Compétence">
+                                            <text:span text:style-name="T5">L</text:span>
+                                        </text:span>
+                                        <text:span text:style-name="Compétence">
+                                            <text:span text:style-name="T6">angage</text:span>
+                                        </text:span>
+                                        <text:span text:style-name="Compétence">
+                                            <text:span text:style-name="T7">s</text:span>
+                                        </text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P6">Scala</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B4" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image44" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="45">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image45" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="46">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image46" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="47">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.18">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P6">Java</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image47" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="48">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image48" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="49">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image49" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="50">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.19">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P6">Javascript</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image50" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="51">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image51" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="52">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image52" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="53">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.20">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P12">TypeScript</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P10">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image68" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="72">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="73">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image70" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="74">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.21">
+                                <table:covered-table-cell table:style-name="Tableau13.A4"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P6">Python</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image53" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="54">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image54" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="55">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image55" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="56">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.22">
+                                <table:table-cell table:style-name="Tableau13.A1" table:number-rows-spanned="2" office:value-type="string">
+                                    <text:h text:style-name="Compétence" text:outline-level="2">Langue<text:span text:style-name="T4">s</text:span>
+                                    </text:h>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P11">Anglais</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.B1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image56" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="57">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image57" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="58">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image58" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="59">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau13.23">
+                                <table:covered-table-cell table:style-name="Tableau13.A1"/>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P11">Allemand</text:p>
+                                </table:table-cell>
+                                <table:table-cell table:style-name="Tableau13.A1" office:value-type="string">
+                                    <text:p text:style-name="P9">
+                                        <draw:frame draw:style-name="fr1" draw:name="Image59" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="60">
+                                            <draw:image xlink:href="Pictures/1000067500003505000035051046D2E1734B0441.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201A53263065CD4FFF3.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="61">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                        <text:s/>
+                                        <draw:frame draw:style-name="fr1" draw:name="Image61" text:anchor-type="as-char" svg:width="0.0591in" svg:height="0.0591in" draw:z-index="62">
+                                            <draw:image xlink:href="Pictures/100000FF0000350500003505CAD4341EDB328597.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/svg+xml"/>
+                                            <draw:image xlink:href="Pictures/100000010000020100000201F77EBC869B8BCCF5.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/png"/>
+                                        </draw:frame>
+                                    </text:p>
+                                </table:table-cell>
+                            </table:table-row>
+                        </table:table>
+                        <text:p text:style-name="Standard"/>
+                    </table:table-cell>
+                    <table:table-cell table:style-name="Tableau6.B2" office:value-type="string">
+                        <text:h text:style-name="P23" text:outline-level="1">Expérience professionnelle</text:h>
+                        <text:h text:style-name="P24" text:outline-level="2">Ultra <text:span text:style-name="T61">Europe</text:span>
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                                <text:span text:style-name="T61">
+                                    <text:tab/>
+                                </text:span>
+                            </text:span>
+                            <text:span text:style-name="Lien">
+                                <text:span text:style-name="T63">https://ultra.io/</text:span>
+                            </text:span>
+                        </text:h>
+                        <text:p text:style-name="P48">Après plusieurs années <text:span text:style-name="T57">à exercer en tant que </text:span>pr<text:span text:style-name="T67">e</text:span>stataire <text:span text:style-name="T66">dans de grosses entreprises</text:span>, j’ai <text:span text:style-name="T57">rejoins une startup pour </text:span>
+                            <text:span text:style-name="T47">mieux </text:span>
+                            <text:span text:style-name="T48">saisir </text:span>
+                            <text:span text:style-name="T47">les problématiques sous-jacentes à la croissance </text:span>
+                            <text:span text:style-name="T51">d’une plus petite structure</text:span>
+                            <text:span text:style-name="T47">, aussi bien </text:span>
+                            <text:span text:style-name="T51">d’un point de vue </text:span>
+                            <text:span text:style-name="T50">technique </text:span>
+                            <text:span text:style-name="T47">que managérial</text:span>. 
+                        </text:p>
+                        <text:h text:style-name="P25" text:outline-level="3">
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                                <text:span text:style-name="T9">Data Engineer</text:span>
+                            </text:span>
+                        </text:h>
+                        <text:p text:style-name="P19">
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">De </text:span>
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                                <text:span text:style-name="T52">Avril</text:span>
+                            </text:span>
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet"></text:span>
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                                <text:span text:style-name="T52">2021 </text:span>
+                            </text:span>
+                            <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">à aujourd’hui</text:span>
+                        </text:p>
+                        <table:table table:name="Tableau1" table:style-name="Tableau1">
+                            <table:table-column table:style-name="Tableau1.A"/>
+                            <table:table-column table:style-name="Tableau1.B"/>
+                            <table:table-row table:style-name="Tableau1.1">
+                                <table:table-cell table:style-name="Tableau1.A1" table:number-columns-spanned="2" office:value-type="string">
+                                    <text:p text:style-name="P49">Mise en place <text:span text:style-name="T57">d’une architecture de type</text:span>
+                                        <text:span text:style-name="T54">Data Mesh </text:span>
+                                        <text:span text:style-name="T57">à destination des équipes </text:span>
+                                        <text:span text:style-name="T34">Marketing</text:span>
+                                        <text:span text:style-name="T35"></text:span>
+                                        <text:span text:style-name="T57">et </text:span>
+                                        <text:span text:style-name="T34">Payment</text:span>
+                                    </text:p>
+                                </table:table-cell>
+                                <table:covered-table-cell/>
+                            </table:table-row>
+                            <table:table-row table:style-name="Tableau1.1">
+                                <table:table-cell table:style-name="Tableau1.A1" office:value-type="string">
+                                    <text:list xml:id="list981705651" text:style-name="List_20_1">
+                                        <text:list-item>
+                                            <text:p text:style-name="P30">Definition de bonnes pratiques <text:s/>
+                                            <text:span text:style-name="T60">de développement et de modélisation</text:span>
+                                        </text:p>
+                                        <text:list>
+                                            <text:list-item>
+                                                <text:p text:style-name="P42">Modélisation des schémas Avro</text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P42">Domaines et responsabilité des micro-services</text:p>
+                                            </text:list-item>
+                                        </text:list>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P31">
+                                            <text:span text:style-name="T59">Développement et maintenance des </text:span>
+                                            <text:span text:style-name="T67">micro-services de la </text:span>
+                                            <text:span text:style-name="T36">Data Platform</text:span>
+                                        </text:p>
+                                        <text:list>
+                                            <text:list-item>
+                                                <text:p text:style-name="P41">
+                                                    <text:span text:style-name="T57">Système d’o</text:span>ffload <text:span text:style-name="T57">d</text:span>es <text:span text:style-name="T57">messages Kafka sur Google Cloud Storage</text:span>
+                                                </text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P42">Ingestion automatique des messages de Kafka dans BigQuery</text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P41">Indexation <text:span text:style-name="T58">en temps réel </text:span>
+                                                    <text:span text:style-name="T34">via </text:span>
+                                                    <text:span text:style-name="T49">Aloglia</text:span>
+                                                </text:p>
+                                            </text:list-item>
+                                        </text:list>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P30">Outillage divers</text:p>
+                                        <text:list>
+                                            <text:list-item>
+                                                <text:p text:style-name="P43">
+                                                    <text:span text:style-name="T64">Validation</text:span> de schémas Avro (linting, nomenclature, <text:span text:style-name="T64">compatibilité, </text:span>etc.)</text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P43">Automatisation de la maintenance de la plateforme</text:p>
+                                            </text:list-item>
+                                        </text:list>
+                                    </text:list-item>
+                                </text:list>
+                            </table:table-cell>
+                            <table:table-cell table:style-name="Tableau1.B2" office:value-type="string">
+                                <text:list xml:id="list221550834946817" text:continue-numbering="true" text:style-name="List_20_1">
+                                    <text:list-item>
+                                        <text:p text:style-name="P32">Confluent Plateform</text:p>
+                                        <text:list>
+                                            <text:list-item>
+                                                <text:p text:style-name="P44">Apache Kafka</text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P44">Schema Registry</text:p>
+                                            </text:list-item>
+                                            <text:list-item>
+                                                <text:p text:style-name="P46">Kafka Connect</text:p>
+                                            </text:list-item>
+                                        </text:list>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P32">Akka Stream</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P33">Java 11 / Gradle</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P32">Scala <text:span text:style-name="T42">2.1</text:span>
+                                            <text:span text:style-name="T53">3</text:span>
+                                            <text:span text:style-name="T42"></text:span>/ SBT</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P34">Kubernetes</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P34">BigQuery</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P34">Apache Beam (<text:span text:style-name="T46">sur</text:span>
+                                            <text:span text:style-name="T33"></text:span>Dataflow)</text:p>
+                                    </text:list-item>
+                                    <text:list-item>
+                                        <text:p text:style-name="P35">GitLab Pipelines</text:p>
+                                    </text:list-item>
+                                </text:list>
+                            </table:table-cell>
+                        </table:table-row>
+                    </table:table>
+                    <text:h text:style-name="P51" text:outline-level="2">OCTO Technology<text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:tab/>
+                    </text:span>
+                    <text:span text:style-name="Lien">
+                        <text:span text:style-name="T62">https://www.octo.com/</text:span>
+                    </text:span>
+                </text:h>
+                <text:p text:style-name="Présentation_20_de_20_l_27_entreprise">En parall<text:span text:style-name="T39">èle</text:span> de mon rôle de Tech Lead, exerc<text:span text:style-name="T25">er</text:span> au sein d’OCTO Technology <text:span text:style-name="T30">m’a permis de me confronter aux problématiques</text:span>
+                    <text:span text:style-name="T26">liées au staffing ainsi qu’au management </text:span>
+                    <text:span text:style-name="T10">d’équipe </text:span>
+                    <text:span text:style-name="T13">(R&amp;D, retour</text:span>
+                    <text:span text:style-name="T15">s</text:span>
+                    <text:span text:style-name="T13"> d’exp</text:span>
+                    <text:span text:style-name="T14">é</text:span>
+                    <text:span text:style-name="T13">rience en interne, bilans de fin de mission, etc.)</text:span>
+                    <text:span text:style-name="T10"></text:span>
+                    <text:span text:style-name="T28">e</text:span>
+                    <text:span text:style-name="T29">t</text:span>
+                    <text:span text:style-name="T10"></text:span>
+                    <text:span text:style-name="T11">de personnes </text:span>
+                    <text:span text:style-name="T12">(suivi</text:span>
+                    <text:span text:style-name="T15">s</text:span>
+                    <text:span text:style-name="T12"> hébdomadaire</text:span>
+                    <text:span text:style-name="T15">s</text:span>
+                    <text:span text:style-name="T12">, point</text:span>
+                    <text:span text:style-name="T15">s</text:span>
+                    <text:span text:style-name="T12"> d’évaluation annuel, etc.)</text:span>
+                    <text:span text:style-name="T11"></text:span>
+                </text:p>
+                <text:h text:style-name="P26" text:outline-level="3">
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">Tech Lead / </text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:span text:style-name="T2">Chef de projet</text:span>
+                    </text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:tab/>
+BNP Paribas BDDF<text:tab/>
+Mon Poste / </text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:span text:style-name="T37">V360</text:span>
+                    </text:span>
+                </text:h>
+                <text:p text:style-name="P19">
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">De juin 201</text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:span text:style-name="T52">8</text:span>
+                    </text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet"> à </text:span>
+                    <text:span text:style-name="Période_2c__20_fonction_2c__20_client_20_et_20_projet">
+                        <text:span text:style-name="T52">Avril 2020 </text:span>
+                    </text:span>
+                    <text:span text:style-name="Durée_20_du_20_projet">
+                        <text:span text:style-name="T45">(</text:span>
+                    </text:span>
+                    <text:span text:style-name="Durée_20_du_20_projet">
+                        <text:span text:style-name="T65">2</text:span>
+                    </text:span>
+                    <text:span text:style-name="Durée_20_du_20_projet">
+                        <text:span text:style-name="T52"> ans</text:span>
+                    </text:span>
+                    <text:span text:style-name="Durée_20_du_20_projet">
+                        <text:span text:style-name="T8">)</text:span>
+                    </text:span>
+                </text:p>
+                <table:table table:name="Tableau7" table:style-name="Tableau7">
+                    <table:table-column table:style-name="Tableau7.A"/>
+                    <table:table-column table:style-name="Tableau7.B"/>
+                    <table:table-row table:style-name="Tableau7.1">
+                        <table:table-cell table:style-name="Tableau7.A1" table:number-columns-spanned="2" office:value-type="string">
+                            <text:p text:style-name="Présentation_20_du_20_projet">Mise en place d’une architecture Lambda (Batch et Streaming) destinée à transformer <text:span text:style-name="T45">l</text:span>
+                                <text:span text:style-name="T68">e</text:span>
+                                <text:span text:style-name="T20">s</text:span> données issue<text:span text:style-name="T45">s</text:span> du Mainframe <text:span text:style-name="T21">à</text:span>
+                                <text:span text:style-name="T43">l’aide d’un </text:span>modèle d’entreprise, <text:span text:style-name="T43">à destination de l’application front-end des conseillers bancaires</text:span>
+                            </text:p>
+                        </table:table-cell>
+                        <table:covered-table-cell/>
+                    </table:table-row>
+                    <table:table-row table:style-name="Tableau7.1">
+                        <table:table-cell table:style-name="Tableau7.A1" office:value-type="string">
+                            <text:list xml:id="list221551010920310" text:continue-numbering="true" text:style-name="List_20_1">
+                                <text:list-item>
+                                    <text:p text:style-name="P36">Définition de l’architecture technique <text:span text:style-name="T44">globale</text:span>
+                                    </text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">
+                                        <text:span text:style-name="T17">Garant</text:span>
+                                        <text:span text:style-name="T19">ie</text:span> des bonnes pratiques</text:p>
+                                    <text:list>
+                                        <text:list-item>
+                                            <text:p text:style-name="P47">Méthodologie de développement</text:p>
+                                        </text:list-item>
+                                        <text:list-item>
+                                            <text:p text:style-name="P47">Intégration continue</text:p>
+                                        </text:list-item>
+                                        <text:list-item>
+                                            <text:p text:style-name="P47">
+                                                <text:span text:style-name="T55">R</text:span>ituels Agile (Daily, Rétro, etc.)</text:p>
+                                        </text:list-item>
+                                    </text:list>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Organisation de la passation en vue de la TMA</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Suivi de production</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="P37">Suivi du projet au quotidien (COPIL, etc.)</text:p>
+                                </text:list-item>
+                            </text:list>
+                        </table:table-cell>
+                        <table:table-cell table:style-name="Tableau7.B2" office:value-type="string">
+                            <text:list xml:id="list221550877143872" text:continue-numbering="true" text:style-name="List_20_1">
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Confluent Plateform</text:p>
+                                    <text:list>
+                                        <text:list-item>
+                                            <text:p text:style-name="P45">Apache Kafka</text:p>
+                                        </text:list-item>
+                                        <text:list-item>
+                                            <text:p text:style-name="P45">Schema Registry</text:p>
+                                        </text:list-item>
+                                    </text:list>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Akka Stream</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Apache Spark</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Scala <text:span text:style-name="T42">2.12 </text:span>/ SBT et Maven</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">H<text:span text:style-name="T18">ortonworks Data Platform</text:span> 2.6</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_1_20_Cont.">Hive</text:p>
+                                </text:list-item>
+                            </text:list>
+                        </table:table-cell>
+                    </table:table-row>
+                </table:table>
+                <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Tech Lead<text:tab/>
+VSCT<text:tab/>
+COSMO</text:h>
+            <text:p text:style-name="Période">De juin 2017 à juin 2018 <text:span text:style-name="Durée_20_du_20_projet">
+                <text:span text:style-name="T45">(</text:span>
+            </text:span>
+            <text:span text:style-name="Durée_20_du_20_projet">
+                <text:span text:style-name="T8">1 an)</text:span>
+            </text:span>
+        </text:p>
+        <table:table table:name="Tableau8" table:style-name="Tableau8">
+            <table:table-column table:style-name="Tableau8.A"/>
+            <table:table-column table:style-name="Tableau8.B"/>
+            <table:table-row table:style-name="Tableau8.1">
+                <table:table-cell table:style-name="Tableau8.A1" table:number-columns-spanned="2" office:value-type="string">
+                    <text:p text:style-name="Présentation_20_du_20_projet">Refonte du <text:span text:style-name="T22">b</text:span>ack-end de l’application de contrôle des contr<text:span text:style-name="T41">ô</text:span>leurs TGV et TER de la SNCF</text:p>
+                </table:table-cell>
+                <table:covered-table-cell/>
+            </table:table-row>
+            <table:table-row table:style-name="Tableau8.1">
+                <table:table-cell table:style-name="Tableau8.A2" office:value-type="string">
+                    <text:list xml:id="list221549710912396" text:continue-numbering="true" text:style-name="List_20_1">
+                        <text:list-item>
+                            <text:p text:style-name="List_20_1_20_Cont.">Participation à l’architecture CQRS orientée micro-services</text:p>
+                            <text:list>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_2_20_Cont.">Mise en place de connecteurs scalables et résilients</text:p>
+                                </text:list-item>
+                                <text:list-item>
+                                    <text:p text:style-name="List_20_2_20_Cont.">Modélisation des évènements (prise en compte des montées de version, etc.)</text:p>
+                                </text:list-item>
+                            </text:list>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="List_20_1_20_Cont.">Harmonisation des méthodes de développement au sein des Feature Teams</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="List_20_1_20_Cont.">Mise en place du monitoring avec alterting automatique</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="List_20_1_20_Cont.">Suivi de production</text:p>
+                        </text:list-item>
+                    </text:list>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau8.B2" office:value-type="string">
+                    <text:list xml:id="list221550969761515" text:continue-numbering="true" text:style-name="List_20_1">
+                        <text:list-item>
+                            <text:p text:style-name="P27">Scala 2.12 / Maven</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P28">Apache Kafka</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P27">Apache ZooKeeper</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P29">Akka</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P29">Akka Stream</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P27">Akka HTTP</text:p>
+                        </text:list-item>
+                        <text:list-item>
+                            <text:p text:style-name="P38">Rundeck et Jenkins</text:p>
+                        </text:list-item>
+                    </text:list>
+                </table:table-cell>
+            </table:table-row>
+        </table:table>
+        <text:h text:style-name="P21" text:outline-level="1">Publications</text:h>
+        <table:table table:name="Tableau14" table:style-name="Tableau14">
+            <table:table-column table:style-name="Tableau14.A"/>
+            <table:table-column table:style-name="Tableau14.B"/>
+            <table:table-column table:style-name="Tableau14.C"/>
+            <table:table-row table:style-name="Tableau14.1">
+                <table:table-cell table:style-name="Tableau14.A1" table:number-rows-spanned="2" office:value-type="string">
+                    <text:h text:style-name="P15" text:outline-level="2">
+                        <text:span text:style-name="T31">Talk </text:span>
+                        <text:span text:style-name="Titre_20_de_20_publication">Démystifions Apache Spark !</text:span>
+                    </text:h>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.B1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Format_20_de_20_publication">PerfUG #61</text:span>
+                    </text:p>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.B1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Période_20_de_20_publication">
+                            <text:span text:style-name="T23">M</text:span>
+                        </text:span>
+                        <text:span text:style-name="Période_20_de_20_publication">ars 2019</text:span>
+                    </text:p>
+                </table:table-cell>
+            </table:table-row>
+            <table:table-row table:style-name="Tableau14.1">
+                <table:covered-table-cell table:style-name="Tableau14.A1"/>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Format_20_de_20_publication">Devoxx</text:span>
+                    </text:p>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Période_20_de_20_publication">
+                            <text:span text:style-name="T23">a</text:span>
+                        </text:span>
+                        <text:span text:style-name="Période_20_de_20_publication">vril 2018</text:span>
+                    </text:p>
+                </table:table-cell>
+            </table:table-row>
+            <table:table-row table:style-name="Tableau14.1">
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:h text:style-name="P15" text:outline-level="2">
+                        <text:span text:style-name="T31">Article </text:span>
+                        <text:span text:style-name="Titre_20_de_20_publication">Ansible Container: Chronic of a Death Foretold</text:span>
+                    </text:h>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Format_20_de_20_publication">OCTO Talk!</text:span>
+                    </text:p>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Période_20_de_20_publication">Juin 2018</text:span>
+                    </text:p>
+                </table:table-cell>
+            </table:table-row>
+            <table:table-row table:style-name="Tableau14.1">
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:h text:style-name="P15" text:outline-level="2">Articles <text:span text:style-name="Titre_20_de_20_publication">MythBuster: Apache Spark</text:span>
+                    </text:h>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Format_20_de_20_publication">OCTO Talk!</text:span>
+                    </text:p>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Période_20_de_20_publication">
+                            <text:span text:style-name="T32">De </text:span>
+                        </text:span>
+                        <text:span text:style-name="Période_20_de_20_publication">août </text:span>
+                        <text:span text:style-name="Période_20_de_20_publication">
+                            <text:span text:style-name="T32">à </text:span>
+                        </text:span>
+                        <text:span text:style-name="Période_20_de_20_publication">novembre 2017</text:span>
+                    </text:p>
+                </table:table-cell>
+            </table:table-row>
+            <table:table-row table:style-name="Tableau14.1">
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:h text:style-name="P15" text:outline-level="2">Article <text:span text:style-name="Titre_20_de_20_publication">5 services que systemd m’a déjà rendu</text:span>
+                        <text:span text:style-name="Titre_20_de_20_publication">
+                            <text:span text:style-name="T40">s</text:span>
+                        </text:span>
+                    </text:h>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Format_20_de_20_publication">OCTO Talk!</text:span>
+                    </text:p>
+                </table:table-cell>
+                <table:table-cell table:style-name="Tableau14.A1" office:value-type="string">
+                    <text:p text:style-name="Standard">
+                        <text:span text:style-name="Période_20_de_20_publication">Juillet 2017</text:span>
+                    </text:p>
+                </table:table-cell>
+            </table:table-row>
+        </table:table>
+        <text:h text:style-name="P22" text:outline-level="1">Formations</text:h>
+        <text:h text:style-name="Formations" text:outline-level="2">EISTI</text:h>
+        <text:p text:style-name="P20">De septembre 2007 à Mai 2009</text:p>
+        <text:list xml:id="list221549330708833" text:continue-numbering="true" text:style-name="List_20_1">
+            <text:list-item>
+                <text:p text:style-name="P39">Option <text:span text:style-name="T33">Décisionnel</text:span>
+                </text:p>
+            </text:list-item>
+            <text:list-item>
+                <text:p text:style-name="P40">Filiale <text:span text:style-name="T33">Management des Systèmes d’Information</text:span>
+                </text:p>
+            </text:list-item>
+        </text:list>
+    </table:table-cell>
+</table:table-row>
+</table:table>
+<text:p text:style-name="P16"/>
+</office:text>
+</office:body>
+</office:document-content>
