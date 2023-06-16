@@ -14,11 +14,7 @@ def render_span_token(span_token: SpanToken) -> Union[Element, str]:
             return span_token.content
 
         case Emphasis():
-            return create_element(
-                tag="text:emphasis", 
-                attributes={
-                    "text:style_name": "Strong_20_Emphasis",
-                },
+            return emphasis(
                 children=[
                     render_span_token(child) for child in span_token.children
                 ],
@@ -26,11 +22,7 @@ def render_span_token(span_token: SpanToken) -> Union[Element, str]:
 
 
 def render_paragraph(paragraph: Paragraph) -> Element:
-    return create_element(
-        tag="text:p", 
-        attributes={
-            "text:style-name": "P1",
-        },
+    return p(
         children=[
             render_span_token(child) for child in paragraph.children
         ],
@@ -56,89 +48,48 @@ def render_tasks(tasks: list[Task]) -> Element:
 
 
 def render_position(position: Position, position_index=0) -> Element:
-    section(
+    return section(
         name=f"Section{position_index}",
         children=[
-            heading(
+            h(
                 outline_level=3,
-                parent=section_element,
                 children=[position.name],
             ),
             table(
-                name=f"Tableau{position_index}"
-            )
-        ],
-    )
-
-    section_element = create_element(
-        tag="text:section",
-        attributes={
-            "text:style-name": "Sect1",
-            "text:name": f"Section{position_index}",
-        },
-    )
-
-    heading_element = 
-     
-    table_element = create_element(
-        parent=section_element,
-        tag="table:table",
-        attributes={
-            "table:style-name": "Tableau1",
-            "table:name": f"Tableau{position_index}"
-        },
-    )
-
-    table_column_element = create_element(
-        parent=table_element,
-        tag="table:table-column",
-        attributes={
-            "table:number-columns-repeated": "2",
-            "table:style-name": "Tableau1.A",
-        },
-    )
-    
-    table_row_element = create_element(
-        parent=table_element,
-        tag="table:table-row"
-    )
-
-    table_cell_element = create_element(
-        parent=table_row_element,
-        tag="table:table-cell",
-        attributes={
-            "table:number-columns-spanned": "2",
-            "table:style-name": "Tableau1.A1",
-        },
-        children=[render_paragraph(position.description)]
-    )
-
-    covered_table_cell_element = create_element(
-        parent=table_row_element,
-        tag="table:covered-table-cell",
-    )
-
-    table_row_element = create_element(
-        parent=table_element,
-        tag="table:table-row",
-        children=[
-            create_element(
-                tag="table:table-cell",
-                attributes={
-                    "table:style-name": "Tableau1.A2"
-                },
-                children=[render_tasks(position.tasks)]
+                name=f"Tableau{position_index}",
+                children=[
+                    table_column(
+                        number_columns_repeated=2,
+                    ),
+                    table_row(
+                        children=[
+                            table_cell(
+                                number_columns_spanned=2,
+                                children=[
+                                    render_paragraph(position.description)
+                                ],
+                            ),
+                            covered_table_cell(),
+                        ]
+                    ),
+                    table_row(
+                        children=[
+                            table_cell(
+                                children=[render_tasks(position.tasks)]
+                            ),
+                            table_cell(
+                                children=[
+                                    p(
+                                        children=["Youpla"]
+                                    ),
+                                ],
+                            ),
+                        ],
+                    ),
+                ],
             ),
-            create_element(
-                tag="table:table-cell",
-                attributes={
-                    "table:style-name": "Tableau1.B2",
-                }
-            )
         ],
     )
-
-    return section_element
 
 
 def render_resume(resume: Resume) -> Element:
