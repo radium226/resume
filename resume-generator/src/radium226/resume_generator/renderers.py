@@ -4,48 +4,8 @@ from mistletoe.block_token import Paragraph
 from mistletoe.span_token import RawText, Emphasis, SpanToken
 
 from .models import *
-from .append_child_nodes_to_parent_element import append_child_nodes_to_parent_element
-
-
-XMLNS_TABLE = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
-XMLNS_TEXT = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
-XMLNS_OFFICE = "urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-
-NAMESPACES_BY_PREFIX = {
-    "table": XMLNS_TABLE,
-    "text": XMLNS_TEXT,
-    "office": XMLNS_OFFICE,
-}
-
-def table()
-
-
-def create_element(tag: str, attributes: dict[str, str] = {}, children: list[Union[Element, str]] = [], parent: Optional[Element] = None, text: str | None = None) -> Element:
-    [namespace_prefix, local_tag] = tag.split(":")
-    namespace = NAMESPACES_BY_PREFIX[namespace_prefix]
-    element = Element(
-        "{" + namespace + "}" + local_tag,
-    )
-
-    if parent is not None:
-        parent.append(element)
-
-    if text:
-        element.text = text
-
-    for attribute_name, attribute_value in attributes.items():
-        set_attribute_to_element(element, attribute_name, attribute_value)
-
-    append_child_nodes_to_parent_element(element, children)
-
-    element.tail = "\n"
-
-    return element
-
-def set_attribute_to_element(element: Element, name: str, value: str):
-    [namespace_prefix, local_name] = name.split(":")
-    namespace = NAMESPACES_BY_PREFIX[namespace_prefix]
-    element.attrib["{" + namespace + "}" + local_name] = value
+from .xml import *
+from .open_document import *
 
 
 def render_span_token(span_token: SpanToken) -> Union[Element, str]:
@@ -64,6 +24,7 @@ def render_span_token(span_token: SpanToken) -> Union[Element, str]:
                 ],
             )
 
+
 def render_paragraph(paragraph: Paragraph) -> Element:
     return create_element(
         tag="text:p", 
@@ -75,15 +36,16 @@ def render_paragraph(paragraph: Paragraph) -> Element:
         ],
     )
 
+
 def render_tasks(tasks: list[Task]) -> Element:
     def render_task(parent_element: Element, task: Task):
         match task:
             case ComplexTask(description, tasks):
-                append_child_nodes_to_parent_element(parent_element, [render_paragraph(description), render_tasks(tasks)])
+                append_children_to_parent_element(parent_element, [render_paragraph(description), render_tasks(tasks)])
 
             case Paragraph():
                 description = task
-                append_child_nodes_to_parent_element(parent_element, [render_paragraph(description)])
+                append_children_to_parent_element(parent_element, [render_paragraph(description)])
 
     list_element = create_element(tag="text:list")
     for task in tasks:
@@ -94,6 +56,20 @@ def render_tasks(tasks: list[Task]) -> Element:
 
 
 def render_position(position: Position, position_index=0) -> Element:
+    section(
+        name=f"Section{position_index}",
+        children=[
+            heading(
+                outline_level=3,
+                parent=section_element,
+                children=[position.name],
+            ),
+            table(
+                name=f"Tableau{position_index}"
+            )
+        ],
+    )
+
     section_element = create_element(
         tag="text:section",
         attributes={
@@ -102,16 +78,8 @@ def render_position(position: Position, position_index=0) -> Element:
         },
     )
 
-    heading_element = create_element(
-        parent=section_element,
-        tag="text:h",
-        attributes={
-            "text:outline-level": "3",
-        },
-        text=position.name,
-    )
-        
- 
+    heading_element = 
+     
     table_element = create_element(
         parent=section_element,
         tag="table:table",
@@ -137,7 +105,7 @@ def render_position(position: Position, position_index=0) -> Element:
 
     table_cell_element = create_element(
         parent=table_row_element,
-        tag="table:cell",
+        tag="table:table-cell",
         attributes={
             "table:number-columns-spanned": "2",
             "table:style-name": "Tableau1.A1",
@@ -175,9 +143,7 @@ def render_position(position: Position, position_index=0) -> Element:
 
 def render_resume(resume: Resume) -> Element:
     empty = parse(str(Path(__file__).parent / "empty.fodt"))
-    body = next(iter(empty.xpath("//office:body", namespaces={
-        "office": XMLNS_OFFICE,
-    })), None)
+    body = next(iter(empty.xpath("//office:body", namespaces=NAMESPACES_BY_PREFIX)), None)
     i = 1
     for experience in resume.experiences:
         for position in experience.positions:
