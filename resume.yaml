@@ -2,6 +2,35 @@
 experiences:
 - company:
     name: Company n°1
+    website: "http://toto.com"
+  description: Yay
+  positions:
+  - name: Position n°1
+    period:
+      from: 2023-02
+      to: now
+    description: |
+        Bla bla bla
+    tasks:
+    - Coucou
+    - Coucou
+  - name: Position n°2
+    period:
+      from: 2023-02
+      to: now
+    description: |
+        Bla bla bla
+    tasks:
+    - description: "Coucou *les* amis"
+      tasks:
+      - Coucou
+      - Toto
+    - Coucou
+
+- company:
+    name: Company n°2
+    website: "http://toto.com"
+  description: Yay
   positions:
   - name: Position n°1
     period:

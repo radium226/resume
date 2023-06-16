@@ -2,6 +2,7 @@ from lxml.etree import Element, SubElement, parse, register_namespace
 from typing import Union, Optional
 from mistletoe.block_token import Paragraph
 from mistletoe.span_token import RawText, Emphasis, SpanToken
+from pendulum import today
 
 from .models import *
 from .xml import *
@@ -48,6 +49,9 @@ def render_tasks(tasks: list[Task]) -> Element:
 
 
 def render_position(position: Position, position_index=0) -> Element:
+    period_from = position.period.start.format("MMMM YYYY", locale="fr")
+    period_to = "aujourd'hui" if position.period.end == today().at(0).set(day=1) else position.period.end.format("MMMM YYYY", locale="fr")
+    
     return section(
         name=f"Section{position_index}",
         children=[
@@ -58,7 +62,7 @@ def render_position(position: Position, position_index=0) -> Element:
             p(
                 children=[
                     span(
-                        children=[],
+                        children=[f"De {period_from} à {period_to}"],
                     )
                 ]
             ),
@@ -99,13 +103,40 @@ def render_position(position: Position, position_index=0) -> Element:
     )
 
 
+def render_experience(experience: Experience) -> Element:
+    return section(
+        name=experience.company.name,
+        children=[
+            h(
+                outline_level=2,
+                children=[
+                    experience.company.name,
+                    tab(),
+                    experience.company.website,
+                ],
+            ),
+        ] + [
+            render_position(position) for position in experience.positions
+        ],
+    )
+
+
 def render_resume(resume: Resume) -> Element:
     empty = parse(str(Path(__file__).parent / "empty.fodt"))
     body = next(iter(empty.xpath("//office:body", namespaces=NAMESPACES_BY_PREFIX)), None)
-    i = 1
-    for experience in resume.experiences:
-        for position in experience.positions:
-            body.append(render_position(position, i))
-            i += 1
+    section_element = section(
+        name="Experience_professionnelle",
+        children=[
+            h(
+                outline_level=1,
+                children=["Expérience professionnelle"],
+            ),
+        ] + [
+            render_experience(experience) for experience in resume.experiences
+        ],
+    )
+    
+    
+    body.append(section_element)
 
     return empty

@@ -27,6 +27,10 @@ def parse_resume(obj: dict) -> Resume:
 def parse_experience(obj: dict) -> Experience:
     positions = [parse_position(position_obj) for position_obj in obj["positions"]]
     return Experience(
+        company=Company(
+            name=obj["company"]["name"],
+            website=obj["company"]["website"],
+        ),
         positions=positions,
     )
 
@@ -34,8 +38,8 @@ def parse_experience(obj: dict) -> Experience:
 def parse_position(obj: dict) -> Position:
     name = obj["name"]
 
-    period_from = parse(obj["period"]["from"])
-    period_to = parse(text, format="YYYY[-]MM") if (text := obj["period"].get("to", None)) else today()
+    period_from = parse(obj["period"]["from"]).at(0).set(day=1)
+    period_to = (parse(text, format="YYYY[-]MM") if (text := obj["period"].get("to", None)) else today()).at(0).set(day=1)
 
     period = period_to - period_from
 

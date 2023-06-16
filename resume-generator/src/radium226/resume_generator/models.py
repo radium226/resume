@@ -32,8 +32,16 @@ class Position:
 
 
 @dataclass
+class Company:
+
+    name: str
+    website: str
+
+
+@dataclass
 class Experience:
 
+    company: Company
     positions: list[Position] = field(default_factory=list)
 
 

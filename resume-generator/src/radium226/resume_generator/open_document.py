@@ -29,6 +29,16 @@ def p(
         } },
     )
 
+
+def tab(
+    **kwargs,
+) -> Element:
+    return create_element(
+        tag="text:tab",
+        **kwargs,
+    )
+
+
 def span(
     *,
     style_name: str | None = None,
