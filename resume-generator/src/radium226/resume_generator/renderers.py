@@ -48,6 +48,19 @@ def render_tasks(tasks: list[Task]) -> Element:
     return list_element
 
 
+def render_tool(tool: Tool) -> list[Element]:
+    match tool:
+        case str():
+            return [p(children=[tool])]
+
+        case ComplexTool(name, tools):
+            return [p(children=[name]), render_tools(tools)]
+
+
+def render_tools(tools: list[Tool]) -> Element:
+    return list_(children=[list_item(children=render_tool(tool)) for tool in tools])
+
+
 def render_position(position: Position, position_index=0) -> Element:
     period_from = position.period.start.format("MMMM YYYY", locale="fr")
     period_to = "aujourd'hui" if position.period.end == today().at(0).set(day=1) else position.period.end.format("MMMM YYYY", locale="fr")
@@ -86,14 +99,10 @@ def render_position(position: Position, position_index=0) -> Element:
                     table_row(
                         children=[
                             table_cell(
-                                children=[render_tasks(position.tasks)]
+                                children=[render_tasks(position.tasks)],
                             ),
                             table_cell(
-                                children=[
-                                    p(
-                                        children=["Youpla"]
-                                    ),
-                                ],
+                                children=[render_tools(position.tools)],
                             ),
                         ],
                     ),
@@ -122,8 +131,9 @@ def render_experience(experience: Experience) -> Element:
 
 
 def render_resume(resume: Resume) -> Element:
-    empty = parse(str(Path(__file__).parent / "empty.fodt"))
-    body = next(iter(empty.xpath("//office:body", namespaces=NAMESPACES_BY_PREFIX)), None)
+    # empty = parse(str(Path(__file__).parent / "empty.fodt"))
+    empty = parse(str(Path(__file__).parent.parent.parent.parent.parent / "CV.fodt"))
+    body = next(iter(empty.xpath("//table:table-cell[@table:style-name='Tableau6.B2']", namespaces=NAMESPACES_BY_PREFIX)), None)
     section_element = section(
         name="Experience_professionnelle",
         children=[

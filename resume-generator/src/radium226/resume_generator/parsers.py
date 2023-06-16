@@ -44,6 +44,12 @@ def parse_position(obj: dict) -> Position:
     period = period_to - period_from
 
 
+    client = Client(text) if (text := obj.get("client", None)) else None
+    project = Project(project) if (text := obj.get("client", None)) else None
+
+    tools = [parse_tool(tool_obj) for tool_obj in obj_tools] if (obj_tools := obj.get("tools", None)) else []
+
+
     description = Description(parse_paragraph(description_text)) if (description_text := obj.get("description", None)) else None
     tasks = [parse_task(task_obj) for task_obj in obj["tasks"]]
     return Position(
@@ -51,7 +57,27 @@ def parse_position(obj: dict) -> Position:
         period=period,
         description=description,
         tasks=tasks,
+        client=client,
+        project=project,
+        tools=tools,
     )
+
+
+def parse_tool(obj_or_text: dict | str) -> Tool:
+    match obj_or_text:
+        case str():
+            text = obj_or_text
+            return SimpleTool(text)
+
+        case dict():
+            obj = obj_or_text
+            name = obj["name"]
+            tools = [parse_tool(tool_obj) for tool_obj in obj["tools"]]
+            return ComplexTool(
+                name=name,
+                tools=tools,
+            )
+
 
 
 def parse_task(obj_or_text: dict | str) -> Task:

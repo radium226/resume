@@ -141,3 +141,21 @@ def covered_table_cell(
         tag="table:covered-table-cell",
         **kwargs,
     )
+
+
+def list_(
+    **kwargs,
+) -> Element:
+    return create_element(
+        tag="text:list",
+        **kwargs,
+    )
+
+
+def list_item(
+    **kwargs,
+) -> Element:
+    return create_element(
+        tag="text:list-item",
+        **kwargs,
+    )

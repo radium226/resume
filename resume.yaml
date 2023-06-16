@@ -1,6 +1,22 @@
 ---
 experiences:
 - company:
+    name: Company Caca  du cul
+    website: "http://toto.com"
+  description: J'ai pété OQ
+  positions:
+  - name: Merdique
+    period:
+      from: 2023-02
+      to: now
+    description: |
+        J'ai fait de la *merde*
+    tasks:
+    - Aucune
+    tools:
+    - Aucun
+
+- company:
     name: Company n°1
     website: "http://toto.com"
   description: Yay
@@ -14,6 +30,15 @@ experiences:
     tasks:
     - Coucou
     - Coucou
+    tools:
+    - Scala
+    - Java
+    - name: Confluent Platform
+      tools:
+      - Kafka
+      - Akka
+
+
   - name: Position n°2
     period:
       from: 2023-02

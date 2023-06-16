@@ -22,13 +22,47 @@ class ComplexTask:
 Task: TypeAlias = ComplexTask | SimpleTask
 
 
+ToolName: TypeAlias = str
+
+
+SimpleTool = NewType("SimpleTool", ToolName)
+
+
+@dataclass
+class ComplexTool:
+
+    name: ToolName | None = None
+    tools: list["Tools"] = field(default_factory=list)
+
+
+Tool: TypeAlias = SimpleTool | ComplexTool
+
+
+
+
+
+@dataclass
+class Client():
+
+    name: str
+
+
+@dataclass
+class Project():
+
+    name: str
+
+
 @dataclass
 class Position:
 
     name: str
     period: Period
     description: Description
+    client: Client | None
+    project: Project | None
     tasks: list[Task] = field(default_factory=list)
+    tools: list[Tool] = field(default_factory=list)
 
 
 @dataclass
