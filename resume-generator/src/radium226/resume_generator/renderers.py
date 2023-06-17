@@ -70,6 +70,7 @@ def render_position(position: Position, position_index=0) -> Element:
         children=[
             h(
                 outline_level=3,
+                style_name="Heading_20_3",
                 children=[position.name],
             ),
             p(
@@ -118,10 +119,16 @@ def render_experience(experience: Experience) -> Element:
         children=[
             h(
                 outline_level=2,
+                style_name="Heading_20_2",
                 children=[
                     experience.company.name,
                     tab(),
-                    experience.company.website,
+                    span(
+                        style_name="Lien",
+                        children=[
+                            f"{experience.company.website}",
+                        ],
+                    ),
                 ],
             ),
         ] + [
