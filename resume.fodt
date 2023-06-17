@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2019-09-02T22:21:37.529149657</meta:creation-date><dc:date>2023-06-16T21:03:12.789787289</dc:date><meta:editing-duration>PT5H44M55S</meta:editing-duration><meta:editing-cycles>143</meta:editing-cycles><meta:generator>LibreOffice/7.5.4.2$Linux_X86_64 LibreOffice_project/50$Build-2</meta:generator><meta:print-date>2022-02-10T15:10:25.918425531</meta:print-date><meta:document-statistic meta:table-count="8" meta:image-count="75" meta:object-count="0" meta:page-count="1" meta:paragraph-count="103" meta:word-count="188" meta:character-count="1158" meta:non-whitespace-character-count="1011"/></office:meta>
+ <office:meta><meta:creation-date>2019-09-02T22:21:37.529149657</meta:creation-date><dc:date>2023-06-17T14:21:12.653695368</dc:date><meta:editing-duration>PT5H44M1S</meta:editing-duration><meta:editing-cycles>143</meta:editing-cycles><meta:generator>LibreOffice/7.5.4.2$Linux_X86_64 LibreOffice_project/50$Build-2</meta:generator><meta:print-date>2022-02-10T15:10:25.918425531</meta:print-date><meta:document-statistic meta:table-count="3" meta:image-count="75" meta:object-count="0" meta:page-count="1" meta:paragraph-count="71" meta:word-count="103" meta:character-count="737" meta:non-whitespace-character-count="628"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">501</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">501</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">26395</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">16979</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">17508</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">true</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">7592</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">4544</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">3009</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">1265</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">501</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">501</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">26894</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">17478</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">18008</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -74,7 +73,7 @@
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">15858716</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">15894286</config:config-item>
    <config:config-item config:name="FootnoteInColumnToPageEnd" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectFields" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
@@ -148,11 +147,11 @@
   </office:script>
  </office:scripts>
  <office:font-face-decls>
-  <style:font-face style:name="Droid Sans Devanagari" svg:font-family="&apos;Droid Sans Devanagari&apos;" style:font-family-generic="swiss"/>
-  <style:font-face style:name="Droid Sans Devanagari1" svg:font-family="&apos;Droid Sans Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
-  <style:font-face style:name="Droid Sans Fallback" svg:font-family="&apos;Droid Sans Fallback&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Droid Sans Devanagari" svg:font-family="'Droid Sans Devanagari'" style:font-family-generic="swiss"/>
+  <style:font-face style:name="Droid Sans Devanagari1" svg:font-family="'Droid Sans Devanagari'" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Droid Sans Fallback" svg:font-family="'Droid Sans Fallback'" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
-  <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Times New Roman" svg:font-family="'Times New Roman'" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Ubuntu" svg:font-family="Ubuntu" style:font-adornments="Maigre" style:font-pitch="variable"/>
   <style:font-face style:name="Ubuntu1" svg:font-family="Ubuntu" style:font-adornments="Normal" style:font-pitch="variable"/>
  </office:font-face-decls>
@@ -191,21 +190,21 @@
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" style:contextual-spacing="false" fo:line-height="100%"/>
   </style:style>
   <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
-   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="&apos;Droid Sans Devanagari&apos;" style:font-family-generic-complex="swiss"/>
+   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="'Droid Sans Devanagari'" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
    <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" style:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
-   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="&apos;Droid Sans Devanagari&apos;" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="'Droid Sans Devanagari'" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
    <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
-   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="&apos;Droid Sans Devanagari&apos;" style:font-family-generic-complex="swiss"/>
+   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Droid Sans Devanagari" style:font-family-complex="'Droid Sans Devanagari'" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="2" style:class="text">
    <loext:graphic-properties draw:fill="bitmap" draw:fill-color="#dbeaff" draw:fill-image-name="Bitmap_20_3" style:repeat="repeat"/>
    <style:paragraph-properties fo:margin-left="-0.049cm" fo:margin-right="0cm" fo:margin-top="0.131cm" fo:margin-bottom="0cm" style:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" fo:padding="0.049cm" fo:border="none">
     <style:tab-stops>
-     <style:tab-stop style:position="14.499cm" style:type="right"/>
+     <style:tab-stop style:position="12cm" style:type="center"/>
     </style:tab-stops>
     <style:background-image>
      <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEX///+0x9ycS1rEAAAA
@@ -318,7 +317,7 @@
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.499cm" style:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:text-transform="uppercase" fo:color="#355269" loext:opacity="100%" fo:font-size="12pt" fo:font-weight="bold" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
   </style:style>
-  <style:style style:name="Présentation_20_de_20_l_27_entreprise" style:display-name="Présentation de l&apos;entreprise" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+  <style:style style:name="Présentation_20_de_20_l_27_entreprise" style:display-name="Présentation de l'entreprise" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
    <style:paragraph-properties fo:margin-top="0.131cm" fo:margin-bottom="0.131cm" style:contextual-spacing="false" style:page-number="auto"/>
    <style:text-properties fo:color="#666666" loext:opacity="100%" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="250"/>
   </style:style>
@@ -663,51 +662,6 @@
   <style:style style:name="Tableau13.23" style:family="table-row">
    <style:table-row-properties style:min-row-height="0.499cm"/>
   </style:style>
-  <style:style style:name="Tableau0" style:family="table">
-   <style:table-properties table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0.A" style:family="table-column">
-   <style:table-column-properties style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0.B" style:family="table-column">
-   <style:table-column-properties style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1" style:display-name="Tableau0_1" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1.A" style:display-name="Tableau0_1.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1.B" style:display-name="Tableau0_1.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2" style:display-name="Tableau0_2" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2.A" style:display-name="Tableau0_2.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2.B" style:display-name="Tableau0_2.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3" style:display-name="Tableau0_3" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3.A" style:display-name="Tableau0_3.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3.B" style:display-name="Tableau0_3.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4" style:display-name="Tableau0_4" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4.A" style:display-name="Tableau0_4.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4.B" style:display-name="Tableau0_4.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
   <style:style style:name="Tableau12" style:family="table">
    <style:table-properties style:width="6.163cm" fo:margin-left="0cm" fo:margin-right="0cm" table:align="margins" fo:background-color="transparent">
     <style:background-image/>
@@ -775,51 +729,6 @@
   </style:style>
   <style:style style:name="Tableau13.23" style:family="table-row">
    <style:table-row-properties style:min-row-height="0.499cm"/>
-  </style:style>
-  <style:style style:name="Tableau0" style:family="table">
-   <style:table-properties table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0.A" style:family="table-column">
-   <style:table-column-properties style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0.B" style:family="table-column">
-   <style:table-column-properties style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1" style:display-name="Tableau0_1" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1.A" style:display-name="Tableau0_1.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_1.B" style:display-name="Tableau0_1.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2" style:display-name="Tableau0_2" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2.A" style:display-name="Tableau0_2.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_2.B" style:display-name="Tableau0_2.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3" style:display-name="Tableau0_3" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3.A" style:display-name="Tableau0_3.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_3.B" style:display-name="Tableau0_3.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4" style:display-name="Tableau0_4" style:family="table">
-   <style:table-properties style:width="18.628cm" table:align="margins"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4.A" style:display-name="Tableau0_4.A" style:family="table-column">
-   <style:table-column-properties style:column-width="9.313cm" style:rel-column-width="32767*"/>
-  </style:style>
-  <style:style style:name="Tableau0_5f_4.B" style:display-name="Tableau0_4.B" style:family="table-column">
-   <style:table-column-properties style:column-width="9.315cm" style:rel-column-width="32768*"/>
   </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Title">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
@@ -977,13 +886,6 @@
   <style:style style:name="P47" style:family="paragraph" style:parent-style-name="List_20_2_20_Cont.">
    <style:text-properties officeooo:rsid="00d1181c" officeooo:paragraph-rsid="00d1181c"/>
   </style:style>
-  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1"/>
-  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2"/>
-  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3"/>
-  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4"/>
-  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5"/>
-  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6"/>
-  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L7"/>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="003001e5"/>
   </style:style>
@@ -1201,385 +1103,6 @@
   <style:style style:name="fr4" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="baseline" fo:padding="0cm" fo:border="0.11pt solid #3465a4" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
   </style:style>
-  <style:style style:name="Sect1" style:family="section">
-   <style:section-properties style:editable="false">
-    <style:columns fo:column-count="1" fo:column-gap="0cm"/>
-   </style:section-properties>
-  </style:style>
-  <text:list-style style:name="L1">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="2" loext:num-list-format="%2%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L2">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="2" loext:num-list-format="%2%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L3">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="2" loext:num-list-format="%2%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L4">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" loext:num-list-format="%2%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L5">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" loext:num-list-format="%2%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L6">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="2" loext:num-list-format="%2%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
-  <text:list-style style:name="L7">
-   <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" loext:num-list-format="%2%." style:num-suffix="." text:bullet-char="">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-    <style:text-properties fo:font-family="starbats" style:font-charset="x-symbol"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-number text:level="3" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.499cm" fo:margin-bottom="0.499cm" fo:margin-left="0.499cm" fo:margin-right="0.499cm" fo:background-color="transparent" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" draw:fill="none" draw:fill-color="#dee6ef" style:repeat="repeat" style:footnote-max-height="0cm" loext:margin-gutter="0cm">
     <style:columns fo:column-count="1" fo:column-gap="0cm"/>
@@ -12056,199 +11579,8 @@
       <text:p text:style-name="Standard"/>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau6.B2" office:value-type="string">
-      <text:section text:style-name="Sect1" text:name="Experience_professionnelle">
-       <text:h text:style-name="Sections_20_suivantes" text:outline-level="1">Expérience professionnelle</text:h>
-       <text:section text:style-name="Sect1" text:name="Company Caca  du cul" text:display="none">
-        <text:h text:style-name="Formations" text:outline-level="2">Company Caca du cul<text:tab/>http://toto.com</text:h>
-        <text:section text:style-name="Sect1" text:name="Section0">
-         <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Merdique</text:h>
-         <text:p text:style-name="Standard">De février 2023 à aujourd&apos;hui</text:p>
-         <table:table table:name="Tableau0" table:style-name="Tableau0">
-          <table:table-column table:style-name="Tableau0.A"/>
-          <table:table-column table:style-name="Tableau0.B"/>
-          <table:table-row>
-           <table:table-cell table:number-columns-spanned="2" office:value-type="string">
-            <text:p text:style-name="Standard">J&apos;ai fait de la </text:p>
-           </table:table-cell>
-           <table:covered-table-cell/>
-          </table:table-row>
-          <table:table-row>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L1">
-             <text:list-item>
-              <text:p text:style-name="P48">Aucune</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L2">
-             <text:list-item>
-              <text:p text:style-name="P49">Aucun</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-          </table:table-row>
-         </table:table>
-        </text:section>
-       </text:section>
-       <text:section text:style-name="Sect1" text:name="Company n°1">
-        <text:h text:style-name="Formations" text:outline-level="2">Company n°1<text:tab/>http://toto.com</text:h>
-        <text:section text:style-name="Sect1" text:name="Section1">
-         <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Position n°1</text:h>
-         <text:p text:style-name="Standard">De février 2023 à aujourd&apos;hui</text:p>
-         <table:table table:name="Tableau0_1" table:style-name="Tableau0_5f_1">
-          <table:table-column table:style-name="Tableau0_5f_1.A"/>
-          <table:table-column table:style-name="Tableau0_5f_1.B"/>
-          <table:table-row>
-           <table:table-cell table:number-columns-spanned="2" office:value-type="string">
-            <text:p text:style-name="Standard">Bla bla bla</text:p>
-           </table:table-cell>
-           <table:covered-table-cell/>
-          </table:table-row>
-          <table:table-row>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L3">
-             <text:list-item>
-              <text:p text:style-name="P50">Coucou</text:p>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P50">Coucou</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L4">
-             <text:list-item>
-              <text:p text:style-name="P51">Scala</text:p>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P51">Java</text:p>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P51">Confluent Platform</text:p>
-              <text:list>
-               <text:list-item>
-                <text:p text:style-name="P51">Kafka</text:p>
-               </text:list-item>
-               <text:list-item>
-                <text:p text:style-name="P51">Akka</text:p>
-               </text:list-item>
-              </text:list>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-          </table:table-row>
-         </table:table>
-        </text:section>
-        <text:section text:style-name="Sect1" text:name="Section2">
-         <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Position n°2</text:h>
-         <text:p text:style-name="Standard">De février 2023 à aujourd&apos;hui</text:p>
-         <table:table table:name="Tableau0_2" table:style-name="Tableau0_5f_2">
-          <table:table-column table:style-name="Tableau0_5f_2.A"/>
-          <table:table-column table:style-name="Tableau0_5f_2.B"/>
-          <table:table-row>
-           <table:table-cell table:number-columns-spanned="2" office:value-type="string">
-            <text:p text:style-name="Standard">Bla bla bla</text:p>
-           </table:table-cell>
-           <table:covered-table-cell/>
-          </table:table-row>
-          <table:table-row>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L5">
-             <text:list-item>
-              <text:p text:style-name="P52">Coucou <text:s/>amis</text:p>
-              <text:list>
-               <text:list-item>
-                <text:p text:style-name="P52">Coucou</text:p>
-               </text:list-item>
-               <text:list-item>
-                <text:p text:style-name="P52">Toto</text:p>
-               </text:list-item>
-              </text:list>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P52">Coucou</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-           <table:table-cell office:value-type="string">
-            <text:p text:style-name="Standard"/>
-           </table:table-cell>
-          </table:table-row>
-         </table:table>
-        </text:section>
-       </text:section>
-       <text:section text:style-name="Sect1" text:name="Company n°2">
-        <text:h text:style-name="Formations" text:outline-level="2">Company n°2<text:tab/>http://toto.com</text:h>
-        <text:section text:style-name="Sect1" text:name="Section3">
-         <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Position n°1</text:h>
-         <text:p text:style-name="Standard">De février 2023 à aujourd&apos;hui</text:p>
-         <table:table table:name="Tableau0_3" table:style-name="Tableau0_5f_3">
-          <table:table-column table:style-name="Tableau0_5f_3.A"/>
-          <table:table-column table:style-name="Tableau0_5f_3.B"/>
-          <table:table-row>
-           <table:table-cell table:number-columns-spanned="2" office:value-type="string">
-            <text:p text:style-name="Standard">Bla bla bla</text:p>
-           </table:table-cell>
-           <table:covered-table-cell/>
-          </table:table-row>
-          <table:table-row>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L6">
-             <text:list-item>
-              <text:p text:style-name="P53">Coucou</text:p>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P53">Coucou</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-           <table:table-cell office:value-type="string">
-            <text:p text:style-name="Standard"/>
-           </table:table-cell>
-          </table:table-row>
-         </table:table>
-        </text:section>
-        <text:section text:style-name="Sect1" text:name="Section4">
-         <text:h text:style-name="Expériences_20_suivantes" text:outline-level="3">Position n°2</text:h>
-         <text:p text:style-name="Standard">De février 2023 à aujourd&apos;hui</text:p>
-         <table:table table:name="Tableau0_4" table:style-name="Tableau0_5f_4">
-          <table:table-column table:style-name="Tableau0_5f_4.A"/>
-          <table:table-column table:style-name="Tableau0_5f_4.B"/>
-          <table:table-row>
-           <table:table-cell table:number-columns-spanned="2" office:value-type="string">
-            <text:p text:style-name="Standard">Bla bla bla</text:p>
-           </table:table-cell>
-           <table:covered-table-cell/>
-          </table:table-row>
-          <table:table-row>
-           <table:table-cell office:value-type="string">
-            <text:list text:style-name="L7">
-             <text:list-item>
-              <text:p text:style-name="P54">Coucou <text:s/>amis</text:p>
-              <text:list>
-               <text:list-item>
-                <text:p text:style-name="P54">Coucou</text:p>
-               </text:list-item>
-               <text:list-item>
-                <text:p text:style-name="P54">Toto</text:p>
-               </text:list-item>
-              </text:list>
-             </text:list-item>
-             <text:list-item>
-              <text:p text:style-name="P54">Coucou</text:p>
-             </text:list-item>
-            </text:list>
-           </table:table-cell>
-           <table:table-cell office:value-type="string">
-            <text:p text:style-name="Standard"/>
-           </table:table-cell>
-          </table:table-row>
-         </table:table>
-        </text:section>
-       </text:section>
-      </text:section>
-     </table:table-cell>
+      <text:p text:style-name="Standard"/>
+     <text:section text:name="Experience_professionnelle"><text:h text:outline-level="1">Expérience professionnelle</text:h><text:section text:name="Company Caca  du cul"><text:h text:outline-level="2" text:style-name="Heading_20_2">Company Caca  du cul<text:tab/><text:span text:style-name="Lien">http://toto.com</text:span></text:h><text:section text:name="Section0"><text:h text:outline-level="3" text:style-name="Heading_20_3">Merdique</text:h><text:p><text:span>De février 2023 à aujourd'hui</text:span></text:p><table:table table:name="Tableau0"><table:table-column table:number-columns-repeated="2"/><table:table-row><table:table-cell table:number-columns-spanned="2"><text:p>J'ai fait de la <text:emphasis>merde</text:emphasis></text:p></table:table-cell><table:covered-table-cell/></table:table-row><table:table-row><table:table-cell><text:list><text:list-item><text:p>Aucune</text:p></text:list-item></text:list></table:table-cell><table:table-cell><text:list><text:list-item><text:p>Aucun</text:p></text:list-item></text:list></table:table-cell></table:table-row></table:table></text:section></text:section><text:section text:name="Company n°1"><text:h text:outline-level="2" text:style-name="Heading_20_2">Company n°1<text:tab/><text:span text:style-name="Lien">http://toto.com</text:span></text:h><text:section text:name="Section0"><text:h text:outline-level="3" text:style-name="Heading_20_3">Position n°1</text:h><text:p><text:span>De février 2023 à aujourd'hui</text:span></text:p><table:table table:name="Tableau0"><table:table-column table:number-columns-repeated="2"/><table:table-row><table:table-cell table:number-columns-spanned="2"><text:p>Bla bla bla</text:p></table:table-cell><table:covered-table-cell/></table:table-row><table:table-row><table:table-cell><text:list><text:list-item><text:p>Coucou</text:p></text:list-item><text:list-item><text:p>Coucou</text:p></text:list-item></text:list></table:table-cell><table:table-cell><text:list><text:list-item><text:p>Scala</text:p></text:list-item><text:list-item><text:p>Java</text:p></text:list-item><text:list-item><text:p>Confluent Platform</text:p><text:list><text:list-item><text:p>Kafka</text:p></text:list-item><text:list-item><text:p>Akka</text:p></text:list-item></text:list></text:list-item></text:list></table:table-cell></table:table-row></table:table></text:section><text:section text:name="Section0"><text:h text:outline-level="3" text:style-name="Heading_20_3">Position n°2</text:h><text:p><text:span>De février 2023 à aujourd'hui</text:span></text:p><table:table table:name="Tableau0"><table:table-column table:number-columns-repeated="2"/><table:table-row><table:table-cell table:number-columns-spanned="2"><text:p>Bla bla bla</text:p></table:table-cell><table:covered-table-cell/></table:table-row><table:table-row><table:table-cell><text:list><text:list-item><text:p>Coucou <text:emphasis>les</text:emphasis> amis</text:p><text:list><text:list-item><text:p>Coucou</text:p></text:list-item><text:list-item><text:p>Toto</text:p></text:list-item></text:list></text:list-item><text:list-item><text:p>Coucou</text:p></text:list-item></text:list></table:table-cell><table:table-cell><text:list/></table:table-cell></table:table-row></table:table></text:section></text:section><text:section text:name="Company n°2"><text:h text:outline-level="2" text:style-name="Heading_20_2">Company n°2<text:tab/><text:span text:style-name="Lien">http://toto.com</text:span></text:h><text:section text:name="Section0"><text:h text:outline-level="3" text:style-name="Heading_20_3">Position n°1</text:h><text:p><text:span>De février 2023 à aujourd'hui</text:span></text:p><table:table table:name="Tableau0"><table:table-column table:number-columns-repeated="2"/><table:table-row><table:table-cell table:number-columns-spanned="2"><text:p>Bla bla bla</text:p></table:table-cell><table:covered-table-cell/></table:table-row><table:table-row><table:table-cell><text:list><text:list-item><text:p>Coucou</text:p></text:list-item><text:list-item><text:p>Coucou</text:p></text:list-item></text:list></table:table-cell><table:table-cell><text:list/></table:table-cell></table:table-row></table:table></text:section><text:section text:name="Section0"><text:h text:outline-level="3" text:style-name="Heading_20_3">Position n°2</text:h><text:p><text:span>De février 2023 à aujourd'hui</text:span></text:p><table:table table:name="Tableau0"><table:table-column table:number-columns-repeated="2"/><table:table-row><table:table-cell table:number-columns-spanned="2"><text:p>Bla bla bla</text:p></table:table-cell><table:covered-table-cell/></table:table-row><table:table-row><table:table-cell><text:list><text:list-item><text:p>Coucou <text:emphasis>les</text:emphasis> amis</text:p><text:list><text:list-item><text:p>Coucou</text:p></text:list-item><text:list-item><text:p>Toto</text:p></text:list-item></text:list></text:list-item><text:list-item><text:p>Coucou</text:p></text:list-item></text:list></table:table-cell><table:table-cell><text:list/></table:table-cell></table:table-row></table:table></text:section></text:section></text:section></table:table-cell>
     </table:table-row>
    </table:table>
    <text:p text:style-name="P18"/>

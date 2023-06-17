@@ -6,25 +6,32 @@ from lxml.etree import tostring
 from .parsers import parse_resume
 from .renderers import render_resume
 
+from .package_to_text_document import package_to_text_document
 
+
+# @command()
+# @argument("yaml_file_path", type=Path, default=Path("../resume.yaml"))
+# @argument("fodt_file_path", type=Path, default=Path("../resume.fodt"))
+# def app(yaml_file_path: Path, fodt_file_path: Path):
+#     print("Resume Generator! ")
+#     yaml = YAML()
+#     obj = yaml.load(yaml_file_path)
+#     resume = parse_resume(obj)
+    
+#     document = render_resume(resume)
+#     fodt_file_content = tostring(document, encoding="utf-8", pretty_print=True, xml_declaration=True).decode()
+#     print(fodt_file_content)
+#     with fodt_file_path.open("w") as fodt_file_stream:
+#         fodt_file_stream.write(fodt_file_content)
+
+#     # for experience in resume.experiences:
+#     #     for position in experience.position:
+#     #         print(position.json())
+
+#     # print(resume)
 
 @command()
-@argument("yaml_file_path", type=Path, default=Path("../resume.yaml"))
-@argument("fodt_file_path", type=Path, default=Path("../resume.fodt"))
-def app(yaml_file_path: Path, fodt_file_path: Path):
-    print("Resume Generator! ")
-    yaml = YAML()
-    obj = yaml.load(yaml_file_path)
-    resume = parse_resume(obj)
-    
-    document = render_resume(resume)
-    fodt_file_content = tostring(document, encoding="utf-8", pretty_print=True, xml_declaration=True).decode()
-    print(fodt_file_content)
-    with fodt_file_path.open("w") as fodt_file_stream:
-        fodt_file_stream.write(fodt_file_content)
-
-    # for experience in resume.experiences:
-    #     for position in experience.position:
-    #         print(position.json())
-
-    # print(resume)
+@argument("folder_path", type=Path, default=Path("../samples/text-document"))
+@argument("text_document_file_path", type=Path, default=Path("../samples/text-document.odt"))
+def app(folder_path: Path, text_document_file_path) -> None:
+    package_to_text_document(folder_path, text_document_file_path)

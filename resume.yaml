@@ -1,4 +1,18 @@
 ---
+profile: |
+  Issue d'une formation en Business Intelligence...
+
+  ...J'ai pris le virage Big Data
+
+skills:
+- name: Kafka
+  category: Streaming
+  level: 2
+- name: fs2
+  category: Streaming
+  level: 2
+
+
 experiences:
 - company:
     name: Company Caca  du cul
