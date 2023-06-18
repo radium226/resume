@@ -1,0 +1,141 @@
+---
+jobs:
+  - company:
+      name: "Jump"
+      website: "https://www.join-jump.com/"
+    explanation: >
+      Fort de ma première expérience startup au sein d'ULTRA, 
+      j'ai eu la chance de rejoindre Jump qui était dans un stade moins
+      avancé qu'ULTRA et en plein refonte
+    positions:
+    - name: Head of Data
+      period:
+        from: 2023-01
+        to: now
+      description: |
+        Conception, développement et maintenance en condition opérationnelle de 
+        la Data Platform
+      roles:
+      - description: Dévelopment de
+        details:
+        - 
+      - description: Réalisation de reporing à destinations de différents métiers
+        details:
+        - Finance (Déclaratio)
+      - description: Maintient 
+
+      tools:
+      - Python
+      - DBT
+      - Metabase
+      - PostgreSQL
+      - Trino
+      - Terraform / Terragrunt
+
+    - name: Data Engineer
+      period: 
+        from: 2022-06
+        to: 2023-01
+      description: |
+        Responsable de la migration de l'ancienne plateforme
+
+      roles:
+      - 
+      tools:
+      - Python
+      - Kubernetes
+  - company:
+      name: "ULTRA"
+      website: "https://ultra.io"
+    explanation: |
+      Après plusieurs années à exercer en tant que prestataire dans de grosses 
+      entreprises, j'ai rejoins une startup pour mieux saisir les problématiques 
+      sous-jacentes à la croissance d'une plus petite structure, aussi bien d'un 
+      point de vue technique que managérial.
+
+    positions:
+    - name: Data Engineer
+      description: Mise en place d'une architecture de type Data Mesh à destination des équipes Marketing et Payment 
+      roles:
+      - description: Definition de bonnes pratiques de développement et de modélisation
+        details:
+        - Modélisation des schémas Avro
+        - Domaines et responsabilité des micro-services
+      - description: Développement et maintenance des micro-services de la Data Platform
+        details: 
+        - Système d'offload des messages Kafka sur Google Cloud Storage
+        - Ingestion automatique des messages de Kafka dans BigQuery
+        - Indexation en temps réel via Aloglia
+      - descriptions: Développement d'outillage divers
+        details:
+        - Validation de schémas Avro (linting, nomenclature, compatibilité, etc.)
+        - Automatisation de la maintenance de la plateforme
+
+      tools:
+      - name: Confluent Plateform
+        details:
+        - Apache Kafka
+        - Schema Registry
+        - Kafka Connect
+      - Akka Stream
+      - Java 11 / Gradle
+      - Scala 2.13 / SBT
+      - Kubernetes
+      - BigQuery
+      - Apache Beam (sur Dataflow)
+      - GitLab Pipelines
+  - company:
+      name: OCTO Technology
+      website: https://octo.com
+    explanation: |
+      En parallèle de mon rôle de Tech Lead, exercer au sein 
+      d'OCTO Technology m'a permis de me confronter aux problématiques 
+      liées au staffing ainsi qu'au management d'équipe (R&D, retours 
+      d'expérience en interne, bilans de fin de mission, etc.) et de personnes 
+      (suivis hébdomadaires, points d'évaluation annuel, etc.) 
+    positions:
+    - title: Tech Lead / Chef de projet
+      client: BNP Paribas BDDF
+      project: Mon Poste
+      period:
+        from: 2018-04
+        to: 2020-06
+      description: |
+        Mise en place d'une architecture Lambda (Batch et Streaming) destinée à 
+        transformer les données issues du Mainframe à l'aide d'un modèle d'entreprise, 
+        à destination de l'application front-end des conseillers bancaires
+      roles:
+      - Définition de l'architecture technique globale
+      - description: Garantie des bonnes pratiques
+        details:
+        - Méthodologie de développement
+        - Intégration continue
+        - Rituels Agile (Daily, Rétro, etc.)
+      - Organisation de la passation en vue de la TMA
+      - Suivi de production
+      - Suivi du projet au quotidien (COPIL, etc.) 
+    
+    - title: Tech Lead
+      client: VSCT
+      project: COSMO
+      period:
+        from: 2017-06
+        to: 2018-06
+      description: |
+        Refonte du back-end de l'application de contrôle des contrôleurs TGV et TER de 
+        la SNCF
+      roles:
+      - description: Participation à l'architecture CQRS orientée micro-services
+        details:
+        - Mise en place de connecteurs scalables et résilients
+        - Modélisation des évènements (prise en compte des montées de version, etc.)
+      - Harmonisation des méthodes de développement au sein des Feature Teams
+      - Mise en place du monitoring avec alterting automatique
+      - Suivi de production
+
+
+
+
+
+
+      
