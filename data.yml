@@ -1,141 +1,423 @@
 ---
 jobs:
-  - company:
+  - employer:
       name: "Jump"
       website: "https://www.join-jump.com/"
-    explanation: >
+    context: >
       Fort de ma première expérience startup au sein d'ULTRA, 
       j'ai eu la chance de rejoindre Jump qui était dans un stade moins
       avancé qu'ULTRA et en plein refonte
     positions:
-    - name: Head of Data
-      period:
-        from: 2023-01
-        to: now
-      description: |
-        Conception, développement et maintenance en condition opérationnelle de 
-        la Data Platform
-      roles:
-      - description: Dévelopment de
-        details:
-        - 
-      - description: Réalisation de reporing à destinations de différents métiers
-        details:
-        - Finance (Déclaratio)
-      - description: Maintient 
+      - name: Head of Data
+        period:
+          from: 2023-01
+          to: now
+        description: |
+          Conception, développement et maintenance en condition opérationnelle de 
+          la Data Platform
+        roles:
+          - description: Dévelopment de
+            details:
+              -
+          - description: Réalisation de reporing à destinations de différents métiers
+            details:
+              - Finance (Déclaratio)
+          - description: Maintient
 
-      tools:
-      - Python
-      - DBT
-      - Metabase
-      - PostgreSQL
-      - Trino
-      - Terraform / Terragrunt
+        techical_stack:
+          - Python
+          - DBT
+          - Metabase
+          - PostgreSQL
+          - Trino
+          - Terraform / Terragrunt
 
-    - name: Data Engineer
-      period: 
-        from: 2022-06
-        to: 2023-01
-      description: |
-        Responsable de la migration de l'ancienne plateforme
+      - name: Data Engineer
+        period:
+          from: 2022-06
+          to: 2023-01
+        description: |
+          Responsable de la migration de l'ancienne plateforme
 
-      roles:
-      - 
-      tools:
-      - Python
-      - Kubernetes
-  - company:
+        roles:
+          -
+        techical_stack:
+          - Python
+          - Kubernetes
+  - employer:
       name: "ULTRA"
       website: "https://ultra.io"
-    explanation: |
+    context: |
       Après plusieurs années à exercer en tant que prestataire dans de grosses 
       entreprises, j'ai rejoins une startup pour mieux saisir les problématiques 
       sous-jacentes à la croissance d'une plus petite structure, aussi bien d'un 
       point de vue technique que managérial.
 
     positions:
-    - name: Data Engineer
-      description: Mise en place d'une architecture de type Data Mesh à destination des équipes Marketing et Payment 
-      roles:
-      - description: Definition de bonnes pratiques de développement et de modélisation
-        details:
-        - Modélisation des schémas Avro
-        - Domaines et responsabilité des micro-services
-      - description: Développement et maintenance des micro-services de la Data Platform
-        details: 
-        - Système d'offload des messages Kafka sur Google Cloud Storage
-        - Ingestion automatique des messages de Kafka dans BigQuery
-        - Indexation en temps réel via Aloglia
-      - descriptions: Développement d'outillage divers
-        details:
-        - Validation de schémas Avro (linting, nomenclature, compatibilité, etc.)
-        - Automatisation de la maintenance de la plateforme
+      - name: Data Engineer
+        period:
+          from: 2021-04
+          to: 2022-06
+        description: Mise en place d'une architecture de type Data Mesh à destination des équipes Marketing et Payment
+        roles:
+          - description: Definition de bonnes pratiques de développement et de modélisation
+            details:
+              - Modélisation des schémas Avro
+              - Domaines et responsabilité des micro-services
+          - description: Développement et maintenance des micro-services de la Data Platform
+            details:
+              - Système d'offload des messages Kafka sur Google Cloud Storage
+              - Ingestion automatique des messages de Kafka dans BigQuery
+              - Indexation en temps réel via Aloglia
+          - description: Développement d'outillage divers
+            details:
+              - Validation de schémas Avro (linting, nomenclature, compatibilité, etc.)
+              - Automatisation de la maintenance de la plateforme
 
-      tools:
-      - name: Confluent Plateform
-        details:
-        - Apache Kafka
-        - Schema Registry
-        - Kafka Connect
-      - Akka Stream
-      - Java 11 / Gradle
-      - Scala 2.13 / SBT
-      - Kubernetes
-      - BigQuery
-      - Apache Beam (sur Dataflow)
-      - GitLab Pipelines
-  - company:
+        techical_stack:
+          - name: Confluent Plateform
+            details:
+              - Apache Kafka
+              - Schema Registry
+              - Kafka Connect
+          - Akka Stream
+          - Java 11 / Gradle
+          - Scala 2.13 / SBT
+          - Kubernetes
+          - BigQuery
+          - Apache Beam (sur Dataflow)
+          - GitLab Pipelines
+  - employer:
       name: OCTO Technology
       website: https://octo.com
-    explanation: |
+    context: |
       En parallèle de mon rôle de Tech Lead, exercer au sein 
       d'OCTO Technology m'a permis de me confronter aux problématiques 
       liées au staffing ainsi qu'au management d'équipe (R&D, retours 
       d'expérience en interne, bilans de fin de mission, etc.) et de personnes 
-      (suivis hébdomadaires, points d'évaluation annuel, etc.) 
+      (suivis hébdomadaires, points d'évaluation annuel, etc.)
     positions:
-    - title: Tech Lead / Chef de projet
-      client: BNP Paribas BDDF
-      project: Mon Poste
-      period:
-        from: 2018-04
-        to: 2020-06
-      description: |
-        Mise en place d'une architecture Lambda (Batch et Streaming) destinée à 
-        transformer les données issues du Mainframe à l'aide d'un modèle d'entreprise, 
-        à destination de l'application front-end des conseillers bancaires
-      roles:
-      - Définition de l'architecture technique globale
-      - description: Garantie des bonnes pratiques
-        details:
-        - Méthodologie de développement
-        - Intégration continue
-        - Rituels Agile (Daily, Rétro, etc.)
-      - Organisation de la passation en vue de la TMA
-      - Suivi de production
-      - Suivi du projet au quotidien (COPIL, etc.) 
-    
-    - title: Tech Lead
-      client: VSCT
-      project: COSMO
-      period:
-        from: 2017-06
-        to: 2018-06
-      description: |
-        Refonte du back-end de l'application de contrôle des contrôleurs TGV et TER de 
-        la SNCF
-      roles:
-      - description: Participation à l'architecture CQRS orientée micro-services
-        details:
-        - Mise en place de connecteurs scalables et résilients
-        - Modélisation des évènements (prise en compte des montées de version, etc.)
-      - Harmonisation des méthodes de développement au sein des Feature Teams
-      - Mise en place du monitoring avec alterting automatique
-      - Suivi de production
+      - title: Tech Lead / Chef de projet
+        client: BNP Paribas BDDF
+        project: Mon Poste
+        period:
+          from: 2018-04
+          to: 2020-06
+        description: |
+          Mise en place d'une architecture Lambda (Batch et Streaming) destinée à 
+          transformer les données issues du Mainframe à l'aide d'un modèle d'entreprise, 
+          à destination de l'application front-end des conseillers bancaires
+        roles:
+          - Définition de l'architecture technique globale
+          - description: Garantie des bonnes pratiques
+            details:
+              - Méthodologie de développement
+              - Intégration continue
+              - Rituels Agile (Daily, Rétro, etc.)
+          - Organisation de la passation en vue de la TMA
+          - Suivi de production
+          - Suivi du projet au quotidien (COPIL, etc.)
+        techical_stack:
+          - name: Confluent Plateform
+            details:
+              - Apache Kafka
+              - Schema Registry
+          - Akka Stream
+          - Apache Spark
+          - Scala 2.12 / SBT et Maven
+          - Hortonworks Data Platform 2.6
+          - Hive
 
-
-
-
-
-
-      
+      - title: Tech Lead
+        client: VSCT
+        project: COSMO
+        period:
+          from: 2017-06
+          to: 2018-06
+        description: |
+          Refonte du back-end de l'application de contrôle des contrôleurs TGV et TER de 
+          la SNCF
+        roles:
+          - description: Participation à l'architecture CQRS orientée micro-services
+            details:
+              - Mise en place de connecteurs scalables et résilients
+              - Modélisation des évènements (prise en compte des montées de version, etc.)
+          - Harmonisation des méthodes de développement au sein des Feature Teams
+          - Mise en place du monitoring avec alterting automatique
+          - Suivi de production
+        techical_stack:
+          - Scala 2.12 / Maven
+          - Apache Kafka
+          - Apache ZooKeeper
+          - Akka
+          - Akka Stream
+          - Akka HTTP
+          - Rundeck et Jenkins
+      - title: Data Engineer
+        client: Crédit Agricole / CIB
+        project: MASAI Core
+        period:
+          from: 2016-10
+          to: 2017-06
+        description: |
+          Architecture Big Data dont l'objectif est l'emission de rapports aux régulateurs dans le cadre réglementaire « Bâle IV »
+        roles:
+          - description: Participation à la réalisation d'un framework destiné à simplifier l'interaction avec la plateforme HDP d'HortonWorks pour les développeurs offshore
+            details:
+              - Harmonisation de la configuration des différents middlewares
+              - Packaging des applications destinées à être déployées sur la plateforme
+              - Réalisation d'un module de tests d'intégration automatisés des applications Spark
+          - description: Participation à l'architecure globale
+            details:
+              - Lineage des données
+              - Haute-disponibilité et reprise en cas d'erreur
+        techical_stack:
+          - name: Environnent sous HDP 2.5 avec Kerberos
+            details:
+              - Hadoop
+              - YARN
+              - HDFS
+          - name: Middlewares
+            details:
+              - Apache Spark 1.6.1
+              - Apache Kafka 0.9.0 / 0.10.0
+              - Apache HBase 1.6.2
+              - Développement avec Java 8 (et Maven)
+          - Déploiement avec Nexus et Jenkins
+  - employer:
+      name: StarClay
+      website: https://starclay.fr/
+    context: |
+      1er employé
+    positions:
+      - title: Tech Lead
+        client: La Poste
+        project: Reactive SI
+        period:
+          from: 2015-06
+          to: 2016-10
+        description: |
+          Architecture réactive s'inscrivant dans le cadre de la refonte du SI du Pôle Colis dont 
+          l'objectif est le scaling horizontal de la plateforme sur Azure / OVH lors de la période forte de 
+          l'année
+        roles:
+          - description: Module marketing de création et d'émission de sondages destiné à suivre la satisfaction des clients
+            details:
+              - Réponse à l'appel d'offre émis et soutenance
+              - Recueil des besoins, conception et réalisation du module
+              - Scrum Master et Tech Lead pour une équipe de 3 développeurs
+          - description: Cellule d'intégration transverse
+            details:
+              - Harmonisation et fluidification des développements (industrialisation des environnements, revues de code, mise-en-place de bonnes pratiques, etc.)
+              - Participation à la réalisation d'un framework d'abstraction des briques logicielles en vue de l'accostage de nouveaux projets au sein de l'architecture réactive (configuration, remontée de logs, etc.)
+              - Stabilisation de la plateforme de production (autour de 500 messages par secondes en nominal)
+          - description: DevOps au sein de l'équipe d'architecture globale
+            details:
+              - Conception de scripts Ansible dédiés au provisionning de l'infrastructure
+              - Automatisation de l'ensemble du pipeline de build (jusqu'au déploiement des applications Spark)
+        techical_stack:
+          - name: Middlewares
+            details:
+              - Apache Spark 1.5.1
+              - Apache Kafka 0.8.2
+              - Apache Cassandra 2.5.1
+              - Développement avec Scala 2.10 (et SBT)
+          - Environnent sous Ubuntu et CentOS 7
+          - Provisionning avec Ansible 1.9
+          - name: Supervision
+            details:
+              - Elastic Search
+              - Logstash
+              - Kibana
+          - Déploiement avec Nexus et Jenkins
+      - title: BI Engineer
+        client: BNP Paribas / CIB
+        project: Front Office & BI Analytical tools
+        period:
+          from: 2012-04
+          to: 2015-05
+        description: |
+          Système décisionnel reposant sur un datawarehouse des ordres et des exécutions réalisées par les automates de trading sur les marchés électroniques (Euronext, Xetra, etc.) et sur un ensemble de datamarts utilisés pour la visualisation et l'analyse des trades pour le front, middle et back-office
+        roles:
+          - description: Participation à l'évolution de l'architecture datawarehouse et réalisation de plusieurs datamarts
+            details:
+              - Volumétrie importante (1To de données non-compressées par jour)
+              - Chargement en masse pour J-1 ou en temps réel
+              - Calcul d'une centaine de datamarts en une nuit applicative
+          - description: Réalisation d'une solution de reporting des données
+            details:
+              - Utilisation GWT et Highcharts
+              - Industrialisation du déploiement sur plusieurs environnements
+              - Fournisseur de données pour des applications tierces par web-services
+          - description: Réalisation de d'extractions et de rapports fonctionnels ad-hoc et support à destination des différentes entités clientes
+            details:
+              - Calcul des honoraires de trading dus pour chacun des marchés principaux et alternatifs
+              - Analyses des temps de latence des automates
+              - Production des métriques pour les régulateurs
+          - Suivi de production
+        techical_stack:
+          - name: Appliance Oracle Exadata
+            details:
+              - Oracle 11g + Storage Cell + ASM
+              - Oracle Linux
+          - Environnent sous Windows 7 et Cygwin
+          - Infrastructure en Korn Shell, Python et PL/SQL
+          - name: Solution de reporting en Java 1.6
+            details:
+              - Servlet 2.5, GWT , SmartGWT et Highcharts
+              - Guice, Guava, etc.
+              - Scheduling avec Quartz
+              - Streaming des données avec RxJava
+              - Web-services avec Jersey et Jackson
+              - Serveur Weblogic 11g
+          - Planification avec $Universe
+  - employer:
+      name: Sopra Group
+      webwite: https://www.soprasteria.com/fr
+    positions:
+      - client: Maroc Telecom
+        project: Datawarehouse IN
+        period:
+          from: 2010-07
+          to: 2012-04
+        description: |
+          Système décisionnel reposant sur un datawarehouse de tickets téléphoniques issus de 
+          systèmes amonts hétérogènes, destiné à l'alimentation d'un ensemble de datamarts utilisés 
+          dans le cadre de la création de rapports synthétiques pour divers métiers (marketing, fraude, 
+          revenu assurance, etc.)
+        roles:
+          - description: Conception, spécifications et développement de l'infrastructure de chargement des tickets dans le datawarehouse et d'alimentation des datamarts à la volée
+            details:
+              - Volumétrie importante (près de 60M de tickets par jour avec 9 mois de Rétention pour le datawarehouse et 3 ans pour les datamarts)
+              - Alimentation d'une dizaine de datamarts ayant des finalités fonctionnelles spécifiques
+          - description: Conception, spécifications et développement des univers Business Objects utilisés dans le cadre de la confection des rapports
+            details:
+              - Prise en compte de l'intégralité des métiers impactés
+              - Présence d'un univers technique de statistiques d'exploitation
+          - Qualification à Rabat et mise-en-production à Casablanca
+        techical_stack:
+          - Environnement sous Solaris et HP-UX
+          - Stockage des tickets avec Oracle 10g
+          - Alimentation avec IBM Datastage 7.3
+          - Reporting avec Business Objects XI R2
+          - Infrastructure en Korn Shell
+          - Utilisation d' HP Quality Center
+      - client: SFR
+        project: IRIS
+        period:
+          from: 2009-04
+          to: 2010-07
+        description: |
+          Refonte de l'application PRM, alors chargée de la valorisation et de la facturation de la branche B2B de SFR
+        roles:
+          - description: Conception, spécifications et développement de l' outil de migration des contrats dans le nouveau système
+            details:
+              - Plus de 2M de contrats répartis sur 6 offres différentes
+              - Contraintes de performance puisque migration en one-shot
+          - Développement d'un framework d'uniformisation de l'intégralité des batches
+          - Participation à la campagne de tests de qualification
+          - description: Spécifications et réalisation d'une partie des interfaces d'administration et de suivi des clients
+            details:
+              - frontoffice
+              - backoffice
+        techical_stack:
+          - Environnement sous Solaris
+          - Stockage des transactions avec Oracle 10g
+          - Batchs en Java 1.5 ou PL/SQL , encapsulés avec du Korn Shell
+          - Paramétrisation de SAP Highdeal 4.1
+          - Utilisation de JasperReport comme moteur de facturation
+          - Webapps en JEE 5 avec Hibernate (JPA) et Struts2
+          - Utilisation de HP Quality Center
+  - employer:
+      name: BT France
+      website: https://www.globalservices.bt.com/fr
+    context: |
+      Projet de fin d'étude
+    positions:
+      - project: Suivi de la masse salariale
+        period:
+          from: 2008-11
+          to: 2009-04
+        description: |
+          Participation à la mise-en-place d'un système décisionnel de suivi de 
+          l'évolution des effectifs et de la masse salariale de l'ensemble du groupe, 
+          suite à leur forte croissance organique
+        roles:
+          - description: Suivi de projet du début à la fin
+            details:
+              - équipe de 5 personnes
+              - interaction directe avec le client
+          - description: participation autant fonctionnelle que technique
+            details:
+              - recueil des besoins, spécifications fonctionnelles et détaillées
+              - développement, packaging et livraison
+  - employer: Cap'EISTI
+    positions:
+      - project: Vivier RH
+        period:
+          from: 2008-11
+          to: 2009-02
+        client: Geodis
+        context: |
+          Projet réalisé dans le cadre de ma participation à la Junior-Entreprise de l'EISTI
+        description: |
+          Réalisation d'un vivier de CV partagé à destination de l'ensemble des collaborateurs du groupe
+        roles:
+          - description: Participation fonctionnelle
+            details:
+              - Suivi de projet
+              - Recueil des besoins et rédaction des spécifications fonctionnelles
+          - description: Participation technique
+              - Rédaction des spécifications techniques et conception
+              - Développement
+        techical_stack:
+          - name: Java 1.5 / JEE 6
+            details:
+              - JSF 1.2
+              - Facelets
+              - Hibernate
+          - MySQL 4.1
+          - Tomcat 5.5
+          - description: UML
+            details:
+              - Use-Cases + Diagrammes d'activité
+              - Diagrammes de classes
+  - employer: Ralamax Prod.
+    positions:
+      - title: Stagiaire
+        project: PragmaClip
+        period:
+          from: 2008-05
+          to: 2008-08
+        context: |
+          Projet réalisé dans le cadre de mon stage de 2ème année  à l'EISTI
+        description: |
+          Participation au prototype d'un projet de plateforme collaborative 
+          dédiée au financement communautaire d'oeuvres cinématographiques 
+          indépendantes
+        roles:
+          - description: Suivi de projet de bout en bout
+            details:
+              - Equipe de 2 personnes
+              - Application de la méthode MERISE
+          - description: participation autant fonctionnelle que technique
+            details:
+              - recueil des besoins, spécifications fonctionnelles et détaillées
+              - développement
+  - employer: Be-iTech
+    positions:
+      - title: Stagiaire
+        project: MyVisit'
+        period:
+          from: 2007-06
+          to: 2007-07
+        context: |
+          Projet réalisé dans le cadre de mon stage de 1ère année à l'EISTI
+        description: |
+          Participation à une évolution de la solution MyVisit' destinée à déclencher l'impression de documents médicaux sur l'imprimante la plus rapprochée géographiquement du médecin demandeur
+        roles:
+          - Intégration au sein d'une équipe de 4 développeurs
+          - Développement et rédaction de la documentation destinée aux utilisateurs
+        techical_stack:
+          - Développement côté serveur avec PHP5
+          - Développement côté client en ActionScript avec interface en Flash
