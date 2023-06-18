@@ -1,37 +1,26 @@
-from click import command, argument
+from click import command, argument, option
 from pathlib import Path
 from ruamel.yaml import YAML
-from lxml.etree import tostring
+from lxml.etree import tostring, Element
+from functools import partial
 
 from .parsers import parse_resume
-from .renderers import render_resume
+from .renderers import render_resume_into_element
+from .odt_file import ODTFile
 
-from .package_to_text_document import package_to_text_document
-
-
-# @command()
-# @argument("yaml_file_path", type=Path, default=Path("../resume.yaml"))
-# @argument("fodt_file_path", type=Path, default=Path("../resume.fodt"))
-# def app(yaml_file_path: Path, fodt_file_path: Path):
-#     print("Resume Generator! ")
-#     yaml = YAML()
-#     obj = yaml.load(yaml_file_path)
-#     resume = parse_resume(obj)
-    
-#     document = render_resume(resume)
-#     fodt_file_content = tostring(document, encoding="utf-8", pretty_print=True, xml_declaration=True).decode()
-#     print(fodt_file_content)
-#     with fodt_file_path.open("w") as fodt_file_stream:
-#         fodt_file_stream.write(fodt_file_content)
-
-#     # for experience in resume.experiences:
-#     #     for position in experience.position:
-#     #         print(position.json())
-
-#     # print(resume)
 
 @command()
-@argument("folder_path", type=Path, default=Path("../samples/text-document"))
-@argument("text_document_file_path", type=Path, default=Path("../samples/text-document.odt"))
-def app(folder_path: Path, text_document_file_path) -> None:
-    package_to_text_document(folder_path, text_document_file_path)
+@option("--model", "model_file_path", type=Path, default=Path(__file__).parent / "model.odt")
+@argument("input_file_path", type=Path, metavar="INPUT", default="../resume.yaml")
+@argument("output_file_path", type=Path, metavar="OUTPUT", default="/tmp/resume.odt")
+def app(model_file_path: Path, input_file_path: Path, output_file_path: Path):
+    # Parsing resume
+    yaml = YAML()
+    yaml_obj = yaml.load(input_file_path)
+    resume = parse_resume(yaml_obj)
+
+    ODTFile.modify_with(
+        input_file_path=model_file_path,
+        output_file_path=output_file_path,
+        update_content=partial(render_resume_into_element, resume=resume),
+    )

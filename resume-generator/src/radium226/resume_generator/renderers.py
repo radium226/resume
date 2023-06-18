@@ -137,10 +137,8 @@ def render_experience(experience: Experience) -> Element:
     )
 
 
-def render_resume(resume: Resume) -> Element:
-    # empty = parse(str(Path(__file__).parent / "empty.fodt"))
-    empty = parse(str(Path(__file__).parent.parent.parent.parent.parent / "CV.fodt"))
-    body = next(iter(empty.xpath("//table:table-cell[@table:style-name='Tableau6.B2']", namespaces=NAMESPACES_BY_PREFIX)), None)
+def render_resume_into_element(resume: Resume, element: Element) -> None:
+    body = next(iter(element.xpath("//table:table-cell[@table:style-name='Tableau6.B2']", namespaces=NAMESPACES_BY_PREFIX)), None)
     section_element = section(
         name="Experience_professionnelle",
         children=[
@@ -155,5 +153,3 @@ def render_resume(resume: Resume) -> Element:
     
     
     body.append(section_element)
-
-    return empty
