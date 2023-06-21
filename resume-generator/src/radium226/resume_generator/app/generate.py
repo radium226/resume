@@ -5,8 +5,13 @@ from lxml.etree import tostring, Element
 from functools import partial
 
 from .parsers import parse_resume
-from .renderers import render_resume_into_element
+from .renderers import render_resume
 from .odt_file import ODTFile
+
+
+def render_resume_into_element(resume: Resume, element: Element) -> None:
+    body = next(iter(element.xpath("//table:table-cell[@table:style-name='Tableau6.B2']", namespaces=NAMESPACES_BY_PREFIX)), None)
+    body.append(render_resume(resume))
 
 
 @command()
