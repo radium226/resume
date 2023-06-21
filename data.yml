@@ -1,50 +1,6 @@
 ---
 jobs:
   - employer:
-      name: "Jump"
-      website: "https://www.join-jump.com/"
-    context: >
-      Fort de ma première expérience startup au sein d'ULTRA, 
-      j'ai eu la chance de rejoindre Jump qui était dans un stade moins
-      avancé qu'ULTRA et en plein refonte
-    positions:
-      - name: Head of Data
-        period:
-          from: 2023-01
-          to: now
-        description: |
-          Conception, développement et maintenance en condition opérationnelle de 
-          la Data Platform
-        roles:
-          - description: Dévelopment de
-            details:
-              -
-          - description: Réalisation de reporing à destinations de différents métiers
-            details:
-              - Finance (Déclaratio)
-          - description: Maintient
-
-        techical_stack:
-          - Python
-          - DBT
-          - Metabase
-          - PostgreSQL
-          - Trino
-          - Terraform / Terragrunt
-
-      - name: Data Engineer
-        period:
-          from: 2022-06
-          to: 2023-01
-        description: |
-          Responsable de la migration de l'ancienne plateforme
-
-        roles:
-          -
-        techical_stack:
-          - Python
-          - Kubernetes
-  - employer:
       name: "ULTRA"
       website: "https://ultra.io"
     context: |
@@ -54,7 +10,7 @@ jobs:
       point de vue technique que managérial.
 
     positions:
-      - name: Data Engineer
+      - title: Data Engineer
         period:
           from: 2021-04
           to: 2022-06
@@ -275,7 +231,8 @@ jobs:
       name: Sopra Group
       webwite: https://www.soprasteria.com/fr
     positions:
-      - client: Maroc Telecom
+      - title: BI Engineer
+        client: Maroc Telecom
         project: Datawarehouse IN
         period:
           from: 2010-07

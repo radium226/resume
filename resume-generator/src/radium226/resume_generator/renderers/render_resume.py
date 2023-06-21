@@ -6,7 +6,7 @@ from ..open_document import text
 from .render_job import render_job
 
 
-def render_resume_into_element(resume: Resume) -> Element:
+def render_resume(resume: Resume) -> Element:
     return text.section(
         name="Experience_professionnelle",
         children=[

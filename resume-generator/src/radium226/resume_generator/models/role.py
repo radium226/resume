@@ -13,4 +13,4 @@ RoleDescription = NewType("RoleDescription", Paragraph)
 class Role():
 
     description: RoleDescription
-    etails: list["Role"] = field(default_factory=list)
+    details: list["Role"] = field(default_factory=list)

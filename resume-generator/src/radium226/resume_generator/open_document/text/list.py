@@ -3,7 +3,7 @@ from lxml.etree import Element
 from ...xml import create_element
 
 
-def list_(
+def list(
     **kwargs,
 ) -> Element:
     return create_element(

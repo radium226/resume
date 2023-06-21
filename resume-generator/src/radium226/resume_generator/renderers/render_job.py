@@ -8,18 +8,18 @@ from .render_position import render_position
 
 def render_job(job: Job) -> Element:
     return text.section(
-        name=job.company.name,
+        name=job.employer.name,
         children=[
             text.h(
                 outline_level=2,
                 style_name="Heading_20_2",
                 children=[
-                    job.company.name,
-                    tab(),
-                    span(
+                    job.employer.name,
+                    text.tab(),
+                    text.span(
                         style_name="Lien",
                         children=[
-                            f"{job.company.website}",
+                            f"{job.employer.website}",
                         ],
                     ),
                 ],

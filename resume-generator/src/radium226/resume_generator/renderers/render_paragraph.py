@@ -18,6 +18,8 @@ def render_span_token(span_token: SpanToken) -> Union[Element, str]:
                 ],
             )
 
+    return text.emphasis(children=["FIXME"])
+
 
 def render_paragraph(paragraph: Paragraph) -> Element:
     return text.p(

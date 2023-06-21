@@ -2,6 +2,8 @@ from typing import Optional, Union
 from lxml.etree import Element
 
 from .namespaces_by_prefix import NAMESPACES_BY_PREFIX
+from .set_attribute_to_element import set_attribute_to_element
+from .append_children_to_parent_element import append_children_to_parent_element
 
 
 def create_element(tag: str, attributes: dict[str, str] = {}, children: list[Union[Element, str]] = [], parent: Optional[Element] = None, text: str | None = None) -> Element:

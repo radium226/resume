@@ -4,9 +4,11 @@ from ruamel.yaml import YAML
 from lxml.etree import tostring, Element
 from functools import partial
 
-from .parsers import parse_resume
-from .renderers import render_resume
-from .odt_file import ODTFile
+from ..models import Resume
+from ..parsers import parse_resume
+from ..renderers import render_resume
+from ..open_document import ODTFile
+from ..xml import NAMESPACES_BY_PREFIX
 
 
 def render_resume_into_element(resume: Resume, element: Element) -> None:
@@ -15,10 +17,10 @@ def render_resume_into_element(resume: Resume, element: Element) -> None:
 
 
 @command()
-@option("--model", "model_file_path", type=Path, default=Path(__file__).parent / "model.odt")
-@argument("input_file_path", type=Path, metavar="INPUT", default="../resume.yaml")
+@option("--model", "model_file_path", type=Path, default=Path(__file__).parent.parent / "model.odt")
+@argument("input_file_path", type=Path, metavar="INPUT", default="../data.yml")
 @argument("output_file_path", type=Path, metavar="OUTPUT", default="/tmp/resume.odt")
-def app(model_file_path: Path, input_file_path: Path, output_file_path: Path):
+def generate(model_file_path: Path, input_file_path: Path, output_file_path: Path):
     # Parsing resume
     yaml = YAML()
     yaml_obj = yaml.load(input_file_path)
