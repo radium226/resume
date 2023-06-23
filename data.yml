@@ -14,7 +14,7 @@ jobs:
         period:
           from: 2021-04
           to: 2022-06
-        description: Mise en place d'une architecture de type Data Mesh à destination des équipes Marketing et Payment
+        description: Mise en place d'une architecture de type *Data Mesh* à destination des équipes Marketing et Payment
         roles:
           - description: Definition de bonnes pratiques de développement et de modélisation
             details:
@@ -30,7 +30,7 @@ jobs:
               - Validation de schémas Avro (linting, nomenclature, compatibilité, etc.)
               - Automatisation de la maintenance de la plateforme
 
-        techical_stack:
+        technical_stack:
           - name: Confluent Plateform
             details:
               - Apache Kafka
@@ -73,7 +73,7 @@ jobs:
           - Organisation de la passation en vue de la TMA
           - Suivi de production
           - Suivi du projet au quotidien (COPIL, etc.)
-        techical_stack:
+        technical_stack:
           - name: Confluent Plateform
             details:
               - Apache Kafka
@@ -101,7 +101,7 @@ jobs:
           - Harmonisation des méthodes de développement au sein des Feature Teams
           - Mise en place du monitoring avec alterting automatique
           - Suivi de production
-        techical_stack:
+        technical_stack:
           - Scala 2.12 / Maven
           - Apache Kafka
           - Apache ZooKeeper
@@ -127,7 +127,7 @@ jobs:
             details:
               - Lineage des données
               - Haute-disponibilité et reprise en cas d'erreur
-        techical_stack:
+        technical_stack:
           - name: Environnent sous HDP 2.5 avec Kerberos
             details:
               - Hadoop
@@ -171,7 +171,7 @@ jobs:
             details:
               - Conception de scripts Ansible dédiés au provisionning de l'infrastructure
               - Automatisation de l'ensemble du pipeline de build (jusqu'au déploiement des applications Spark)
-        techical_stack:
+        technical_stack:
           - name: Middlewares
             details:
               - Apache Spark 1.5.1
@@ -211,7 +211,7 @@ jobs:
               - Analyses des temps de latence des automates
               - Production des métriques pour les régulateurs
           - Suivi de production
-        techical_stack:
+        technical_stack:
           - name: Appliance Oracle Exadata
             details:
               - Oracle 11g + Storage Cell + ASM
@@ -252,7 +252,7 @@ jobs:
               - Prise en compte de l'intégralité des métiers impactés
               - Présence d'un univers technique de statistiques d'exploitation
           - Qualification à Rabat et mise-en-production à Casablanca
-        techical_stack:
+        technical_stack:
           - Environnement sous Solaris et HP-UX
           - Stockage des tickets avec Oracle 10g
           - Alimentation avec IBM Datastage 7.3
@@ -277,7 +277,7 @@ jobs:
             details:
               - frontoffice
               - backoffice
-        techical_stack:
+        technical_stack:
           - Environnement sous Solaris
           - Stockage des transactions avec Oracle 10g
           - Batchs en Java 1.5 ou PL/SQL , encapsulés avec du Korn Shell
@@ -327,7 +327,7 @@ jobs:
           - description: Participation technique
               - Rédaction des spécifications techniques et conception
               - Développement
-        techical_stack:
+        technical_stack:
           - name: Java 1.5 / JEE 6
             details:
               - JSF 1.2
@@ -335,7 +335,7 @@ jobs:
               - Hibernate
           - MySQL 4.1
           - Tomcat 5.5
-          - description: UML
+          - name: UML
             details:
               - Use-Cases + Diagrammes d'activité
               - Diagrammes de classes
@@ -375,6 +375,6 @@ jobs:
         roles:
           - Intégration au sein d'une équipe de 4 développeurs
           - Développement et rédaction de la documentation destinée aux utilisateurs
-        techical_stack:
+        technical_stack:
           - Développement côté serveur avec PHP5
           - Développement côté client en ActionScript avec interface en Flash

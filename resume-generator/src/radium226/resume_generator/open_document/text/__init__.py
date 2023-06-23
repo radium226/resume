@@ -1,5 +1,4 @@
 from .covered_table_cell import covered_table_cell
-from .emphasis import emphasis
 from .h import h
 from .list_item import list_item
 from .list import list

@@ -6,18 +6,23 @@ from ..open_document import text
 from .render_paragraph import render_paragraph
 
 
-def render_tools(tools: list[Tool]) -> Element:
-    def render_tool(tool: Tool) -> Element:
-        if len(role.details) > 0:
-            return render_paragraph(tool.description)
+def render_tools(tools: list[Tool]) -> list[Element]:
+    def render_tool(tool: Tool) -> list[Element]:
+        if len(tool.details) == 0:
+            return [
+                text.list_item(
+                    children=render_paragraph(tool.name),
+                )
+            ]
         else:
-            return text.list_item(
-                children=[
-                    render_paragraph(tool.name),
-                    render_roles(tool.name),
-                ]
-            )
+            return [
+                text.list_item(
+                    children=render_paragraph(tool.name) + render_tools(tool.details),
+                ),
+            ]
     
-    return text.list(
-        children=[render_tool(tool) for tool in tools],
-    )
+    return [
+        text.list(
+            children=[element for tool in tools for element in render_tool(tool)],
+        ),
+    ]

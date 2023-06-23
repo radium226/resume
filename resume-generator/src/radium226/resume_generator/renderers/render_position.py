@@ -35,9 +35,7 @@ def render_position(position: Position, position_index=0) -> list[Element]:
                     children=[
                         text.table_cell(
                             number_columns_spanned=2,
-                            children=[
-                                render_paragraph(position.description)
-                            ],
+                            children=render_paragraph(position.description),
                         ),
                         text.covered_table_cell(),
                     ]
@@ -45,10 +43,10 @@ def render_position(position: Position, position_index=0) -> list[Element]:
                 text.table_row(
                     children=[
                         text.table_cell(
-                            children=[render_roles(position.roles)],
+                            children=render_roles(position.roles),
                         ),
                         text.table_cell(
-                            children=[render_tools(position.technical_stack)],
+                            children=render_tools(position.technical_stack),
                         ),
                     ],
                 ),

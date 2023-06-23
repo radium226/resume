@@ -11,9 +11,9 @@ def parse_tool(tool_obj) -> Tool:
                 name=name,
             )
         case dict():
-            name = ToolName(parse_paragraph(role_obj["name"]))
+            name = ToolName(parse_paragraph(tool_obj["name"]))
             details = [parse_tool(detail_obj) for detail_obj in tool_obj.get("details", [])]
-            return Role(
+            return Tool(
                 name=name,
                 details=details,
             )
