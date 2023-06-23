@@ -259,7 +259,8 @@ jobs:
           - Reporting avec Business Objects XI R2
           - Infrastructure en Korn Shell
           - Utilisation d' HP Quality Center
-      - client: SFR
+      - title: Backend Developer
+        client: SFR
         project: IRIS
         period:
           from: 2009-04
@@ -291,7 +292,8 @@ jobs:
     context: |
       Projet de fin d'étude
     positions:
-      - project: Suivi de la masse salariale
+      - title: Fullstack Developer
+        project: Suivi de la masse salariale
         period:
           from: 2008-11
           to: 2009-04
@@ -310,7 +312,8 @@ jobs:
               - développement, packaging et livraison
   - employer: Cap'EISTI
     positions:
-      - project: Vivier RH
+      - title: Fullstack Developer
+        project: Vivier RH
         period:
           from: 2008-11
           to: 2009-02

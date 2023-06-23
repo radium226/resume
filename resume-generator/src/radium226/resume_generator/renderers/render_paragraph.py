@@ -29,9 +29,10 @@ def render_span_token(span_token: SpanToken) -> list[Union[Element, str]]:
     return text.span(children=["FIXME"])
 
 
-def render_paragraph(paragraph: Paragraph) -> list[Element]:
+def render_paragraph(paragraph: Paragraph, style_name: str | None = None) -> list[Element]:
     return [
         text.p(
+            style_name=style_name,
             children=[
                 element for child in paragraph.children for element in render_span_token(child)
             ],

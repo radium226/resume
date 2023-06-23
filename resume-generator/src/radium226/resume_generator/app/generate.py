@@ -12,13 +12,16 @@ from ..xml import NAMESPACES_BY_PREFIX, append_children_to_parent_element
 
 
 def render_resume_into_element(resume: Resume, element: Element) -> None:
-    # body = next(iter(element.xpath("//table:table-cell[@table:style-name='Tableau6.B2']", namespaces=NAMESPACES_BY_PREFIX)), None)
-    body = next(iter(element.xpath("//table:table-cell", namespaces=NAMESPACES_BY_PREFIX)), None)
+    XPATH_QUERY = "//table:table[@table:name='Tableau6']/table:table-row[2]/table:table-cell[2]"
+    body = next(iter(element.xpath(XPATH_QUERY, namespaces=NAMESPACES_BY_PREFIX)), None)
+    for child in body.getchildren():
+        body.remove(child)
+
     append_children_to_parent_element(body, render_resume(resume))
 
 
 @command()
-@option("--model", "model_file_path", type=Path, default=Path(__file__).parent.parent / "model2.odt")
+@option("--model", "model_file_path", type=Path, default=Path(__file__).parent.parent / "model.odt")
 @argument("input_file_path", type=Path, metavar="INPUT", default="../data.yml")
 @argument("output_file_path", type=Path, metavar="OUTPUT", default="/tmp/resume.odt")
 def generate(model_file_path: Path, input_file_path: Path, output_file_path: Path):
