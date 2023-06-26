@@ -41,6 +41,14 @@ jobs:
         git -C "gh-pages" config user.name "GitHub Actions"
         git -C "gh-pages" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       
+    - name: Install LibreOffice
+      shell: bash
+      run: |
+        set -euOe pipefail
+        add-apt-repository ppa:libreoffice/ppa
+        apt-get -y update
+        apt-get -y install "libreoffice"
+
     - uses: actions/setup-python@v4
       with:
         python-version: "3.11"
@@ -66,6 +74,7 @@ jobs:
                 generate \
                   "./resume-generator/data.yml" \
                   "./gh-pages/resume.odt"
+                  
 
     - name: Update resume on GitHub Pages
       shell: bash
