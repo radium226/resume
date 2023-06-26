@@ -1,0 +1,46 @@
+---
+name: generate-resume
+on:
+  push:
+
+jobs:
+  generate-resume:
+    name: |
+      generate-resume
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+      pull-requests: read
+      actions: read
+    steps:
+    - name: Checkout Resume Generator sources
+      uses: actions/checkout@v3
+      with:
+        path: "resume-generator"
+        fetch-depth: 0
+
+    - name: Checkout Resume Generator sources
+      uses: actions/checkout@v3
+      with:
+        path: "resume-generator"
+        fetch-depth: 0
+
+    - name: Setup Git user
+      uses: fregante/setup-git-user@v2
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    - uses: pdm-project/setup-pdm@v3
+      with:
+        python-version: "3.11"
+        version: "2.7.4"
+    - name: Install dependencies for tools/automation
+      run: pdm sync --project="resume-generator/resume-generator"
+    - name: Generate resume
+      shell: bash
+      run: |
+        pdm run \
+          --project="resume-generator/resume-generator" \
+            radium226-resume-generator \
+              generate

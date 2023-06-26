@@ -1,0 +1,98 @@
+---
+jobs:
+  - company:
+      name: "Jump"
+      website: "https://www.join-jump.com/"
+    explanation: |
+      Après avoir expérimenté une startup déjà en place, j'ai eu l'opportunité
+
+profile: |
+  Issue d'une formation en Business Intelligence...
+
+  ...J'ai pris le virage Big Data
+
+skills:
+  - name: Kafka
+    category: Streaming
+    level: 2
+  - name: fs2
+    category: Streaming
+    level: 2
+# experiences:
+# - company:
+#     name: Company Caca  du cul
+#     website: "http://toto.com"
+#   description: J'ai pété OQ
+#   positions:
+#   - name: Merdique
+#     period:
+#       from: 2023-02
+#       to: now
+#     description: |
+#         J'ai fait de la *merde*
+#     tasks:
+#     - Aucune
+#     tools:
+#     - Aucun
+
+# - company:
+#     name: Company n°1
+#     website: "http://toto.com"
+#   description: Yay
+#   positions:
+#   - name: Position n°1
+#     period:
+#       from: 2023-02
+#       to: now
+#     description: |
+#         Bla bla bla
+#     tasks:
+#     - Coucou
+#     - Coucou
+#     tools:
+#     - Scala
+#     - Java
+#     - name: Confluent Platform
+#       tools:
+#       - Kafka
+#       - Akka
+
+#   - name: Position n°2
+#     period:
+#       from: 2023-02
+#       to: now
+#     description: |
+#         Bla bla bla
+#     tasks:
+#     - description: "Coucou *les* amis"
+#       tasks:
+#       - Coucou
+#       - Toto
+#     - Coucou
+
+# - company:
+#     name: Company n°2
+#     website: "http://toto.com"
+#   description: Yay
+#   positions:
+#   - name: Position n°1
+#     period:
+#       from: 2023-02
+#       to: now
+#     description: |
+#         Bla bla bla
+#     tasks:
+#     - Coucou
+#     - Coucou
+#   - name: Position n°2
+#     period:
+#       from: 2023-02
+#       to: now
+#     description: |
+#         Bla bla bla
+#     tasks:
+#     - description: "Coucou *les* amis"
+#       tasks:
+#       - Coucou
+#       - Toto
+#     - Coucou
