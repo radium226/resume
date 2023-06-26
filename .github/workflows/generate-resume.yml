@@ -67,6 +67,8 @@ jobs:
     - name: Generate resume
       shell: bash
       run: |
+        set -euEo pipefail
+
         pdm \
           run \
             --project="./resume-generator/resume-generator" \
@@ -74,11 +76,18 @@ jobs:
                 generate \
                   "./resume-generator/data.yml" \
                   "./gh-pages/resume.odt"
+        
+        soffice \
+          --convert-to "pdf" \
+          --outdir "./gh-pages" \
+            "./gh-pages/resume.odt"
                   
 
     - name: Update resume on GitHub Pages
       shell: bash
       run: |
-        git -C "./gh-pages" add "./resume.odt"
+        set -euEo pipefail 
+
+        git -C "./gh-pages" add "./resume.odt" "./resume.pdf"
         git -C "./gh-pages" commit -m "Update resume! "
         git -C "./gh-pages" push -u origin gh-pages
