@@ -49,9 +49,10 @@ jobs:
 
     - name: Install dependencies for tools/automation
       shell: bash
-      run: pdm \
-        sync \
-          --project="./resume-generator/resume-generator"
+      run: |
+        pdm \
+          sync \
+            --project="./resume-generator/resume-generator"
     
     - name: Generate resume
       shell: bash
