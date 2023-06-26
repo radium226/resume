@@ -69,7 +69,7 @@ jobs:
 
     - name: Update resume on GitHub Pages
       shell: bash
-      run: \
+      run: |
         git -C "./gh-pages" add "./resume.odt"
         git -C "./gh-pages" commit -m "Update resume! "
         git -C "./gh-pages" push -u origin gh-pages
