@@ -45,9 +45,9 @@ jobs:
       shell: bash
       run: |
         set -euEo pipefail
-        add-apt-repository ppa:libreoffice/ppa
-        apt-get -y update
-        apt-get -y install "libreoffice"
+        sudo add-apt-repository ppa:libreoffice/ppa
+        sudo apt-get -y update
+        sudo apt-get -y install "libreoffice"
 
     - uses: actions/setup-python@v4
       with:
