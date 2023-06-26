@@ -29,7 +29,7 @@ jobs:
     - name: Checkout GitHub Pages
       uses: actions/checkout@v3
       with:
-        branch: "gh-pages"
+        ref: "gh-pages"
         path: "gh-pages"
         fetch-depth: 0
 
@@ -61,4 +61,6 @@ jobs:
           run \
             --project="./resume-generator/resume-generator" \
               radium226-resume-generator \
-                generate
+                generate \
+                  "./resume-generator/data.yml" \
+                  "./gh-pages/resume.odt"
