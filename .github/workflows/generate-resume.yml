@@ -20,14 +20,25 @@ jobs:
         path: "resume-generator"
         fetch-depth: 0
 
-    - name: Checkout Resume Generator sources
+    - name: Checkout resume-generator sources
       uses: actions/checkout@v3
       with:
         path: "resume-generator"
         fetch-depth: 0
 
-    - name: Setup Git user
-      uses: fregante/setup-git-user@v2
+    - name: Checkout GitHub Pages
+      uses: actions/checkout@v3
+      with:
+        branch: "gh-pages"
+        path: "gh-pages"
+        fetch-depth: 0
+
+    - name: Config Git user for GitHub Pages
+      shell: bash
+      run: |
+        git -C "gh-pages" config user.name "GitHub Actions"
+        git -C "gh-pages" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      
     - uses: actions/setup-python@v4
       with:
         python-version: "3.11"
@@ -35,12 +46,18 @@ jobs:
       with:
         python-version: "3.11"
         version: "2.7.4"
+
     - name: Install dependencies for tools/automation
-      run: pdm sync --project="resume-generator/resume-generator"
+      shell: bash
+      run: pdm \
+        sync \
+          --project="./resume-generator/resume-generator"
+    
     - name: Generate resume
       shell: bash
       run: |
-        pdm run \
-          --project="resume-generator/resume-generator" \
-            radium226-resume-generator \
-              generate
+        pdm \
+          run \
+            --project="./resume-generator/resume-generator" \
+              radium226-resume-generator \
+                generate
