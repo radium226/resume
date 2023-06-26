@@ -44,7 +44,7 @@ jobs:
     - name: Install LibreOffice
       shell: bash
       run: |
-        set -euOe pipefail
+        set -euEo pipefail
         add-apt-repository ppa:libreoffice/ppa
         apt-get -y update
         apt-get -y install "libreoffice"
