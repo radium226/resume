@@ -8,10 +8,14 @@ from .render_roles import render_roles
 from .render_tools import render_tools
 from .render_paragraph import render_paragraph
 
+from .context import get_current_render_context
+
 
 def render_position(position: Position, position_index) -> list[Element]:
     period_from = position.period.start.format("MMMM YYYY", locale="fr")
     period_to = "aujourd'hui" if position.period.end == today().at(0).set(day=1) else position.period.end.format("MMMM YYYY", locale="fr")
+
+    render_context = get_current_render_context()
 
     return (
         [
@@ -43,19 +47,20 @@ def render_position(position: Position, position_index) -> list[Element]:
                 ]
             ),
             text.table(
-                name="Tableau",
+                name=render_context.next_table_name(),
                 style_name="Tableau1",
                 children=[
                     text.table_column(
-                        style_name="Tableau1.A",
-                        number_columns_repeated=2,
+                        # style_name="Tableau1.A",
+                        number_columns_repeated=3,
                     ),
                     text.table_row(
                         children=[
                             text.table_cell(
-                                number_columns_spanned=2,
+                                number_columns_spanned=3,
                                 children=render_paragraph(position.description, style_name="Présentation_20_du_20_projet"),
                             ),
+                            text.covered_table_cell(),
                             text.covered_table_cell(),
                         ]
                     ),
@@ -63,11 +68,13 @@ def render_position(position: Position, position_index) -> list[Element]:
                         style_name="Tableau1.2",
                         children=[
                             text.table_cell(
-                                style_name="Tableau1.A2",
+                                number_columns_spanned=2,
+                                # style_name="Tableau1.A2",
                                 children=render_roles(position.roles),
                             ),
+                            text.covered_table_cell(),
                             text.table_cell(
-                                style_name="Tableau1.B2",
+                                # style_name="Tableau1.B2",
                                 children=render_tools(position.technical_stack),
                             ),
                         ],
