@@ -2,6 +2,8 @@
 name: generate-resume
 on:
   push:
+    branches:
+      - "main"
 
 jobs:
   generate-resume:
@@ -64,3 +66,10 @@ jobs:
                 generate \
                   "./resume-generator/data.yml" \
                   "./gh-pages/resume.odt"
+
+    - name: Update resume on GitHub Pages
+      shell: bash
+      run: \
+        git -C "./gh-pages" add "./resume.odt"
+        git -C "./gh-pages" commit -m "Update "./resume.odt"
+        git -C "./gh-pages" push -u origin gh-pages
