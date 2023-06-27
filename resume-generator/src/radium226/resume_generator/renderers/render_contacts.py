@@ -15,7 +15,13 @@ def _render_contact_as_table_row(contact: Contact) -> Element:
             text.table_cell(
                 children=[
                     text.p(
-                        children=[get_current_render_context().embed_image(file_path=Path(__file__).parent.parent / "pizza.png")],
+                        children=[
+                            get_current_render_context().embedded_image(
+                                width="0.33cm",
+                                height="0.33cm",
+                                file_path=Path(__file__).parent.parent / "data" / f"{contact.type}.png",
+                            )
+                        ],
                     )
                 ],
             ),

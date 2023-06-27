@@ -26,7 +26,7 @@ class RenderContext():
         self.number_of_tables += 1
         return f"Tableau_{self.number_of_tables}"
 
-    def embed_image(self, *, file_path: Path, width: str | None = None, height: str | None = None) -> Element:
+    def embedded_image(self, *, file_path: Path, width: str | None = None, height: str | None = None) -> Element:
         with file_path.open("rb") as file_stream:
             embedded_image_content = file_stream.read()
             embedded_image_name = file_path.name

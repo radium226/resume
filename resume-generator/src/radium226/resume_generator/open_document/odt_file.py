@@ -39,20 +39,21 @@ class ODTFile():
                                 input_stream = BytesIO(tostring(element))
 
                             if file_name == "META-INF/manifest.xml":
-                                manifest_element = parse(input_stream).getroot()
+                                manifest_element_tree = parse(input_stream)
+                                manifest_element = manifest_element_tree.getroot()
                                 file_entry_elements = []
                                 for embedded_image in embedded_images:
                                     file_entry_elements.append(
                                         create_element(
                                             "manifest:file-entry",
                                             attributes={
-                                                "manifest:full-path": embedded_image.name,
+                                                "manifest:full-path": f"Pictures/{embedded_image.name}",
                                                 "manifest:media-type": embedded_image.mime_type,
                                             }
                                         )
                                     )
                                 append_children_to_parent_element(manifest_element, file_entry_elements)
-                                input_stream = BytesIO(tostring(manifest_element))
+                                input_stream = BytesIO(tostring(manifest_element_tree))
 
                             with output_zip_file.open(output_zip_info, mode="w") as output_stream:
                                 copyfileobj(input_stream, output_stream)
