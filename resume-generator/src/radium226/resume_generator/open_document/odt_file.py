@@ -33,7 +33,9 @@ class ODTFile():
                             if file_name == "content.xml":
                                 element = parse(input_stream)
                                 if update_content:
-                                    embedded_images.extend(update_content(element=element))
+                                    for embedded_image in update_content(element=element):
+                                        if embedded_image.name not in [e.name for e in embedded_images]:
+                                            embedded_images.append(embedded_image)
                                 input_stream = BytesIO(tostring(element))
 
                             if file_name == "META-INF/manifest.xml":
@@ -50,7 +52,7 @@ class ODTFile():
                                         )
                                     )
                                 append_children_to_parent_element(manifest_element, file_entry_elements)
-                                input_stream = BytesIO(tostring(element))
+                                input_stream = BytesIO(tostring(manifest_element))
 
                             with output_zip_file.open(output_zip_info, mode="w") as output_stream:
                                 copyfileobj(input_stream, output_stream)
