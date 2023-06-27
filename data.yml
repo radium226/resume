@@ -381,3 +381,54 @@ jobs:
         technical_stack:
           - Développement côté serveur avec PHP5
           - Développement côté client en ActionScript avec interface en Flash
+
+publications:
+  - title: |
+      Génération de code, moteur Catalyst... Démystifions Apache Spark ! 
+    details:
+      - medium:
+          type: talk
+          name: Devoxx France
+        date: 2018-04-19
+        link: https://www.youtube.com/watch?v=LvvXFd7IjbI
+
+      - medium:
+          type: talk
+          name: PerfUG
+        date: 2018-04-19
+        link: https://www.youtube.com/watch?v=v01Mc__Pvic
+
+  - title: |
+      Ansible Containers: Chronicle of a Death Foretold
+    medium:
+      name: OCTO Talk!
+      type: article
+    date: 2018-06-20
+    link: https://blog.octo.com/ansible-container-chronicle-of-a-death-foretold/
+  
+  - title: |
+      Articles MythBuster: Apache Spark
+    medium:
+      name: OCTO Talk!
+      type: article
+    details:
+      - title: Épisode 1
+        link: https://blog.octo.com/mythbuster-apache-spark-parsing-requete-sql/
+        date: 2017-04-07
+
+      - title: Épisode 2
+        link: https://blog.octo.com/mythbuster-apache-spark-planification-execution-requete-sql/
+        date: 2017-08-08
+
+      - title: Épisode 3
+        link: https://blog.octo.com/mythbuster-apache-spark-%e2%80%a2-episode-3-generation-de-code-a-la-volee/
+        date: 2017-11-29
+
+  - title: |
+      5 services que systemd m'a déjà rendu
+    medium:
+      name: OCTO Talk!
+      type: article
+    link: https://blog.octo.com/5-services-que-systemd-ma-deja-rendu/
+    date: 2017-04-07
+      

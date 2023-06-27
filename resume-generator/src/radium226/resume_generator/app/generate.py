@@ -32,6 +32,7 @@ def render_resume_into_element(resume: Resume, number_of_jobs: int, element: Ele
 def generate(model_file_path: Path, number_of_jobs: int, input_file_path: Path, output_file_path: Path):
     # Parsing resume
     yaml = YAML()
+    yaml.constructor.yaml_constructors[u'tag:yaml.org,2002:timestamp'] = yaml.constructor.yaml_constructors[u'tag:yaml.org,2002:str']
     yaml_obj = yaml.load(input_file_path)
     resume = parse_resume(yaml_obj)
 

@@ -11,6 +11,7 @@ def parse(yaml_file_path: Path) -> None:
     print(f"Parsing {yaml_file_path}... ")
 
     yaml = YAML()
+    yaml.constructor.yaml_constructors[u'tag:yaml.org,2002:timestamp'] = yaml.constructor.yaml_constructors[u'tag:yaml.org,2002:str']
     resume_obj = yaml.load(yaml_file_path)
     print(resume_obj)
     resume = parse_resume(resume_obj)
