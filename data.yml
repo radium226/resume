@@ -432,3 +432,84 @@ publications:
     link: https://blog.octo.com/5-services-que-systemd-ma-deja-rendu/
     date: 2017-04-07
       
+
+skills:
+- title: Gestion de projet
+  category: Pilotage
+  rating: 2
+
+- title: Méthodologie Agile
+  category: Pilotage
+  rating: 3
+
+- title: Management
+  category: Pilotage
+  rating: 2
+
+- title: Google BigQuery
+  category: Big Data
+  rating: 2
+
+- title: Ecosystème Hadoop
+  category: Big Data
+  rating: 2
+
+- title: Spark
+  category: Big Data
+  rating: 3
+
+- title: Cassandra
+  category: Big Data
+  rating: 1
+
+- title: Kubernetes
+  category: DevOps / SRE
+  rating: 2
+
+- title: PostgreSQL
+  category: SGBDR
+  rating: 3
+
+- title: Oracle
+  category: SGBDR
+  rating: 3
+
+- title: Spark Streaming
+  category: Streaming
+  rating: 2
+
+- title: Akka Stream
+  category: Streaming
+  rating: 2
+
+- title: FS2
+  category: Streaming
+  rating: 2
+
+- title: Apache Beam
+  category: Streaming
+  rating: 2
+
+- title: Java
+  category: Langages
+  rating: 3
+
+- title: Scala
+  category: Langages
+  rating: 3
+
+- title: Python
+  category: Langages
+  rating: 3
+
+- title: JavaScript
+  category: Langages
+  rating: 2
+
+- title: TypeScript
+  category: Langages
+  rating: 2
+
+- title: Bash
+  category: Langages
+  rating: 2

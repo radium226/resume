@@ -10,3 +10,6 @@ from .table_cell import table_cell
 from .table_column import table_column
 from .table_row import table_row
 from .table import table
+from .s import s
+from .image import image
+from .frame import frame

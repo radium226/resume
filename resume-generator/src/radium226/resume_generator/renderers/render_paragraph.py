@@ -14,8 +14,7 @@ def render_span_token(span_token: SpanToken) -> list[Union[Element, str]]:
             ]
 
         case Emphasis():
-            print(f"We are here! {span_token}")
-            t = [
+            return [
                 text.span(
                     style_name="Strong_20_Emphasis",
                     children=[
@@ -23,8 +22,6 @@ def render_span_token(span_token: SpanToken) -> list[Union[Element, str]]:
                     ],
                 ),
             ]
-            print(tostring(t[0]))
-            return t
 
     return text.span(children=["FIXME"])
 
