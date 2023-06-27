@@ -23,7 +23,7 @@ def render_span_token(span_token: SpanToken) -> list[Union[Element, str]]:
                 ),
             ]
 
-    return text.span(children=["FIXME"])
+    return []
 
 
 def render_paragraph(

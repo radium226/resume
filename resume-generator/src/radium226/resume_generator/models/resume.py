@@ -3,10 +3,13 @@ from dataclasses import dataclass, field
 from .job import Job
 from .publication import Publication
 from .skill import Skill
+from .profile import Profile
 
 
 @dataclass
 class Resume():
+
+    profile: Profile
 
     jobs: list[Job] = field(default_factory=list)
 

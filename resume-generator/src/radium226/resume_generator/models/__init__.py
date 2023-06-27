@@ -8,3 +8,4 @@ from .role import Role, RoleDescription
 from .tool import Tool, ToolName
 from .publication import Publication, PublicationTitle, PublicationLink
 from .skill import Skill, SkillTitle, SkillCategory, SkillRating
+from .profile import Profile
