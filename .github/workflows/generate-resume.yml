@@ -102,6 +102,6 @@ jobs:
 
         EOCAT
 
-        git -C "./gh-pages" add "./resume.odt" "./resume.pdf"
+        git -C "./gh-pages" add "./resume.odt" "./resume.pdf" "./index.html"
         git -C "./gh-pages" commit -m "Update resume! "
         git -C "./gh-pages" push -u origin gh-pages
