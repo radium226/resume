@@ -5,6 +5,10 @@ from shutil import copyfileobj
 from lxml.etree import Element, parse, tostring
 from io import BytesIO
 
+from ..xml import create_element, append_children_to_parent_element
+
+from .embedded_image import EmbeddedImage
+
 
 class ODTFile():
 
@@ -17,6 +21,7 @@ class ODTFile():
     ) -> None:
         with ZipFile(input_file_path, mode="r") as input_zip_file:
             with ZipFile(output_file_path, mode="w") as output_zip_file:
+                embedded_images = []
                 for input_zip_info in input_zip_file.infolist():
                     file_name = input_zip_info.filename
                     if input_zip_info.is_dir():
@@ -28,11 +33,36 @@ class ODTFile():
                             if file_name == "content.xml":
                                 element = parse(input_stream)
                                 if update_content:
-                                    update_content(element=element)
+                                    embedded_images.extend(update_content(element=element))
+                                input_stream = BytesIO(tostring(element))
+
+                            if file_name == "META-INF/manifest.xml":
+                                manifest_element = parse(input_stream).getroot()
+                                file_entry_elements = []
+                                for embedded_image in embedded_images:
+                                    file_entry_elements.append(
+                                        create_element(
+                                            "manifest:file-entry",
+                                            attributes={
+                                                "manifest:full-path": embedded_image.name,
+                                                "manifest:media-type": embedded_image.mime_type,
+                                            }
+                                        )
+                                    )
+                                append_children_to_parent_element(manifest_element, file_entry_elements)
                                 input_stream = BytesIO(tostring(element))
 
                             with output_zip_file.open(output_zip_info, mode="w") as output_stream:
                                 copyfileobj(input_stream, output_stream)
+                
+                for embedded_image in embedded_images:
+                    output_zip_info = ZipInfo(f"Pictures/{embedded_image.name}")
+                    print(output_zip_info)
+                    output_zip_info.compress_type = input_zip_info.compress_type
+                    with output_zip_file.open(output_zip_info, mode="w") as output_stream:
+                        output_stream.write(embedded_image.content)
+
+                    
 
 
     @staticmethod

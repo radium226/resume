@@ -6,12 +6,12 @@ from functools import partial
 
 from ..models import Resume
 from ..parsers import parse_resume
-from ..renderers import render_resume, render_skills, render_profile, init_current_render_context
-from ..open_document import ODTFile
+from ..renderers import render_resume, render_skills, render_profile, render_contacts, init_current_render_context, get_current_render_context
+from ..open_document import ODTFile, EmbeddedImage
 from ..xml import NAMESPACES_BY_PREFIX, append_children_to_parent_element
 
 
-def render_resume_into_element(resume: Resume, number_of_jobs: int, element: Element) -> None:
+def render_resume_into_element(resume: Resume, number_of_jobs: int, element: Element) -> list[EmbeddedImage]:
     XPATH_QUERY_FOR_MAIN_CELL = "//table:table[@table:name='Tableau6']/table:table-row[2]/table:table-cell[2]"
     main_cell_element = next(iter(element.xpath(XPATH_QUERY_FOR_MAIN_CELL, namespaces=NAMESPACES_BY_PREFIX)), None)
     for child in main_cell_element.getchildren():
@@ -26,7 +26,14 @@ def render_resume_into_element(resume: Resume, number_of_jobs: int, element: Ele
     init_current_render_context()
     
     append_children_to_parent_element(main_cell_element, render_resume(resume))
-    append_children_to_parent_element(left_cell_element, render_profile(resume.profile) + render_skills(resume.skills))
+    append_children_to_parent_element(
+        left_cell_element, 
+        render_contacts(resume.contacts) +
+        render_profile(resume.profile) + 
+        render_skills(resume.skills)
+    )
+
+    return get_current_render_context().embedded_images
 
     
 

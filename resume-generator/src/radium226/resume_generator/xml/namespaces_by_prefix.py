@@ -5,4 +5,5 @@ NAMESPACES_BY_PREFIX = {
     "draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
     "svg": "urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0",
     "xlink": "http://www.w3.org/1999/xlink",
+    "manifest": "urn:oasis:names:tc:opendocument:xmlns:manifest:1.0",
 }

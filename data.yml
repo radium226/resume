@@ -520,3 +520,18 @@ profile: >
 
   En plus de l'expertise technique, ces 10 années d'expérience m'ont permis de monter en compétence sur 
   le management d'équipe, le pilotage et suivi de projets.
+
+contacts:
+  - type: phone
+    value: +336XXXXXXXX
+
+  - type: email
+    value: xxx.xxx@xxx.com
+
+  - type: github
+    value: radium226
+    link: https://github.com/radium226
+
+  - type: linkedin
+    value: adrienbesnard
+    link: https://www.linkedin.com/in/adrienbesnard
