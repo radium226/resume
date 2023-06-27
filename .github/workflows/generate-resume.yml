@@ -27,24 +27,12 @@ jobs:
       with:
         path: "resume-generator"
         fetch-depth: 0
-
-    - name: Checkout GitHub Pages
-      uses: actions/checkout@v3
-      with:
-        ref: "gh-pages"
-        path: "gh-pages"
-        fetch-depth: 0
-
-    - name: Config Git user for GitHub Pages
-      shell: bash
-      run: |
-        git -C "gh-pages" config user.name "GitHub Actions"
-        git -C "gh-pages" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       
-    - name: Install LibreOffice
+    - name: Install packages for LibreOffice
       shell: bash
       run: |
         set -euEo pipefail
+
         sudo add-apt-repository "ppa:libreoffice/ppa"
         sudo apt-get --yes update
         sudo apt-get --yes install "libreoffice" "fonts-ubuntu"
@@ -57,9 +45,11 @@ jobs:
         python-version: "3.11"
         version: "2.7.4"
 
-    - name: Install dependencies for tools/automation
+    - name: Install dependencies for Resume Generator
       shell: bash
       run: |
+        set -euEo pipefail
+        
         pdm \
           sync \
             --project="./resume-generator/resume-generator"
@@ -69,26 +59,22 @@ jobs:
       run: |
         set -euEo pipefail
 
+        mkdir -p "./github-pages"
+
         pdm \
           run \
             --project="./resume-generator/resume-generator" \
               radium226-resume-generator \
                 generate \
                   "./resume-generator/data.yml" \
-                  "./gh-pages/resume.odt"
+                  "./github-pages/resume.odt"
         
         soffice \
           --convert-to "pdf" \
-          --outdir "./gh-pages" \
-            "./gh-pages/resume.odt"
-                  
+          --outdir "./github-pages" \
+            "./github-pages/resume.odt"
 
-    - name: Update resume on GitHub Pages
-      shell: bash
-      run: |
-        set -euEo pipefail 
-
-        cat <<EOCAT >"./gh-pages/index.html"
+        cat <<EOCAT >"./github-pages/index.html"
         <!DOCTYPE html>
         <html lang="en">
           <head>
@@ -99,9 +85,9 @@ jobs:
           <body>
           </body>
         </html>
-
         EOCAT
 
-        git -C "./gh-pages" add "./resume.odt" "./resume.pdf" "./index.html"
-        git -C "./gh-pages" commit -m "Update resume! "
-        git -C "./gh-pages" push -u origin gh-pages
+    - name: Upload GitHub Pages
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: "./github-pages"
