@@ -35,12 +35,15 @@ jobs:
 
         sudo add-apt-repository "ppa:libreoffice/ppa"
         sudo apt-get --yes update
-        sudo apt-get --yes install "libreoffice" "fonts-ubuntu"
+        sudo apt-get --yes install "libreoffice" "fonts-ubuntu" "ttf-ubuntu-font-family"
 
-    - uses: actions/setup-python@v4
+    - name: Install Python
+      uses: actions/setup-python@v4
       with:
         python-version: "3.11"
-    - uses: pdm-project/setup-pdm@v3
+    
+    - name: Install PDM
+      uses: pdm-project/setup-pdm@v3
       with:
         python-version: "3.11"
         version: "2.7.4"
