@@ -93,8 +93,25 @@ jobs:
 
         tar -C "./github-pages" -zcvf "./github-pages.tar.gz" "."
 
-
-    - uses: actions/upload-artifact@v3
+    - name: Upload artifact for GitHub Pages
+      uses: actions/upload-artifact@v3
       with:
         name: github-pages
         path: ./github-pages.tar.gz
+
+  deploy:
+    needs: generate
+
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2    
