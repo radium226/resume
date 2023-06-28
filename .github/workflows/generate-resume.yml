@@ -1,14 +1,12 @@
 ---
-name: generate-resume
+name: update-resume
 on:
   push:
     branches:
       - "main"
 
 jobs:
-  generate-resume:
-    name: |
-      generate-resume
+  generate:
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -99,7 +97,7 @@ jobs:
         name: github-pages
         path: ./github-pages.tar.gz
 
-  deploy:
+  publish:
     needs: generate
 
     permissions:
