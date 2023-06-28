@@ -91,7 +91,10 @@ jobs:
         </html>
         EOCAT
 
-    - name: Upload GitHub Pages
-      uses: actions/upload-pages-artifact@v1
+        tar -C "./github-pages" -zcvf "./github-pages.tar.gz" "."
+
+
+    - uses: actions/upload-artifact@v3
       with:
-        path: "github-pages/"
+        name: github-paegs
+        path: ./github-pages.tar.gz
