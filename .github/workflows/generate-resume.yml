@@ -89,13 +89,13 @@ jobs:
         </html>
         EOCAT
 
-        tar --dereference --hard-dereference -C "./github-pages" -zcvf "./github-pages.tar.gz" "."
+        tar --dereference --hard-dereference -C "./github-pages" -zcvf "./artifact.tar" "."
 
     - name: Upload artifact for GitHub Pages
       uses: actions/upload-artifact@v3
       with:
         name: github-pages
-        path: ./github-pages.tar.gz
+        path: ./artifact.tar
 
   publish:
     needs: generate
