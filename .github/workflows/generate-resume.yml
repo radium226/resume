@@ -96,5 +96,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: github-paegs
+        name: github-pages
         path: ./github-pages.tar.gz
