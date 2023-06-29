@@ -3,7 +3,7 @@ from contextvars import ContextVar
 from pathlib import Path
 from dataclasses import dataclass
 
-from ..open_document import EmbeddedImage, TableStyle, text
+from ..open_document import EmbeddedImage, text
 
 
 CURRENT_CONTEXT = ContextVar("CURRENT_CONTEXT")
@@ -50,8 +50,8 @@ class RenderContext():
                 ]
             )
     
-    def register_table_style(table_style: TableStyle) -> None:
-        pass
+    # def register_table_style(table_style: TableStyle) -> None:
+    #     pass
 
 
 
