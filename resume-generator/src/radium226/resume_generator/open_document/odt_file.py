@@ -2,7 +2,7 @@ from typing import Callable
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED, ZipInfo
 from shutil import copyfileobj
-from lxml.etree import Element, parse, tostring
+from lxml.etree import _Element, parse, tostring
 from io import BytesIO
 
 from ..xml import create_element, append_children_to_parent_element
@@ -17,11 +17,11 @@ class ODTFile():
     def modify_with(
         input_file_path: Path,
         output_file_path: Path,
-        update_content: Callable[[Element], None] | None = None,
+        update_content: Callable[[_Element], list[EmbeddedImage]] | None = None,
     ) -> None:
         with ZipFile(input_file_path, mode="r") as input_zip_file:
             with ZipFile(output_file_path, mode="w") as output_zip_file:
-                embedded_images = []
+                embedded_images: list[EmbeddedImage] = []
                 for input_zip_info in input_zip_file.infolist():
                     file_name = input_zip_info.filename
                     if input_zip_info.is_dir():
@@ -33,7 +33,7 @@ class ODTFile():
                             if file_name == "content.xml":
                                 element = parse(input_stream)
                                 if update_content:
-                                    for embedded_image in update_content(element=element):
+                                    for embedded_image in update_content(element):
                                         if embedded_image.name not in [e.name for e in embedded_images]:
                                             embedded_images.append(embedded_image)
                                 input_stream = BytesIO(tostring(element))

@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 from functools import partial
 
 from ..models import Publication
@@ -111,9 +111,9 @@ from .render_paragraph import render_paragraph
 
 
 
-def render_publications(publications: list[Publication]) -> list[Element]:
+def render_publications(publications: list[Publication]) -> list[_Element]:
 
-    def render_publication_as_table_row(publication: Publication) -> Element:
+    def render_publication_as_table_row(publication: Publication) -> _Element:
         print(publication)
         return text.table_row(
             children=[

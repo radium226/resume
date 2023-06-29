@@ -16,7 +16,7 @@ PositionTitle = NewType("PositionTitle", str)
 PositionProject = NewType("PositionProject", str)
 
 
-PositionDescription = NewType("PositionDescription", Paragraph)
+PositionDescription = NewType("PositionDescription", Paragraph) # type: ignore
 
 
 @dataclass

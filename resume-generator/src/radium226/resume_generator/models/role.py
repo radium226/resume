@@ -6,7 +6,7 @@ from mistletoe.block_token import Paragraph
 from .context import Context
 
 
-RoleDescription = NewType("RoleDescription", Paragraph)
+RoleDescription = NewType("RoleDescription", Paragraph) # type: ignore
 
 
 @dataclass

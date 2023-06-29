@@ -7,7 +7,7 @@ from mistletoe.block_token import Paragraph
 from .medium import Medium
 
 
-PublicationTitle = NewType("PublicationTitle", Paragraph)
+PublicationTitle = NewType("PublicationTitle", Paragraph) # type: ignore
 
 
 PublicationLink = NewType("PublicationLink", str)

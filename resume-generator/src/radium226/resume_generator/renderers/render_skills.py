@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from lxml.etree import Element
+from lxml.etree import _Element
 from itertools import groupby
 from copy import deepcopy
 
@@ -16,8 +16,8 @@ class CategoryAndSkills():
     skills: list[Skill]
 
 
-def render_rating(rating: SkillRating) -> list[Element]:
-    def filled_square_element() -> Element:
+def render_rating(rating: SkillRating) -> list[_Element]:
+    def filled_square_element() -> _Element:
         return text.frame(
             width="0.0591in",
             height="0.0591in",
@@ -30,7 +30,7 @@ def render_rating(rating: SkillRating) -> list[Element]:
             ]
         )
 
-    def empty_square_element() -> Element:
+    def empty_square_element() -> _Element:
         return text.frame(
             width="0.0591in",
             height="0.0591in",

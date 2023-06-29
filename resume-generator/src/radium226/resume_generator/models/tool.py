@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from mistletoe.block_token import Paragraph
 
 
-ToolName = NewType("ToolName", Paragraph)
+ToolName = NewType("ToolName", Paragraph) # type: ignore
 
 
 @dataclass

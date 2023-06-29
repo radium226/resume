@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from lxml.etree import Element
+from lxml.etree import _Element
 from itertools import groupby
 from copy import deepcopy
 from pathlib import Path
@@ -9,7 +9,7 @@ from ..open_document import text
 from .context import get_current_render_context
 
 
-def _render_contact_as_table_row(contact: Contact) -> Element:
+def _render_contact_as_table_row(contact: Contact) -> _Element:
     return text.table_row(
         children=[
             text.table_cell(

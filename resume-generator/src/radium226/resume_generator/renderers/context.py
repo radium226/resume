@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 from contextvars import ContextVar
 from pathlib import Path
 from dataclasses import dataclass
@@ -26,7 +26,7 @@ class RenderContext():
         self.number_of_tables += 1
         return f"Tableau_{self.number_of_tables}"
 
-    def embedded_image(self, *, file_path: Path, width: str | None = None, height: str | None = None) -> Element:
+    def embedded_image(self, *, file_path: Path, width: str | None = None, height: str | None = None) -> _Element:
         with file_path.open("rb") as file_stream:
             embedded_image_content = file_stream.read()
             embedded_image_name = file_path.name

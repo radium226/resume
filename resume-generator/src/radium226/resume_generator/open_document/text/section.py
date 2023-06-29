@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 
 from ...xml import create_element
 
@@ -8,7 +8,7 @@ def section(
     name: str,
     style_name: str | None = None,
     **kwargs,
-) -> Element:
+) -> _Element:
     return create_element(
         tag="text:section",
         **kwargs | { "attributes": kwargs.get("attributes", {}) | { 

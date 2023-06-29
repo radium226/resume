@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
-@dataclasses
-class TableStyle()
+@dataclass
+class TableStyle():
+    pass
 
     

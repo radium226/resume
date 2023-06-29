@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 
 from ...xml import create_element
 
@@ -8,7 +8,7 @@ def table_column(
     number_columns_repeated: int | None = None,
     style_name: str | None = None,
     **kwargs,
-) -> Element:
+) -> _Element:
     return create_element(
         tag="table:table-column",
         **kwargs | { "attributes": kwargs.get("attributes", {}) | { 

@@ -4,4 +4,4 @@ from typing import NewType
 from mistletoe.block_token import Paragraph
 
 
-Context = NewType("Context", Paragraph)
+Context = NewType("Context", Paragraph) # type: ignore

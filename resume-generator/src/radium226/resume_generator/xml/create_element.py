@@ -1,12 +1,12 @@
 from typing import Optional, Union
-from lxml.etree import Element
+from lxml.etree import Element, _Element
 
 from .namespaces_by_prefix import NAMESPACES_BY_PREFIX
 from .set_attribute_to_element import set_attribute_to_element
 from .append_children_to_parent_element import append_children_to_parent_element
 
 
-def create_element(tag: str, attributes: dict[str, str] = {}, children: list[Union[Element, str]] = [], parent: Optional[Element] = None, text: str | None = None) -> Element:
+def create_element(tag: str, attributes: dict[str, str] = {}, children: list[Union[_Element, str]] = [], parent: Optional[_Element] = None, text: str | None = None) -> _Element:
     [namespace_prefix, local_tag] = tag.split(":")
     namespace = NAMESPACES_BY_PREFIX[namespace_prefix]
     element = Element(
