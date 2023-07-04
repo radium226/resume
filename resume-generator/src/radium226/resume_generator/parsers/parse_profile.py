@@ -15,7 +15,7 @@ def parse_profile(obj: str) -> Profile:
     def iter_document() -> Generator[Paragraph, None, None]:
         for paragraph in document.children:
             match paragraph:
-                case Paragraph():
+                case Paragraph(): # type: ignore
                     yield paragraph
 
     paragraphs=list(iter_document())

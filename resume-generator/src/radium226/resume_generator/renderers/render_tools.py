@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 
 from ..models import Tool 
 from ..open_document import text
@@ -6,8 +6,8 @@ from ..open_document import text
 from .render_paragraph import render_paragraph
 
 
-def render_tools(tools: list[Tool], level: int = 1) -> list[Element]:
-    def render_tool(tool: Tool, index: int, length: int) -> list[Element]:
+def render_tools(tools: list[Tool], level: int = 1) -> list[_Element]:
+    def render_tool(tool: Tool, index: int, length: int) -> list[_Element]:
 
         style_name_suffix = "Cont."
         # if index == 0:

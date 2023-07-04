@@ -36,7 +36,7 @@ def _render_contact_as_table_row(contact: Contact) -> _Element:
     )
 
 
-def render_contacts(contacts: list[Contact]) -> list[Element]:
+def render_contacts(contacts: list[Contact]) -> list[_Element]:
     return [
         text.h(outline_level=1, children=["Contacts"]),
         text.table(

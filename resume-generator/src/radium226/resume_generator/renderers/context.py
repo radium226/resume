@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from ..open_document import EmbeddedImage, text
 
 
-CURRENT_CONTEXT = ContextVar("CURRENT_CONTEXT")
+CURRENT_CONTEXT: ContextVar["RenderContext"] = ContextVar("CURRENT_CONTEXT")
 
 
 MIME_TYPES_BY_SUFFIX = {

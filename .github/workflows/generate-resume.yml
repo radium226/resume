@@ -52,9 +52,13 @@ jobs:
       run: |
         set -euEo pipefail
         
-        pdm \
-          sync \
-            --project="./resume-generator/resume-generator"
+        pdm sync --project="./resume-generator/resume-generator"
+
+    - name: Check types in Resume Generator
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm run --project="./resume-generator/resume-generator" check-types 
     
     - name: Generate resume
       shell: bash

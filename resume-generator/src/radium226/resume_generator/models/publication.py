@@ -16,7 +16,7 @@ PublicationLink = NewType("PublicationLink", str)
 @dataclass
 class Publication():
 
-    title: PublicationTitle
+    title: PublicationTitle | None = None
     
     medium: Medium | None = None
 

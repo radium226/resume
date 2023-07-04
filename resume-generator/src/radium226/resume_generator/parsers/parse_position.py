@@ -10,7 +10,8 @@ from .parse_tool import parse_tool
 
 def parse_position(position_obj: dict) -> Position:
     try:
-        title = PositionTitle(title_obj) if (title_obj := position_obj.get("title", None)) else None
+        # title = PositionTitle(title_obj) if (title_obj := position_obj.get("title", None)) else None
+        title = PositionTitle(position_obj["title"])
         description = PositionDescription(parse_paragraph(position_obj["description"]))
         client = parse_company(client_obj) if (client_obj := position_obj.get("client", None)) else None
         project = PositionProject(project_obj) if (project_obj := position_obj.get("project", None)) else None

@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 
 from ..models import Profile
 from ..open_document import text
@@ -6,7 +6,7 @@ from ..open_document import text
 from .render_paragraph import render_paragraph
 
 
-def render_profile(profile: Profile) -> list[Element]:
+def render_profile(profile: Profile) -> list[_Element]:
     return (
         [
             text.h(

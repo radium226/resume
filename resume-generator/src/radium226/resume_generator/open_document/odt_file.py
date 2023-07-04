@@ -31,12 +31,13 @@ class ODTFile():
                         output_zip_info.compress_type = input_zip_info.compress_type
                         with input_zip_file.open(input_zip_info, mode="r") as input_stream:
                             if file_name == "content.xml":
-                                element = parse(input_stream)
+                                element_tree = parse(input_stream)
+                                element = element_tree.getroot()
                                 if update_content:
                                     for embedded_image in update_content(element):
                                         if embedded_image.name not in [e.name for e in embedded_images]:
                                             embedded_images.append(embedded_image)
-                                input_stream = BytesIO(tostring(element))
+                                input_stream = BytesIO(tostring(element_tree))
 
                             if file_name == "META-INF/manifest.xml":
                                 manifest_element_tree = parse(input_stream)
@@ -52,11 +53,11 @@ class ODTFile():
                                             }
                                         )
                                     )
-                                append_children_to_parent_element(manifest_element, file_entry_elements)
+                                append_children_to_parent_element(manifest_element, list(file_entry_elements))
                                 input_stream = BytesIO(tostring(manifest_element_tree))
 
                             with output_zip_file.open(output_zip_info, mode="w") as output_stream:
-                                copyfileobj(input_stream, output_stream)
+                                copyfileobj(input_stream, output_stream) # type: ignore
                 
                 for embedded_image in embedded_images:
                     output_zip_info = ZipInfo(f"Pictures/{embedded_image.name}")
@@ -84,4 +85,4 @@ class ODTFile():
                         zip_info.compress_type = ZIP_DEFLATED
 
                     with zip_file.open(zip_info, mode="w") as output_stream:
-                        copyfileobj(input_stream, output_stream)
+                        copyfileobj(input_stream, output_stream) # type: ignore

@@ -59,7 +59,7 @@ def render_rating(rating: SkillRating) -> list[_Element]:
 
 
 
-def render_category_and_skills_to_table_rows(category_and_skills: CategoryAndSkills) -> list[Element]:
+def render_category_and_skills_to_table_rows(category_and_skills: CategoryAndSkills) -> list[_Element]:
     return [
         text.table_row(
             children=[
@@ -72,7 +72,7 @@ def render_category_and_skills_to_table_rows(category_and_skills: CategoryAndSki
     ]
 
 
-def render_skills(skills: list[Skill]) -> list[Element]:
+def render_skills(skills: list[Skill]) -> list[_Element]:
     skills_by_category = list(
         map(
             lambda entry: CategoryAndSkills(category=entry[0], skills=list(entry[1])),

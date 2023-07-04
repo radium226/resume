@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 from pendulum import today
 
 from ..models import Position
@@ -11,7 +11,7 @@ from .render_paragraph import render_paragraph
 from .context import get_current_render_context
 
 
-def render_position(position: Position, position_index) -> list[Element]:
+def render_position(position: Position, position_index) -> list[_Element]:
     period_from = position.period.start.format("MMMM YYYY", locale="fr")
     period_to = "aujourd'hui" if position.period.end == today().at(0).set(day=1) else position.period.end.format("MMMM YYYY", locale="fr")
 

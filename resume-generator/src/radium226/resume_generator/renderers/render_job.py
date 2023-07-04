@@ -1,4 +1,4 @@
-from lxml.etree import Element
+from lxml.etree import _Element
 
 from ..models import Job
 from ..open_document import text
@@ -7,7 +7,7 @@ from .render_position import render_position
 from .render_paragraph import render_paragraph
 
 
-def render_job(job: Job, job_index: int) -> list[Element]:
+def render_job(job: Job, job_index: int) -> list[_Element]:
     return (
         [
             text.h(
