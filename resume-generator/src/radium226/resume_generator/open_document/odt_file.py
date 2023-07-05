@@ -1,4 +1,4 @@
-from typing import Callable
+from typing import Callable, Protocol
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED, ZipInfo
 from shutil import copyfileobj
@@ -10,6 +10,12 @@ from ..xml import create_element, append_children_to_parent_element
 from .embedded_image import EmbeddedImage
 
 
+class UpdateContentCallable(Protocol):
+
+    def __call__(self, element: _Element) -> list[EmbeddedImage]:
+        pass
+
+
 class ODTFile():
 
 
@@ -17,7 +23,7 @@ class ODTFile():
     def modify_with(
         input_file_path: Path,
         output_file_path: Path,
-        update_content: Callable[[_Element], list[EmbeddedImage]] | None = None,
+        update_content: UpdateContentCallable | None = None,
     ) -> None:
         with ZipFile(input_file_path, mode="r") as input_zip_file:
             with ZipFile(output_file_path, mode="w") as output_zip_file:
@@ -34,7 +40,7 @@ class ODTFile():
                                 element_tree = parse(input_stream)
                                 element = element_tree.getroot()
                                 if update_content:
-                                    for embedded_image in update_content(element):
+                                    for embedded_image in update_content(element=element):
                                         if embedded_image.name not in [e.name for e in embedded_images]:
                                             embedded_images.append(embedded_image)
                                 input_stream = BytesIO(tostring(element_tree))
