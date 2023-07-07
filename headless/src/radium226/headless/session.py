@@ -7,6 +7,7 @@ from pathlib import Path
 from tempfile import mkstemp
 from time import sleep
 from signal import SIGINT
+import re
 
 from .display import Display
 
@@ -34,6 +35,19 @@ class Window():
     def name(self) -> str:
         return self.session.run(["xdotool", "getwindowname", f"{self.id}"], capture_output=True, text=True).stdout.strip()
 
+    @property
+    def props(self) -> dict[str, str]:
+
+        def _iter_props() -> Generator[tuple[str, str], None, None]:
+            lines = self.session.run(["obxprop", "--id", f"{self.id}"], capture_output=True, text=True).stdout.splitlines()
+            pattern = re.compile("""^(?P<name>[A-Z_]+)\(UTF8_STRING\) = "(?P<value>.*)"$""")
+            for line in lines:
+                if (result := pattern.match(line)):
+                    name = result.group("name")
+                    value = result.group("value")
+                    yield (name, value)
+
+        return { name: value for name, value in _iter_props() }
 
 class StopProcess(Protocol):
 
@@ -56,6 +70,14 @@ class Session():
 
     _exit_stack: ExitStack = field(default_factory=ExitStack)
 
+    def _run_openbox(self) -> None:
+        config_file_path = Path(__file__).parent / "data" / "openbox" / "rc.xml"
+        self.run(
+            ["openbox", "--config-file", f"{config_file_path}"],
+            background=True,
+            include_display_in_env=True
+        )
+
     def __enter__(self):
         self.run(
             [
@@ -68,15 +90,20 @@ class Session():
         )
         sleep(2) # FIXME
 
-        self.run(
-            [
-                "fluxbox",
-                "-no-slit",
-                "-no-toolbar",
-            ],
-            background=True,
-            include_display_in_env=True,
-        )
+
+        # fluxbox_folder_path = Path(__file__).parent / "data" / "fluxbox" / "init"
+        # self.run(
+        #     [
+        #         "fluxbox",
+        #         "-rc", f"{fluxbox_folder_path}",
+        #         "-no-edit",
+        #         "-no-toolbar"
+        #     ],
+        #     background=True,
+        #     include_display_in_env=True,
+        # )
+        
+        self._run_openbox()
         sleep(2) # FIXME
 
         return self

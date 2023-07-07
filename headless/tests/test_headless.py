@@ -11,7 +11,7 @@ class LibreOffice(App):
     def find_window(self, session: Session) -> Window | None:
         for window in session.windows:
             print(f"window.name={window.name}")
-            if window.name.lower() == "libreoffice":
+            if window.props.get("_OB_APP_CLASS", None) == "libreoffice-startcenter":
                 return window
 
         return None
@@ -33,3 +33,6 @@ def test_session():
 
         for window in session.windows:
             print(f"window.name={window.name}")
+            print(f"window.props={window.props}")
+
+        sleep(2.5)

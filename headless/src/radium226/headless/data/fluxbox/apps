@@ -1,0 +1,4 @@
+[app] (name=LibreOffice)
+  [Deco]    {0x6}
+  [Maximized]   {yes}
+[end]
