@@ -33,13 +33,21 @@ class Window():
 
     @property
     def name(self) -> str:
-        return self.session.run(["xdotool", "getwindowname", f"{self.id}"], capture_output=True, text=True).stdout.strip()
+        stdout = self.session.run(["xdotool", "getwindowname", f"{self.id}"], capture_output=True, text=True).stdout
+        if isinstance(stdout, str):
+            return stdout.strip()
+        else:
+            raise Exception("We should not be here! ")
+
 
     @property
     def props(self) -> dict[str, str]:
 
         def _iter_props() -> Generator[tuple[str, str], None, None]:
-            lines = self.session.run(["obxprop", "--id", f"{self.id}"], capture_output=True, text=True).stdout.splitlines()
+            stdout = self.session.run(["obxprop", "--id", f"{self.id}"], capture_output=True, text=True).stdout
+            if not isinstance(stdout, str):
+                raise Exception("We should not be here! ")
+            lines = stdout.splitlines()
             pattern = re.compile("""^(?P<name>[A-Z_]+)\(UTF8_STRING\) = "(?P<value>.*)"$""")
             for line in lines:
                 if (result := pattern.match(line)):
@@ -49,18 +57,22 @@ class Window():
 
         return { name: value for name, value in _iter_props() }
 
-class StopProcess(Protocol):
+class StopProcessCallable(Protocol):
+
+    def __call__(self, process: Popen) -> None:
+        pass
+
+
+class StopProcess:
 
     @staticmethod
     def kill(process: Popen) -> None:
         process.kill()
 
+    @staticmethod
     def terminate_and_wait(process: Popen) -> None:
         process.send_signal(SIGINT)
         process.wait()
-
-    def __call__(self, process: Popen) -> None:
-        pass
 
 
 @dataclass
@@ -118,7 +130,7 @@ class Session():
         command: list[str], 
         include_display_in_env: bool = True, 
         env: dict[str, str] = {}, 
-        stop_process: StopProcess = StopProcess.terminate_and_wait,
+        stop_process: StopProcessCallable = StopProcess.terminate_and_wait,
         **kwargs
     ) -> Generator[Popen, None, None]:
         env = env | ( { "DISPLAY": f":{self.display.number}.0" } if include_display_in_env else {} )
@@ -154,7 +166,7 @@ class Session():
         *,
         background: bool = False, 
         include_display_in_env: bool = True,
-        stop_process: StopProcess = StopProcess.terminate_and_wait,
+        stop_process: StopProcessCallable = StopProcess.terminate_and_wait,
         **kwargs,
     ) -> Popen | CompletedProcess:
         if background:
@@ -175,15 +187,20 @@ class Session():
 
     @property
     def windows(self) -> list[Window]:
+        stdout = self.run(
+            ["wmctrl", "-l"],
+            background=False,
+            include_display_in_env=True,
+            capture_output=True,
+            text=True,
+        ).stdout
+
+        if not isinstance(stdout, str):
+            raise Exception("We should not be here! ")
+        
         return [
             Window(self, line.split(" ")[0])
-            for line in self.run(
-                ["wmctrl", "-l"],
-                background=False,
-                include_display_in_env=True,
-                capture_output=True,
-                text=True,
-            ).stdout.splitlines()
+            for line in stdout.splitlines()
             if ( line or "" ).strip() != ""
         ]
 
@@ -201,10 +218,15 @@ class Session():
 
             return window
 
+        return None
+
 
     def take_picture(self, file_path: Path | None = None) -> Path:
         if not file_path:
-            _, file_path = mkstemp(prefix="snapshot", suffix=".png")
+            _, file_path_str = mkstemp(prefix="snapshot", suffix=".png")
+            if not file_path_str:
+                raise Exception("We should not be here! ")
+            file_path = Path(file_path_str)
 
         self.run(
             ["scrot", f"{file_path}"], 
@@ -215,8 +237,11 @@ class Session():
 
     def record_video(self, file_path: Path | None = None) -> Path:
         if not file_path:
-            _, file_path = mkstemp(prefix="snapshot", suffix=".mp4")
-
+            _, file_path_str = mkstemp(prefix="snapshot", suffix=".mp4")
+            if not file_path_str:
+                raise Exception("We should not be here! ")
+            file_path = Path(file_path_str)
+            
         self.run(
             [
                 "ffmpeg",
