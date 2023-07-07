@@ -56,7 +56,7 @@ jobs:
         set -euEo pipefail
         pdm run --project="./resume-generator/headless" test
         
-    - uses: actions/upload-pages-artifact@v1
+    - uses: actions/upload-artifact@v3
       with:
         name: "Session"
         path: "/tmp/session.mp4"
