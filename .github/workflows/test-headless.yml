@@ -1,0 +1,61 @@
+---
+name: test-headless
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - ./headless/**
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: write
+      pull-requests: read
+      actions: read
+    steps:
+    - name: Checkout Resume Generator sources
+      uses: actions/checkout@v3
+      with:
+        path: "resume-generator"
+        fetch-depth: 0
+      
+    - name: Install required Ubuntu packages
+      shell: bash
+      run: |
+        set -euEo pipefail
+        sudo add-apt-repository "ppa:libreoffice/ppa"
+        sudo apt-get --yes update
+        sudo apt-get --yes install "libreoffice" "fonts-ubuntu"
+        sudo apt-get --yes install "xvfb" "xdotool" "wmctrl" "fluxbox"
+
+    - name: Install Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Install PDM
+      uses: pdm-project/setup-pdm@v3
+      with:
+        python-version: "3.11"
+        version: "2.7.4"
+
+    - name: Install dependencies for Headless
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm sync --project="./resume-generator/headless"
+    
+    - name: Test Headless
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm run --project="./resume-generator/headless" test
+        
+    - uses: actions/upload-pages-artifact@v1
+      with:
+        name: "Session"
+        path: "/tmp/session.mp4"

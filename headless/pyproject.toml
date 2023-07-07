@@ -1,0 +1,35 @@
+
+[project]
+name = "radium226-headless"
+version = "0.1.0"
+description = "Headless"
+authors = [
+    {name = "Radium226", email = "radium226@rouages.xyz"},
+]
+dependencies = [
+    "click>=8.1.3",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "GPL"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+radium226-resume-generator = "radium226.resume_generator:app"
+
+[tool.pdm.build]
+package-dir = "src" 
+includes = ["src/radium226/headless"]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.3.2",
+    "mypy>=1.3.0",
+    "types-contextvars>=2.4.7.2",
+]
+
+[tool.pdm.scripts]
+check-types = "mypy './src'"
+test = "pytest -s './tests'"
