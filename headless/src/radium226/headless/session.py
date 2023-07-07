@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import TypeAlias, Generator, Callable, Protocol
+from typing import TypeAlias, Generator, Callable, Protocol, Optional
 from contextlib import ExitStack, contextmanager, nullcontext
 from subprocess import Popen, CompletedProcess, run, STDOUT
 from enum import Enum, auto
@@ -14,20 +14,25 @@ from .display import Display
 WindowID: TypeAlias = str
 
 
+class App(Protocol):
+
+    def provide_command(self, session: "Session") -> list[str]:
+        pass
+
+    def find_window(self, session: "Session") -> Optional["Window"]:
+        pass
+
+
 @dataclass
 class Window():
 
     session: "Session"
     
     id: WindowID
-    
 
-    def maximize(self) -> None: # FIXME
-        command=["wmctrl", "-r", f"{self.id}", "-b", "remove,maximized_vert,maximized_horz"]
-        self.session.run(command, background=False)
-
-    def minimize(self) -> None: # FIXME
-        self.session.run(["xdotool", "windowminimize", f"{self.id}"], background=False)
+    @property
+    def name(self) -> str:
+        return self.session.run(["xdotool", "getwindowname", f"{self.id}"], capture_output=True, text=True).stdout.strip()
 
 
 class StopProcess(Protocol):
@@ -141,27 +146,33 @@ class Session():
                 **kwargs,
             )
 
-
-    def open(
-        self,
-        command: list[str],
-    ) -> "Window":
-        process = self.run(command, background=True)
-
-        sleep(5)
-
-        window_id = [
-            line.split(" ")[0]
+    @property
+    def windows(self) -> list[Window]:
+        return [
+            Window(self, line.split(" ")[0])
             for line in self.run(
-                ["wmctrl", "-l"], # FIXME
+                ["wmctrl", "-l"],
                 background=False,
                 include_display_in_env=True,
                 capture_output=True,
                 text=True,
-            ).stdout.split("\n")
-        ][0]
+            ).stdout.splitlines()
+            if ( line or "" ).strip() != ""
+        ]
+
+    def open_app(
+        self,
+        app: App,
+        wait_for_window: bool = True
+    ) -> Window | None:
         
-        return Window(self, window_id)
+        self.run(app.provide_command(self), background=True)
+
+        if wait_for_window:
+            while not (window := app.find_window(self)):
+                sleep(0.5)
+
+            return window
 
 
     def take_picture(self, file_path: Path | None = None) -> Path:
