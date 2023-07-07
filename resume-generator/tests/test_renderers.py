@@ -15,12 +15,14 @@ from radium226.resume_generator.open_document import ODTFile
 
 @fixture
 def session(request):
-    file_name = request.node.name + ".mp4"
+    file_name = request.node.name
     with Session() as session:
-        video_file_path = Path(f"/tmp/test_renderers") / file_name
+        video_file_path = Path(f"/tmp/test_renderers") / ( file_name + ".mp4" )
         video_file_path.parent.mkdir(parents=True, exist_ok=True)
         session.record_video(video_file_path)
         yield session
+        picture_file_path = Path(f"/tmp/test_renderers") / ( file_name + ".png" )
+        session.take_picture(picture_file_path)
 
 
 def test_render_paragraph(session):

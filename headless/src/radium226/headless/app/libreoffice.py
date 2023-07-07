@@ -10,7 +10,7 @@ class LibreOffice(App):
     file_path: Path | None = None
 
     def provide_command(self, session: Session) -> list[str]:
-        return ["soffice", "--norestore"] + ([f"{self.file_path}"] if self.file_path else [] )
+        return ["soffice", "--norestore", "--quickstart=no"] + ([f"{self.file_path}"] if self.file_path else [] )
 
     def find_window(self, session: Session) -> Window | None:
         for window in session.windows:
