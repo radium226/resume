@@ -1,11 +1,12 @@
 ---
 name: test-headless
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
     paths:
-      - ./headless/**
+      - headless/**
 
 jobs:
   test:
