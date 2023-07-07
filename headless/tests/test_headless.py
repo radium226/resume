@@ -10,7 +10,7 @@ class LibreOffice(App):
 
     def find_window(self, session: Session) -> Window | None:
         for window in session.windows:
-            print("window.name={window.name}")
+            print(f"window.name={window.name}")
             if window.name.lower() == "libreoffice":
                 return window
 
@@ -23,7 +23,13 @@ def test_session():
         session.record_video(Path("/tmp/session.mp4"))
         sleep(1)
 
+        for window in session.windows:
+            print(f"window.name={window.name}")
+
         # Run a program... 
-        libreoffce_window = session.open_app(LibreOffice(), wait_for_window=True)
-        print(libreoffce_window)
+        libreoffice_window = session.open_app(LibreOffice(), wait_for_window=True)
+        print(libreoffice_window)
         sleep(2.5)
+
+        for window in session.windows:
+            print(f"window.name={window.name}")
