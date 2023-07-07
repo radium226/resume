@@ -23,14 +23,8 @@ jobs:
       with:
         path: "resume-generator"
         fetch-depth: 0
-
-    - name: Checkout resume-generator sources
-      uses: actions/checkout@v3
-      with:
-        path: "resume-generator"
-        fetch-depth: 0
       
-    - name: Install packages for LibreOffice
+    - name: Install required Ubuntu packages
       shell: bash
       run: |
         set -euEo pipefail
@@ -38,6 +32,7 @@ jobs:
         sudo add-apt-repository "ppa:libreoffice/ppa"
         sudo apt-get --yes update
         sudo apt-get --yes install "libreoffice" "fonts-ubuntu"
+        sudo apt-get --yes install "xvfb" "xdotool" "wmctrl" "openbox" "ffmpeg"
 
     - name: Install Python
       uses: actions/setup-python@v4
@@ -50,7 +45,7 @@ jobs:
         python-version: "3.11"
         version: "2.7.4"
 
-    - name: Install dependencies for Resume Generator
+    - name: Install required Python dependencies
       shell: bash
       run: |
         set -euEo pipefail
@@ -63,6 +58,17 @@ jobs:
         set -euEo pipefail
         pdm run --project="./resume-generator/resume-generator" check-types 
     
+    - name: Test Resume Generator renderers
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm run --project="./resume-generator/resume-generator" test-renderers 
+  
+    - uses: actions/upload-artifact@v3
+      with:
+        name: "test_renderers"
+        path: "/tmp/test_renderers"
+
     - name: Generate resume
       shell: bash
       run: |
