@@ -6,6 +6,7 @@ on:
       - "main"
     paths:
       - resume-generator/**
+      - .github/**
 
 jobs:
   generate:
