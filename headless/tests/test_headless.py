@@ -10,7 +10,7 @@ class LibreOffice(App):
 
     def find_window(self, session: Session) -> Window | None:
         for window in session.windows:
-            print(window)
+            print("window.name={window.name}")
             if window.name.lower() == "libreoffice":
                 return window
 
