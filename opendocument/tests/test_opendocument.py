@@ -1,9 +1,10 @@
-from radium226.opendocument import Text
-from radium226.opendocument.text import Paragraph
+from pathlib import Path
+
+from radium226.opendocument import Document, StorageType, DocumentType
+from radium226.opendocument.paragraph import Paragraph
 
 
-def test_text():
-
-    with Document() as document:
-        with Text() as text:
-            pass
+def test_document_write():
+    document = Document(type=DocumentType.TEXT)
+    document += Paragraph("kikou")
+    document.save_as(Path("./test.fodt"))

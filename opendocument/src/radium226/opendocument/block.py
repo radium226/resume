@@ -1,6 +1,8 @@
 from typing import Protocol
+from lxml.etree import _Element
+
 
 class Block(Protocol):
 
-    def __iadd__(self, block: "Block") -> None:
+    def to_elements(self) -> list[_Element]:
         pass
