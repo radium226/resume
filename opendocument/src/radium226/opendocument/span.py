@@ -8,7 +8,7 @@ from .xml import create_element
 
 
 @dataclass
-class Paragraph(Block):
+class Span(Block):
 
     children: list[Block | str] = field(default_factory=list)
 
@@ -27,7 +27,7 @@ class Paragraph(Block):
 
         return [
             create_element(
-                "text:p",
+                "text:span",
                 attributes={
                     "text:style-name": self.style_name,
                 },
