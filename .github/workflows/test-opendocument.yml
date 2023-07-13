@@ -49,7 +49,7 @@ jobs:
       shell: bash
       run: |
         set -euEo pipefail
-        pdm sync --project="resume-generator/opendocument"
+        pdm sync --project="resume-generator/opendocument" --dev
     
     - name: Test
       shell: bash

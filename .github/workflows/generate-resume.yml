@@ -6,7 +6,9 @@ on:
       - "main"
     paths:
       - resume-generator/**
-      - .github/**
+      - headless/**
+      - opendocument/**
+      - .github/workflow/generate-resume.yml
 
 jobs:
   generate:
