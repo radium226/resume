@@ -2,6 +2,7 @@ from pytest import fixture
 from types import SimpleNamespace
 from pathlib import Path
 from dataclasses import dataclass
+from time import sleep
 
 from radium226.headless import Session
 from radium226.headless.app import LibreOffice
@@ -64,10 +65,14 @@ def libreoffice(session: Session, result_folder_path, document_file_path: Path, 
     # We open the document file
     session.open_app(LibreOffice(file_path=document_file_path))
     
+    sleep(2.5)
+    
     # We take the screenshot
     picture_file_path = result_folder_path / ( request.node.name + ".png" )
     session.take_picture(file_path=picture_file_path)
     
+    sleep(2.5)
+
     result = Result(
         test_name=test_name,
         document_file_path=document_file_path,
