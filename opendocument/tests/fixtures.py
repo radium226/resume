@@ -37,8 +37,10 @@ def result_folder_path(request) -> Path:
 
 
 @fixture(scope="session")
-def session():
+def session(result_folder_path Path):
     with Session() as session:
+        video_file_path = result_folder_path / "session.mp4"
+        session.record_video(video_file_path)
         yield session
 
 
