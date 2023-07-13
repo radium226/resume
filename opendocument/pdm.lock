@@ -74,6 +74,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "radium226-headless"
+version = "0.1.0"
+requires_python = ">=3.11"
+editable = true
+path = "../headless"
+summary = "Headless"
+dependencies = [
+    "click>=8.1.3",
+]
+
+[[package]]
 name = "types-contextvars"
 version = "2.4.7.3"
 summary = "Typing stubs for contextvars"
@@ -88,7 +99,7 @@ summary = "Backported and Experimental Type Hints for Python 3.7+"
 lock_version = "4.2"
 cross_platform = true
 groups = ["default", "dev"]
-content_hash = "sha256:b94e1cc777b17611f92c69bf96c30249f6ece3ec0e4c872925091b975dee4b31"
+content_hash = "sha256:0b8de814a8a7bae9578f6a9b975b50d5e4a46b44a375069a85833b29a2e2bd1d"
 
 [metadata.files]
 "click 8.1.4" = [
