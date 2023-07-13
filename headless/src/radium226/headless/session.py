@@ -48,7 +48,7 @@ class Window():
             if not isinstance(stdout, str):
                 raise Exception("We should not be here! ")
             lines = stdout.splitlines()
-            pattern = re.compile("""^(?P<name>[A-Z_]+)\(UTF8_STRING\) = "(?P<value>.*)"$""")
+            pattern = re.compile("""^(?P<name>[A-Z_]+)\\(UTF8_STRING\\) = "(?P<value>.*)"$""")
             for line in lines:
                 if (result := pattern.match(line)):
                     name = result.group("name")
@@ -216,6 +216,7 @@ class Session():
             while not (window := app.find_window(self)):
                 sleep(0.5)
 
+            sleep(1)
             return window
 
         return None
@@ -229,7 +230,7 @@ class Session():
             file_path = Path(file_path_str)
 
         self.run(
-            ["scrot", f"{file_path}"], 
+            ["scrot", "--overwrite", f"{file_path}"], 
             include_display_in_env=True,
         )
         return file_path

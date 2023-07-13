@@ -21,6 +21,12 @@ build-backend = "pdm.backend"
 [project.scripts]
 radium226-resume-generator = "radium226.resume_generator:app"
 
+[tool.pytest.ini_options]
+addopts = "-s"
+testpaths = [
+    "tests"
+]
+
 [tool.pdm.build]
 package-dir = "src" 
 includes = ["src/radium226/opendocument"]
@@ -34,4 +40,4 @@ dev = [
 
 [tool.pdm.scripts]
 check-types = "mypy './src'"
-test = "pytest -s './tests'"
+test = "pytest"

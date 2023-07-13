@@ -1,0 +1,63 @@
+---
+name: test-headless
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+    paths:
+      - opendocument/**
+      - .github/worflows/test-opendocument.yml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: write
+      pull-requests: read
+      actions: read
+    steps:
+    - name: Checkout Resume Generator sources
+      uses: actions/checkout@v3
+      with:
+        path: "resume-generator"
+        fetch-depth: 0
+      
+    - name: Install required Ubuntu packages
+      shell: bash
+      run: |
+        set -euEo pipefail
+        sudo add-apt-repository "ppa:libreoffice/ppa"
+        sudo apt-get --yes update
+        sudo apt-get --yes install "libreoffice" "fonts-ubuntu"
+        sudo apt-get --yes install "xvfb" "xdotool" "wmctrl" "openbox" "ffmpeg"
+
+    - name: Install Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Install PDM
+      uses: pdm-project/setup-pdm@v3
+      with:
+        python-version: "3.11"
+        version: "2.7.4"
+
+    - name: Install Python dependencies
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm sync --project="resume-generator/opendocument"
+    
+    - name: Test
+      shell: bash
+      run: |
+        set -euEo pipefail
+        pdm run --project="resume-generator/opendocument" test --result-folder-path="/tmp/resume/opendocument/test-results"
+        
+    - uses: actions/upload-artifact@v3
+      with:
+        name: "test-results"
+        path: "/tmp/resume/opendocument/test-results"
