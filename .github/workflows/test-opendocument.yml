@@ -1,5 +1,5 @@
 ---
-name: test-headless
+name: test-opendocument
 on:
   workflow_dispatch:
   push:
