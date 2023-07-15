@@ -1,0 +1,23 @@
+profile:
+    first_name: John
+    last_name: ENC[AES256_GCM,data:vev8vWJxVg==,iv:xiQhFmfuuIxF8f1wHTylYCsuWwH/5nJGKBhWZk2MK6k=,tag:B7NGw8MPOOgTr6cYbYsl7g==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1h08y4sk97gmzaksnw65j2vgqtr9gfhngyvfx74vx2waqvk6qz3ys570qlq
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5NFplSW9WOHhKQ25yRS9n
+            bmJHUG04ekJMaFIwK3FoamJTeGZzMHBjblRRCmRiWEx2Ymh6aHA1L3NLbGx5aUxm
+            UTlkQ0J6TGNMbUlmQ2w5SmpRNDdIQkUKLS0tIGIxMGpnRDRGczVsS2VXS2hVMU43
+            UFpGSVN2MjZ3eVpocDF3K0s5ZEovNG8KICRcEfl0EsDWOR1PjbYlNIEaJmdEgLrb
+            QBNgCpGf98Z2ho4Veg0aK2p7IlsAq5CSJhIpev/BuOv86kXVsY51tg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-07-15T18:58:03Z"
+    mac: ENC[AES256_GCM,data:aaIA4n8kvJAucGf/dtrsSvkZt7CgIIShrV0U6qGZ2j1ioei00HimUDSxoeRrcKsijehm5vEZ9NhJz2MPSlLihHNh+PUs1mgBmEOElsUSxAUXTM4NUz9mdoEnr/etFphFCf/YkJ9uu2HHUORvOGA7QlTgpt+IUtrvu8PbAl6WlDY=,iv:4koBBIZRQfCX7EOOOibj8FO5uVJWtBJ8VamM1lnm/Q0=,tag:7Q3TYcG7v4HR2VGxH8cLHg==,type:str]
+    pgp: []
+    encrypted_regex: last_name
+    version: 3.7.3

@@ -25,6 +25,21 @@ jobs:
       with:
         path: "resume-generator"
         fetch-depth: 0
+
+    - name: Install Just
+      uses: extractions/setup-just@v1
+
+    - name: Install SOPS
+      uses: mdgreenwald/mozilla-sops-action@v1.4.1
+
+    - name: Decrypt secrets
+      env:
+        PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
+      shell: bash
+      run: |
+        mkdir -p "keys"
+        echo "${PRIVATE_KEY}" >"keys/private.key"
+        just decrypt-secrets
       
     - name: Install required Ubuntu packages
       shell: bash
